@@ -1,11 +1,11 @@
 <template>
   <div class="h-20 bg-gray-500 w-full">
     <div
-      class="max-w-[1600px] bg-red-400 h-full flex items-center justify-between mx-auto"
+      class="max-w-[1600px] h-full flex items-center justify-between mx-auto"
     >
       <div class="flex items-center gap-3">
         <div class="">
-          <router-link class="fonnt-bold" to="/">Logo</router-link>
+          <router-link class="fonnt-bold" to="/">Logo Kashif</router-link>
         </div>
         <div>
           <div class="relative flex items-center">
