@@ -1,7 +1,7 @@
 <template>
-  <div class="py-3 z-40 sticky shdow-md top-0 h-16 px-3 bg-[#263747] w-full">
+  <div class="py-3 z-40 sticky shdow-md top-0 h-16 px-5 sm:px-3 bg-[#263747] w-full">
     <div
-      class="max-w-[1600px] h-full flex items-center justify-between mx-auto"
+      class="h-full flex items-center justify-between mx-auto"
     >
       <div class="flex items-center gap-2.5">
         <router-link class="fonnt-bold flex md:hidden" to="/">

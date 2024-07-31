@@ -1,7 +1,7 @@
 <template>
     <footer class="w-full bg-[rgb(10,28,45)] px-6 pt-20 pb-40">
         <div class="max-w-7xl mx-auto">
-            <div class="flex lg:flex-row flex-col gap-4 lg:gap-24 ">
+            <div class="flex xl:flex-row flex-col gap-4 lg:gap-6 xl:gap-12 2xl:gap-12 2xl:justify-between ">
            <div class="">
                     <img src="../assets/logo.png" alt="" class="w-[130px] h-[60px] object-cover">
                     <p class="text-white/90 text-sm">© 2024 Wild. All rights <br>reserved.</p>
@@ -31,7 +31,7 @@
                           
                     </div>
                 </div>
-            <div class=" lg:grid-cols-5 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-between gap-5 sm:gap-16">
+            <div class=" xl:grid-cols-5 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-between gap-5 sm:gap-16">
                
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Slot Games</h3>
@@ -83,7 +83,7 @@
                 </div>
             </div>
             </div>
-            <div class="border border-gray-600 my-10 lg:flex-row flex-col flex justify-between items-center gap-3 rounded-lg p-5">
+            <div class="border border-gray-600 my-10 lg:flex-row flex-col flex justify-between items-center gap-5 lg:gap-3 rounded-lg p-5">
                 <p class="text-white/80 lg:w-1/2 lg:text-left text-center text-xs">Wild.io is owned and operated by Nonce Gaming B.V. that is incorporated under the laws of<br class="lg:flex hidden"> Curacao with company registration number 161858 and having its registered address at<br class="lg:flex hidden"> Scharlooweg 39, Willemstad, Curaçao. Nonce Gaming B.V. is operating under E-gaming license<br class="lg:flex hidden"> No. 8048/JAZ issued by Antillephone N.V. authorized by the government of Curacao.</p>
                 <div class=" flex flex-wrap items-center gap-6">
                     <img src="../assets/footerlogo.svg" alt="" class="w-[36px] sm:mx-0 mx-auto h-[36px]">
