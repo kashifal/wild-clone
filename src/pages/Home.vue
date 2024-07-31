@@ -282,9 +282,7 @@
           </div>
         </div>
       </div>
-      <div class="px-[34px]">
-       <div class="bg-gradient-to-r w-full py-6 from-[#294B41] to-[#1B2C3C]"></div>
-      </div>
+      <div class=""></div>
     <Footer />
   </div>
   </div>
@@ -346,6 +344,6 @@ import Footer from '../components/Footer.vue';
   background-color: transparent; /* Transparent track background */
 }
 
-
+.bit{}
 
 </style>
