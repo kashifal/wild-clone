@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="bg-[#192C3D]">
 
     <div class="w-16 z-40 hidden sidebar h-screen fixed left-0 top-16 bg-[#192C3D]">
       <div class="flex flex-col items-center  w-16 py-4 gap-1">
@@ -314,7 +314,11 @@
           </div>
         </div>
       </div>
-      
+      <div class="px-[34px] bg-[#091E2D]">
+        <div class="barbar py-4 px-6 rounded-2xl w-full">
+          <h1 class="text-xl text-white font-semibold z-100 relative">Want to play? Deposit now</h1>
+        </div>
+      </div>
     <Footer />
   </div>
   </div>
@@ -357,6 +361,12 @@ import Footer from '../components/Footer.vue';
   background: linear-gradient(263.66deg, rgba(247, 184, 89, 0.49) -2.37%, rgba(247, 184, 89, 0.3) 102.49%);
 }
 
+.barbar{
+  background: 
+  linear-gradient(45deg, rgba(96, 202, 84, 0.2) 1.72%, transparent 26.54%),
+  linear-gradient(45deg, hsla(0, 0%, 100%, 0.07), hsla(0, 0%, 100%, 0.07));
+  z-index: 4;
+}
 
 .sidebar {
  overflow-y: scroll;
