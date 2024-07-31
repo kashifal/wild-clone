@@ -1,5 +1,5 @@
 <template>
-  <div class="py-3 h-16 px-3 bg-[#263747] w-full">
+  <div class="py-3 z-40 sticky shdow-md top-0 h-16 px-3 bg-[#263747] w-full">
     <div
       class="max-w-[1600px] h-full flex items-center justify-between mx-auto"
     >
