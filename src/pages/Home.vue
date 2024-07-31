@@ -955,6 +955,7 @@ import Footer from "../components/Footer.vue";
   background-color: transparent; /* Transparent track background */
 }
 
-.bit {
+.bit{
+  
 }
 </style>
