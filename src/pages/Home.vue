@@ -145,7 +145,7 @@
         </div>
       </div>
     </div>
-    <div class="w-64 z-40 h-screen fixed left-0 top-16 bg-[#192C3D]">
+    <div class="z-40 h-screen w-64 fixed left-0 top-16 bg-[#192C3D]">
       <div class="grid grid-cols-2 gap-1  p-3">
         <div class="min-h-10 rounded-md element cursor-pointer w-full flex py-1 px-1.5 gap-1.5 items-center "
         >
