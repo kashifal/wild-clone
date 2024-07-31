@@ -2,10 +2,9 @@
   <div>
     <h1>Kashif made new changes</h1>
     <h2>H2 added by kashif</h2>
-    <p class="">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dolores
-      atque ad enim quod pariatur est, repellendus similique rerum culpa,
-      aperiam iure nulla vitae vero quae molestiae nesciunt fuga repellat!
-    </p>
   </div>
 </template>
+
+<script setup>
+import Nav from '../components/Navbar.vue';
+</script>
