@@ -256,7 +256,7 @@
        <div class="absolute inset-0 w-1/6 -left-10  bg-gradient-to-r from-[#0A1C2D] to-[#0A2334] blur-2xl z-20"></div>
         <div class="max-w-9xl mx-auto z-40 relative py-24 px-[34px]">
           <h2 class="text-white text-3xl font-semibold">Welcome Offer</h2>
-          <h1 class="text-[#FACC15] text-5xl font-extrabold pt-1">120% up to $5,000</h1>
+          <h1 class="text-5xl text-[#FACC15] font-extrabold pt-1">120% up to $5,000</h1>
           <h2 class="text-white text-2xl pt-1 font-bold">and 75 Free Spins</h2>
           <button class="text-white rounded-xl">
             <h5 class="">Sign up now</h5>
