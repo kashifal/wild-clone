@@ -258,7 +258,7 @@
           <h2 class="text-white text-3xl font-semibold">Welcome Offer</h2>
           <h1 class="text-5xl text-[#FACC15] font-extrabold pt-1">120% up to $5,000</h1>
           <h2 class="text-white text-2xl pt-1 font-bold">and 75 Free Spins</h2>
-          <button class="text-white rounded-xl">
+          <button class="text-white rounded-xl bg-green-400">
             <h5 class="">Sign up now</h5>
             <em class="">Only Takes 30 seconds</em>
           </button>
