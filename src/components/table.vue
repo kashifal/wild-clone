@@ -2,7 +2,7 @@
     <div class="py-10 overflow-x-hidden">
         <div class="flex justify-between items-center sm:gap-2 sm:flex-row flex-col gap-4">
             <h1 class="text-white font-bold text-xl">Leaderboard</h1>
-            <div class="flex p-1 bg-[#192C3D] rounded-full">
+            <div class="flex p-1 gap-1 bg-[#192C3D] rounded-full">
                 <button class="px-3 text-sm bg-white bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold">Recent Winners</button>
                 <button class="px-3 text-sm hover:bg-white hover:bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold">Top Winners</button>
             </div>
