@@ -1,5 +1,5 @@
 <template>
-    <footer class="w-full bg-[rgb(10,28,45)] px-6 pt-20 pb-40">
+    <footer class="w-full bg-[rgb(10,28,45)]  pt-20 pb-40">
         <div class="max-w-7xl mx-auto">
             <div class="flex xl:flex-row flex-col gap-4 lg:gap-6 xl:gap-12 2xl:gap-12 2xl:justify-between ">
            <div class="">
