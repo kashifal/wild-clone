@@ -2,7 +2,7 @@
     <div>
         <Sidebar />
         <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
-            <div class="px-8">
+            <div class="sm:px-8 px-4">
             <GamePage />
             <Footer />
         </div>
