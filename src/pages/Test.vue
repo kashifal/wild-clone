@@ -31,6 +31,12 @@
         Close Modal
       </button>
     </div>
+
+    <p v-for="(num, index) in names" :key="num">
+      <span :class="[index === 1 ? 'font-bold' : '']"
+        >{{ num }},{{ index }}</span
+      >
+    </p>
   </div>
 </template>
 
@@ -41,4 +47,6 @@ const show = ref(false);
 function modalFunc() {
   show.value = !show.value;
 }
+
+const names = ["ali", "kashif"];
 </script>
