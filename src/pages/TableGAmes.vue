@@ -5,10 +5,10 @@
             <div class="sm:px-8 px-4">
                 <div class="flex md:flex-row py-10 flex-col justify-between md:items-center gap-4">
                     <div class="flex items-center gap-2">
-                        <img src="../assets/gamecontroll.svg" alt="" class="w-6 h-6">
+                        <img src="../assets/tablegames.svg" alt="" class="w-6 h-6">
                         <div class="">
-                            <h1 class="text-white text-xl font-semibold">Games</h1>
-                            <p class="text-white/70 text-xs">6121 Games</p>
+                            <h1 class="text-white text-xl font-semibold">Table Games</h1>
+                            <p class="text-white/70 text-xs">61 Games</p>
                         </div>
                     </div>
                     <div class="flex md:flex-row flex-wrap gap-1 items-=center">
@@ -21,25 +21,7 @@
                               </select
                             ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"><path d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"></path></svg>
                           </div>
-                          <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
-                              <option value="">Category:All</option>
-                              <option value="">All Games</option>
-                              <option value="">Bgamming</option>
-                              <option value="">Blackjack</option>
-                              <option value="">Bonus Games</option>
-                              <option value="">Crash Games</option>
-                              <option value="">Game Show</option>
-                              <option value="">Jackpot Games</option>
-                              <option value="">Live Casino</option>
-                              <option value="">Megaways</option>
-                              <option value="">Roulette</option>
-                              <option value="">Skill GAmes</option>
-                              <option value="">Slot</option>
-                              <option value="">Table Games</option>
-                              </select
-                            ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"><path d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"></path></svg>
-                          </div>
+                        
                           <div class="relative">
                             <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
                               <option value="">Provide:All</option>
@@ -62,24 +44,27 @@
                     </div>
                 </div>
             <GamePage />
+
             <div class="mx-auto pt-10">
-                <div class="bg-[#142535] relative mx-auto mb-2 h-0.5 w-52"><span class="absolute left-0 top-0 h-0.5 w-full bg-green-500" style="width: 0.173645%;"></span></div>
-                <p data-slot="text" class="text-center text-sm text-white">You viewed 9 out of 6117 games</p>
+                <div class="bg-[#142535] relative mx-auto mb-2 h-0.5 w-52"><span class="absolute left-0 top-0 h-0.5 w-full bg-green-500" style="width: 52.459%;"></span></div>
+                <p data-slot="text" class="text-center text-sm text-white">You viewed 32 out of 564 games</p>
               </div>
               <div class="flex z-20 pt-7 justify-center">
               <button class="py-2 px-3 text-sm rounded-md bg-white bg-opacity-[3%] hover:bg-opacity-[5%] text-white font-medium">Load More</button>
             </div>
+
             <div class="py-16">
                 <div class="lg:max-w-3xl relative mx-auto max-h-[26.75rem]  overflow-hidden rounded-b-3xl bg- bg-gradient-to-t from-transparent to-[#0A1C2D] p-2 transition-all duration-200 ease-in-out">
                     <div class="">
                       <div class="text-sm text-white/80">
                         <div class="flex flex-col max-w-6xl gap-5">
-                          <h1 class="text-2xl text-white font-semibold">All Crypto Casino Games</h1>
-                          <p>Discover all the games our Bitcoin casino has to offer! Here you'll find Bitcoin slots, Bitcoin table games, Bitcoin live roulette, Bitcoin jackpot slots, and any other crypto slots you can think of. Experience over 5,000 crypto casino games from all the major game providers in the industry.</p>
-                          <p>Our Bitcoin live casino has an endless supply of Bitcoin and Ethereum casino games. We have classic 3 and 5-line slots along with the most recent video slots. In addition to our extensive selection of <a href="https://wild.io/categories/slots" class="underline">Bitcoin slots</a>, we also offer a wide range of <a href="#" class="underline">Bitcoin live games</a>. Our live games are played with real dealers and offer an immersive, interactive gaming experience that is second to none. Whether you want to play classic casino games like blackjack and baccarat or try your luck at something new like Dream Catcher or Monopoly Live, we have a game that's perfect for you.</p>
-                          <h2 class="text-xl text-white font-semibold"></h2>
-                          <p>Look no further! Wild.io has got you covered. You can play your favorite casino games on the go and make easy and secure Bitcoin transactions from the comfort of your mobile device. Look no further! Wild.io has got you covered. You can play your favorite casino games on the go and make easy and secure Bitcoin transactions from the comfort of your mobile device. Look no further! Wild.io has got you covered. You can play your favorite casino games on the go and make easy and secure Bitcoin transactions from the comfort of your mobile device.</p>
-                          <h2 class="text-xl text-white font-semibold">Play Ethereum and BTC casino games</h2>
+                          <h1 class="text-2xl text-white font-semibold">Bitcoin Table Games</h1>
+                          <p>Enjoy your favourite table games, from classics like Bitcoin roulette games to the latest popular games. Bitcoin table games at Wild.io offer a comfortable and exciting way for players who love casino table games and want to play from anywhere. Enjoy a deeply satisfying web3 gaming experience on Wild.io, unlike anything you’ll get elsewhere.</p>
+                          <p class="">Play casino table games and earn rewards in cryptocurrency (choose from a selection of popular cryptocurrencies such as BTC, BCH, ETH, LTC, XRP, TRX, and ADA ). All Wild.io’s Bitcoin slot games are accessible via internet-enabled smartphones, laptops, tablets, and PCs; you can enjoy your favorite games at home and anywhere else 24/7.</p>
+                          <p class="">Play casino table games and earn rewards in cryptocurrency (choose from a selection of popular cryptocurrencies such as BTC, BCH, ETH, LTC, XRP, TRX, and ADA ). All Wild.io’s Bitcoin slot games are accessible via internet-enabled smartphones, laptops, tablets, and PCs; you can enjoy your favorite games at home and anywhere else 24/7.</p>
+                          <h2 class="text-xl text-white font-semibold">Bitcoin Live Casino Games at Wild.io</h2>
+                          <p>Our platform has redefined online casino excitement with a vast collection of thrilling slot games. It offers a colorful environment for players to enjoy their gameplay. The benefits here range from the welcoming 350% bonus offer to highly rewarding promotional offers and loyalty programs. Upon signing up, you will get access to our convenient, bright, and user-friendly platform! Why wait? Sign up and enjoy the benefits provided by Wild.io.Our platform has redefined online casino excitement with a vast collection of thrilling slot games. It offers a colorful environment for players to enjoy their gameplay. The benefits here range from the welcoming 350% bonus offer to highly rewarding promotional offers and loyalty programs. Upon signing up, you will get access to our convenient, bright, and user-friendly platform! Why wait? Sign up and enjoy the benefits provided by Wild.io.</p>
+                          <h2 class="text-xl text-white font-semibold">How to Play Bitcoin Slot Games Online</h2>
                           <p>But that's not all! If Ethereum or Litecoin is more your thing, Wild.io also offers the best Ethereum casino and the best Litecoin casino experience. With a seamless and hassle-free registration process, you can start playing and winning in no time.</p>
                           <h2 class="text-xl text-white font-semibold">Crypto casino games for all</h2>
                           <p>At Wild.io, you'll never run out of excitement and entertainment. With a wide range of gaming options available, including BTC online casino, Doge casino, BNB casino, and more, you're sure to find the perfect game to suit your taste.</p>
@@ -141,6 +126,7 @@
                   </div>
                   
             </div>
+          
             <div class="pt-10">
                 <ol class="flex items-center gap-1 text-white">
                     <li class="text-text-subdued flex items-center gap-1 text-sm">
@@ -163,7 +149,7 @@
                         <svg width="16" height="16" class="h-5 w-5 text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.99994 8.00184L12.9981 7.99992M12.9981 7.99992L10.3063 5.30715M12.9981 7.99992L10.3063 10.6927" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                       </div>
                     </li>
-                    <li class="text-text-default flex !cursor-text items-center text-sm capitalize opacity-100"><span class="hover:text-text-default text-text-default cursor-pointer text-sm font-medium">All Games</span></li>
+                    <li class="text-text-default flex !cursor-text items-center text-sm capitalize opacity-100"><span class="hover:text-text-default text-text-default cursor-pointer text-sm font-medium">Table Games</span></li>
                   </ol>
                   
             </div>
@@ -172,6 +158,7 @@
             <BottomBar />
         </div>
         </div>
+       
     </div>
 </template>
 
