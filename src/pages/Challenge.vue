@@ -3,83 +3,35 @@
         <Sidebar />
         <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
             <div class="sm:px-8 px-4">
-                <div class="flex md:flex-row py-10 flex-col justify-between md:items-center gap-4">
+                <div class="pt-10 pb-5">
                     <div class="flex items-center gap-2">
                         <img src="../assets/gamecontroll.svg" alt="" class="w-6 h-6">
                         <div class="">
-                            <h1 class="text-white text-xl font-semibold">Games</h1>
-                            <p class="text-white/70 text-xs">6121 Games</p>
+                            <h1 class="text-white text-2xl font-semibold">Challenges</h1>
                         </div>
                     </div>
-                    <div class="flex md:flex-row flex-wrap gap-1 items-=center">
-                        <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-20 text-sm text-white placeholder:text-gray-400 ">
-                              <option value="">Novelty</option>
-                              <option value="A-Z">A-Z</option>
-                              <option value="nov">Novelty</option>
-                              <option value="popu">Popularity</option>
-                              </select
-                            ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"><path d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"></path></svg>
-                          </div>
-                          <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
-                              <option value="">Category:All</option>
-                              <option value="">All Games</option>
-                              <option value="">Bgamming</option>
-                              <option value="">Blackjack</option>
-                              <option value="">Bonus Games</option>
-                              <option value="">Crash Games</option>
-                              <option value="">Game Show</option>
-                              <option value="">Jackpot Games</option>
-                              <option value="">Live Casino</option>
-                              <option value="">Megaways</option>
-                              <option value="">Roulette</option>
-                              <option value="">Skill GAmes</option>
-                              <option value="">Slot</option>
-                              <option value="">Table Games</option>
-                              </select
-                            ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"><path d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"></path></svg>
-                          </div>
-                          <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
-                              <option value="">Provide:All</option>
-                              <option value="">All Games</option>
-                              <option value="">Bgamming</option>
-                              <option value="">Blackjack</option>
-                              <option value="">Bonus Games</option>
-                              <option value="">Crash Games</option>
-                              <option value="">Game Show</option>
-                              <option value="">Jackpot Games</option>
-                              <option value="">Live Casino</option>
-                              <option value="">Megaways</option>
-                              <option value="">Roulette</option>
-                              <option value="">Skill GAmes</option>
-                              <option value="">Slot</option>
-                              <option value="">Table Games</option>
-                              </select
-                            ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"><path d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"></path></svg>
-                          </div>
-                    </div>
+                   
                 </div>
-            <GamePage />
+            <ChallengeCard />
+
             <div class="mx-auto pt-10">
-                <div class="bg-[#142535] relative mx-auto mb-2 h-0.5 w-52"><span class="absolute left-0 top-0 h-0.5 w-full bg-green-500" style="width: 0.173645%;"></span></div>
-                <p data-slot="text" class="text-center text-sm text-white">You viewed 9 out of 6117 games</p>
+                <div class="relative mx-auto mb-2 h-1  w-full rounded-full bg-[#112232] sm:w-52 xl:w-[22.625rem]"><span class="absolute left-0 top-0 h-1 w-full rounded-full bg-[#2C852E]" style="width: 29.1667%;"></span></div>
+                <p data-slot="text" class="text-center text-sm text-[#66717C] font-medium">You viewed 14 out of 48 challenges</p>
               </div>
               <div class="flex z-20 pt-7 justify-center">
               <button class="py-2 px-3 text-sm rounded-md bg-white bg-opacity-[3%] hover:bg-opacity-[5%] text-white font-medium">Load More</button>
             </div>
+
             <div class="py-16">
                 <div class="lg:max-w-3xl relative mx-auto max-h-[26.75rem]  overflow-hidden rounded-b-3xl bg- bg-gradient-to-t from-transparent to-[#0A1C2D] p-2 transition-all duration-200 ease-in-out">
                     <div class="">
                       <div class="text-sm text-white/80">
                         <div class="flex flex-col max-w-6xl gap-5">
-                          <h1 class="text-2xl text-white font-semibold">All Crypto Casino Games</h1>
-                          <p>Discover all the games our Bitcoin casino has to offer! Here you'll find Bitcoin slots, Bitcoin table games, Bitcoin live roulette, Bitcoin jackpot slots, and any other crypto slots you can think of. Experience over 5,000 crypto casino games from all the major game providers in the industry.</p>
-                          <p>Our Bitcoin live casino has an endless supply of Bitcoin and Ethereum casino games. We have classic 3 and 5-line slots along with the most recent video slots. In addition to our extensive selection of <a href="https://wild.io/categories/slots" class="underline">Bitcoin slots</a>, we also offer a wide range of <a href="#" class="underline">Bitcoin live games</a>. Our live games are played with real dealers and offer an immersive, interactive gaming experience that is second to none. Whether you want to play classic casino games like blackjack and baccarat or try your luck at something new like Dream Catcher or Monopoly Live, we have a game that's perfect for you.</p>
-                          <h2 class="text-xl text-white font-semibold"></h2>
-                          <p>Look no further! Wild.io has got you covered. You can play your favorite casino games on the go and make easy and secure Bitcoin transactions from the comfort of your mobile device. Look no further! Wild.io has got you covered. You can play your favorite casino games on the go and make easy and secure Bitcoin transactions from the comfort of your mobile device. Look no further! Wild.io has got you covered. You can play your favorite casino games on the go and make easy and secure Bitcoin transactions from the comfort of your mobile device.</p>
-                          <h2 class="text-xl text-white font-semibold">Play Ethereum and BTC casino games</h2>
+                          <h1 class="text-2xl text-white font-semibold">Casino Game Challenges at Wild.io</h1>
+                          <p>Welcome to the thrilling world of Wild.io, where every spin, card flip, and bet brings you closer to the ultimate casino experience. Our platform is dedicated to providing an exhilarating and dynamic environment for casino game challenges that cater to every type of player. Whether you’re a seasoned gambler or new to the online casino scene, Wild.io’s game challenges are designed to test your skills, reward your achievements, and enhance your overall gaming experience.</p>
+                          <h2 class="text-xl font-semibold">Dive into Exciting Casino Game Challenges</h2>
+                          <p>At Wild.io, we take pride in our innovative approach to traditional and modern casino games. Each challenge is crafted to push the boundaries of normal gameplay and provide our players with unique, rewarding experiences.</p>
+                          <p>Participating in our casino game challenges at Wild.io is easy and rewarding. Here’s how you can join:</p>
                           <p>But that's not all! If Ethereum or Litecoin is more your thing, Wild.io also offers the best Ethereum casino and the best Litecoin casino experience. With a seamless and hassle-free registration process, you can start playing and winning in no time.</p>
                           <h2 class="text-xl text-white font-semibold">Crypto casino games for all</h2>
                           <p>At Wild.io, you'll never run out of excitement and entertainment. With a wide range of gaming options available, including BTC online casino, Doge casino, BNB casino, and more, you're sure to find the perfect game to suit your taste.</p>
@@ -141,6 +93,7 @@
                   </div>
                   
             </div>
+          
             <div class="pt-10">
                 <ol class="flex items-center gap-1 text-white">
                     <li class="text-text-subdued flex items-center gap-1 text-sm">
@@ -163,7 +116,7 @@
                         <svg width="16" height="16" class="h-5 w-5 text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.99994 8.00184L12.9981 7.99992M12.9981 7.99992L10.3063 5.30715M12.9981 7.99992L10.3063 10.6927" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                       </div>
                     </li>
-                    <li class="text-text-default flex !cursor-text items-center text-sm capitalize opacity-100"><span class="hover:text-text-default text-text-default cursor-pointer text-sm font-medium">All Games</span></li>
+                    <li class="text-text-default flex !cursor-text items-center text-sm capitalize opacity-100"><span class="hover:text-text-default text-text-default cursor-pointer text-sm font-medium">Slots</span></li>
                   </ol>
                   
             </div>
@@ -172,12 +125,13 @@
             <BottomBar />
         </div>
         </div>
+       
     </div>
 </template>
 
 <script setup>
 import Sidebar from '../components/Sidebar.vue';
-import GamePage from '../components/GamePage.vue';
+import ChallengeCard from '../components/ChallengeGuy.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';
 import BottomBar from "../components/BottomBar.vue";

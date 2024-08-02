@@ -590,3 +590,19 @@
 </template>
 
 <script setup></script>
+
+<style>
+/* Custom scrollbar styles */
+.sidebar::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Gray color for the scrollbar thumb */
+  border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track background */
+}
+</style>
