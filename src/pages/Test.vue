@@ -1,30 +1,44 @@
 <template>
-  <div class="sm:p-20 p-4 bg-[#0A1C2D]">
-    <h1>Test All components on this page</h1>
-    <i>item : {{ count }}</i>
-    <button @click="increaseValue" class="px-4 py-2 my-4 bg-red-500">
-      Increase +
+  <div class=" ">
+    <button
+      @click="modalFunc"
+      class="px-4 py-2 bg-blue-700 m-3 rounded-full text-white"
+    >
+      Open Modal
     </button>
+    <!-- overlay -->
+    <div
+      @click="modalFunc"
+      :class="[
+        show
+          ? 'h-screen block z-50 w-screen bg-black/50 fixed top-0 left-0'
+          : 'h-screen hidden z-50 w-screen bg-black/50 fixed top-0 left-0',
+      ]"
+    ></div>
 
-    <button @click="showModal" class="px-4 py-2 my-4 bg-red-500">
-      show modal {{ show }}
-    </button>
-    <h1 :class="[show ? 'block' : 'hidden']">
-      Showing <button @click="showModal">close modal</button>
-    </h1>
+    <!-- modal -->
+    <div
+      :class="[
+        show
+          ? 'h-[40%] block z-50 w-[40%] bg-white rounded-lg fixed inset-0 m-auto'
+          : 'h-[40%] hidden z-50 w-[40%] bg-white rounded-lg fixed inset-0 m-auto',
+      ]"
+    >
+      <button
+        @click="modalFunc"
+        class="px-4 py-2 bg-blue-700 m-3 rounded-full text-white"
+      >
+        Close Modal
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-const count = ref(0);
+
 const show = ref(false);
-
-function increaseValue() {
-  count.value = count.value + 1;
-}
-
-function showModal() {
+function modalFunc() {
   show.value = !show.value;
 }
 </script>
