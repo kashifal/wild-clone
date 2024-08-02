@@ -376,9 +376,6 @@ import BottomBar from "../components/BottomBar.vue";
   );
 }
 
-.sidebar {
-  overflow-y: scroll;
-}
 
 
 
