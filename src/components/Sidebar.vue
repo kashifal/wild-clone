@@ -592,6 +592,9 @@
 <script setup></script>
 
 <style>
+.sidebar {
+  overflow-y: scroll;
+}
 /* Custom scrollbar styles */
 .sidebar::-webkit-scrollbar {
   width: 2px; /* Width of the scrollbar */

@@ -7,7 +7,9 @@ import LiveCasino from "@/pages/Live Casino.vue";
 import Promotion from '@/pages/Promotion.vue';
 import TableGAmes from "../pages/TableGAmes.vue";
 import Tournament from "../pages/Tournament.vue";
+import VipClub from "../pages/VipClub.vue";
 import Challenge from '../pages/Challenge.vue';
+import Live from '../pages/Live.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -56,6 +58,16 @@ const router = createRouter({
       path: "/challenge",
       name: "challenge",
       component: Challenge,
+    },
+    {
+      path: "/vipclub",
+      name: "vipclub",
+      component: VipClub,
+    },
+    {
+      path: "/live",
+      name: "live",
+      component: Live,
     },
   ],
 });
