@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-16 z-40 hidden sidebar h-screen fixed left-0 top-16 bg-[#192C3D]"
+    class="w-16 z-40  hidden sidebar h-screen fixed left-0 top-16 bg-[#192C3D]"
   >
     <div class="flex flex-col items-center w-16 py-4 gap-1">
       <div
@@ -174,7 +174,8 @@
       <div
         class="flex flex-col gap-2 border-b px-2.5 py-1 border-gray-600 items-center"
       >
-        <div
+        <router-link
+        to="/game"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -189,8 +190,9 @@
               All Games
             </div>
           </div>
-        </div>
-        <div
+        </router-link>
+        <router-link
+        to="/slot"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -201,8 +203,9 @@
               Slots
             </div>
           </div>
-        </div>
-        <div
+        </router-link>
+        <router-link
+        to="/livecasino"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -217,8 +220,9 @@
               Live Casino
             </div>
           </div>
-        </div>
-        <div
+        </router-link>
+        <router-link
+        to="/tablegames"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -233,12 +237,13 @@
               Table Games
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
       <div
         class="flex flex-col gap-2 border-b px-2.5 py-1 border-gray-600 items-center"
       >
-        <div
+        <router-link
+        to="/promotion"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -249,8 +254,9 @@
               Promotions
             </div>
           </div>
-        </div>
-        <div
+        </router-link>
+        <router-link
+        to="/tournament"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -265,8 +271,9 @@
               Tournaments
             </div>
           </div>
-        </div>
-        <div
+        </router-link>
+        <router-link
+        to="/vipclub"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -277,8 +284,9 @@
               VIP Club
             </div>
           </div>
-        </div>
-        <div
+        </router-link>
+        <router-link
+        to="/challenge"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -293,10 +301,11 @@
               Challenges
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
       <div class="flex flex-col gap-2 px-2.5 py-1 border-gray-600 items-center">
-        <div
+        <router-link
+        to="/live"
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
@@ -307,7 +316,7 @@
               Live match
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -492,6 +501,9 @@
       <div
         class="bg-white bg-opacity-5 p-1 rounded-[8px] flex gap-[2px] flex-col"
       >
+      <router-link
+      to="/Game"
+      >
         <div
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
@@ -500,12 +512,22 @@
             All Games
           </h3>
         </div>
+      </router-link>
+
+      <router-link
+      to="/slot"
+      >
         <div
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
           <img src="../assets/slot.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">Slots</h3>
         </div>
+        </router-link>
+
+        <router-link
+        to="/livecasino"
+        >
         <div
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
@@ -514,6 +536,11 @@
             Live Casino
           </h3>
         </div>
+      </router-link>
+
+      <router-link
+      to="/tablegames"
+      >
         <div
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
@@ -522,9 +549,15 @@
             Table Games
           </h3>
         </div>
+      </router-link>
+
       </div>
       <div
         class="bg-white bg-opacity-5 p-1 rounded-[8px] flex gap-[2px] flex-col"
+      >
+
+      <router-link
+      to="/promotion"
       >
         <div
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
@@ -534,8 +567,10 @@
             Promotions
           </h3>
         </div>
+      </router-link>
+
         <router-link
-          to="/tournaments"
+          to="/tournament"
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
           <img src="../assets/tournament.svg" alt="" class="w-5 h-5" />
@@ -543,32 +578,36 @@
             Tournaments
           </h3>
         </router-link>
-        <div
+        <router-link
+         to="/vipclub"
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
           <img src="../assets/Vipclub.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">VIP Club</h3>
-        </div>
-        <div
+        </router-link>
+
+        <router-link
+        to="/challenge"
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
           <img src="../assets/challenges.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">
             Challenges
           </h3>
-        </div>
+        </router-link>
       </div>
       <div
         class="bg-white bg-opacity-5 p-1 rounded-[8px] flex gap-[2px] flex-col"
       >
-        <div
+        <router-link
+        to="/live"
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
           <img src="../assets/live.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">
             Live Support
           </h3>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
