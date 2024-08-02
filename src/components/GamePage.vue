@@ -504,7 +504,7 @@
             <div class="bg-[#142535] relative mx-auto mb-2 h-0.5 w-52"><span class="absolute left-0 top-0 h-0.5 w-full bg-green-500" style="width: 0.147131%;"></span></div>
             <p data-slot="text" class="text-center text-sm text-white">You viewed 9 out of 6117 games</p>
           </div>
-          <div class="flex justify-center mt-7">
+          <div class="flex  mt-7 justify-center">
           <button class="py-2 px-3 text-sm rounded-md bg-white bg-opacity-[3%] hover:bg-opacity-[5%] z-40 text-white font-medium">Load More</button>
         </div>
         </div>
