@@ -1,5 +1,5 @@
 <template>
-    <div
+  <div
     class="w-16 z-40 hidden sidebar h-screen fixed left-0 top-16 bg-[#192C3D]"
   >
     <div class="flex flex-col items-center w-16 py-4 gap-1">
@@ -137,11 +137,7 @@
         class="custom-gradient group relative cursor-pointer w-fit p-2.5 rounded-[8px]"
       >
         <div class="">
-          <img
-            src="../assets/announce.svg"
-            alt=""
-            class="w-[20px] h-[20px]"
-          />
+          <img src="../assets/announce.svg" alt="" class="w-[20px] h-[20px]" />
         </div>
         <div
           class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-24 text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
@@ -274,11 +270,7 @@
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
           <div class="">
-            <img
-              src="../assets/Vipclub.svg"
-              alt=""
-              class="w-[20px] h-[20px]"
-            />
+            <img src="../assets/Vipclub.svg" alt="" class="w-[20px] h-[20px]" />
             <div
               class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[75px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
             >
@@ -303,9 +295,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="flex flex-col gap-2 px-2.5 py-1 border-gray-600 items-center"
-      >
+      <div class="flex flex-col gap-2 px-2.5 py-1 border-gray-600 items-center">
         <div
           class="hover:bg-white relative group hover:bg-opacity-[6%] cursor-pointer w-fit p-2.5 rounded-[8px]"
         >
@@ -460,11 +450,7 @@
         class="min-h-10 custom-gradient transition-all duration-300 py-1 px-1.5 cursor-pointer rounded-md w-full flex p-1 gap-1.5 items-center"
       >
         <div class="">
-          <img
-            src="../assets/announce.svg"
-            alt=""
-            class="w-[20px] h-[20px]"
-          />
+          <img src="../assets/announce.svg" alt="" class="w-[20px] h-[20px]" />
         </div>
         <h4
           class="uppercase flex md:flex-col flex-row leading-none text-xs text-white md:space-x-0 space-x-1 text-left"
@@ -548,21 +534,20 @@
             Promotions
           </h3>
         </div>
-        <div
+        <router-link
+          to="/tournaments"
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
           <img src="../assets/tournament.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">
             Tournaments
           </h3>
-        </div>
+        </router-link>
         <div
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
         >
           <img src="../assets/Vipclub.svg" alt="" class="w-5 h-5" />
-          <h3 class="text-sm text-white/80 group-hover:text-white">
-            VIP Club
-          </h3>
+          <h3 class="text-sm text-white/80 group-hover:text-white">VIP Club</h3>
         </div>
         <div
           class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
