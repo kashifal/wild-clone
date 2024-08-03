@@ -15,7 +15,7 @@
     to="/inplay"
     >
     <div class="flex items-center bg-[#2B4658] cursor-pointer transition-all duration-500 hover:bg-[#1C3141] py-2.5 px-4 gap-3">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#3FC02F]" width="1em" height="1em" viewBox="0 0 24 24">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#0C49BE]" width="1em" height="1em" viewBox="0 0 24 24">
         <rect width="24" height="24" fill="none" />
         <path fill="currentColor" d="M6.343 4.938a1 1 0 0 1 0 1.415a8.003 8.003 0 0 0 0 11.317a1 1 0 1 1-1.414 1.414c-3.907-3.906-3.907-10.24 0-14.146a1 1 0 0 1 1.414 0m12.732 0c3.906 3.907 3.906 10.24 0 14.146a1 1 0 0 1-1.415-1.414a8.003 8.003 0 0 0 0-11.317a1 1 0 0 1 1.415-1.415M9.31 7.812a1 1 0 0 1 0 1.414a3.92 3.92 0 0 0 0 5.544a1 1 0 1 1-1.415 1.414a5.92 5.92 0 0 1 0-8.372a1 1 0 0 1 1.415 0m6.958 0a5.92 5.92 0 0 1 0 8.372a1 1 0 0 1-1.414-1.414a3.92 3.92 0 0 0 0-5.544a1 1 0 0 1 1.414-1.414m-4.186 2.77a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3" />
       </svg>

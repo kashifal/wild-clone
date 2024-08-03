@@ -1,7 +1,7 @@
 <template>
-    <footer class="w-full bg-[rgb(10,28,45)]  pt-20 pb-40">
+    <footer class="w-full  border-t  border-gray-600 mt-10 pt-20 pb-40">
         <div class="max-w-7xl mx-auto">
-            <div class="flex xl:flex-row flex-col gap-4 lg:gap-6 xl:gap-12 2xl:gap-12 2xl:justify-between ">
+            <div class="flex xl:flex-row flex-col gap-4 lg:gap-6 xl:gap-12 2xl:gap-12 justify-between ">
            <div class="">
                     <img src="../assets/logo.svg" alt="" class="w-32 h-auto pb-8">
                     <p class="text-white/90 text-sm">© 2024 Wild. All rights <br>reserved.</p>
@@ -31,7 +31,7 @@
                           
                     </div>
                 </div>
-            <div class=" xl:grid-cols-5 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-between gap-5 sm:gap-16">
+            <div class=" xl:grid-cols-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-between gap-5 sm:gap-16">
                
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Slot Games</h3>
@@ -95,17 +95,9 @@
                 </a>
                 </div>
             </div>
-            <div class="">
-                <h1 class="text-white/80">
-                    <h1 class="text-sm text-white/80">Awards</h1>
-                    <div class="flex flex-wrap gap-4 mt-4 items-center">
-                        <img src="../assets/award1.svg" alt="" class="sm:mx-0 mx-auto">
-                        <img src="../assets/award2.svg" alt="" class="sm:mx-0 mx-auto">
-                        <img src="../assets/award3.svg" alt="" class="sm:mx-0 mx-auto">
-                        <img src="../assets/award4.svg" alt="" class="sm:mx-0 mx-auto">
-                    </div>
-                </h1>
-            </div>
+           
         </div>
     </footer>
 </template>
+
+<script setup></script>

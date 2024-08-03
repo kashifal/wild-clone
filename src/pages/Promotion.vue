@@ -12,7 +12,7 @@
                         </div>
                       </div>
                       <div class="flex flex-row text-white  items-center gap-2">
-                        <a href="#"><span class="rounded-md font-medium text-sm hover:bg-white hover:bg-opacity-[7%] py-2.5 px-4 bg-[#3FC02F]">Sign Up</span></a
+                        <a href="#"><span class="rounded-md font-medium text-sm hover:bg-white hover:bg-opacity-[7%] py-2.5 px-4 bg-[#0C49BE]">Sign Up</span></a
                         ><a href="#"><span class="rounded-md font-medium text-sm hover:bg-white hover:bg-opacity-[7%] py-2.5 px-4">Details</span></a>
                       </div>
                     </div>

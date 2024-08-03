@@ -5,7 +5,7 @@
     >
       <div class="flex items-center gap-2.5">
         <router-link class="fonnt-bold flex md:hidden" to="/">
-          <img src="../assets/responsive logo.svg" alt="" class="h-[34px] w-[27px] object-cover">
+          <img src="../assets/logo.svg" alt="" class="w-32 h-auto">
         </router-link>
         <div class="md:flex hidden -space-x-2 items-center">
         <button class="relative h-8 w-8 hover:bg-green-500 hover:bg-opacity-20 rounded-lg transition-all duration-400 hidden md:flex items-center justify-center">
@@ -16,7 +16,7 @@
         </button>
         <div class="">
           <router-link class="fonnt-bold" to="/">
-            <img src="../assets/logo.png" alt="" class="h-[50px] w-[130px] object-cover">
+            <img src="../assets/logo.svg" alt="" class="h-auto w-32 ml-3">
           </router-link>
         </div>
       </div>
@@ -74,7 +74,7 @@
         class="font-semibold text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-5 py-2.5 rounded-[8px] ">Log In</button>
         <button
         @click="modalSignup"
-        class="font-semibold text-white text-[14px] bg-[#52C644] transition-all duration-300 hover:bg-opacity-[70%] px-[18px] py-2.5 rounded-[8px] ">Sign Up</button>
+        class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-[18px] py-2.5 rounded-[8px] ">Sign Up</button>
       </div>
     </div>
   </div>
@@ -139,23 +139,23 @@
         <div class="flex flex-col gap-4">
           <div class="">
               <label for="email" class="text-white text-sm font-semibold">Email</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email" class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
+              <input type="email" name="email" id="email" placeholder="Enter your email" class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
           </div>
           <div class="pt-4 ">
               <label for="password" class="text-white text-sm font-semibold">Password</label>
               <div class="relative">
-              <input type="password" name="password" id="password" placeholder="Password" class="text-white  border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
+              <input type="password" name="password" id="password" placeholder="Password" class="text-white  border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
               <div class="w-8 h-8 absolute right-3 top-[13px] rounded-lg hover:bg-white hover:bg-opacity-[7%]  flex items-center cursor-pointer justify-center">
                   <svg viewBox="0 0 26 22" class="w-5 h-5 text-[#BEC3C7]" fill="#BEC3C7" xmlns="http://www.w3.org/2000/svg"><path d="M13 4.125C8.41669 4.125 4.50252 6.97583 2.91669 11C4.50252 15.0242 8.41669 17.875 13 17.875C17.5834 17.875 21.4975 15.0242 23.0834 11C21.4975 6.97583 17.5834 4.125 13 4.125ZM13 15.5833C10.47 15.5833 8.41669 13.53 8.41669 11C8.41669 8.47 10.47 6.41667 13 6.41667C15.53 6.41667 17.5834 8.47 17.5834 11C17.5834 13.53 15.53 15.5833 13 15.5833ZM13 8.25C11.4784 8.25 10.25 9.47833 10.25 11C10.25 12.5217 11.4784 13.75 13 13.75C14.5217 13.75 15.75 12.5217 15.75 11C15.75 9.47833 14.5217 8.25 13 8.25Z"></path></svg>
               </div>
           </div>
-              <a href="#" class="text-sm hover:underline font-bold text-[#3FC02F]">Forget Password</a>
+              <a href="#" class="text-sm hover:underline font-bold text-[#0C49BE]">Forget Password</a>
           </div>
         </div>
-        <button class="bg-[#3FC02F] py-3 hover:bg-opacity-90 transition-all duration-100 mt-6 rounded-lg px-4 w-full text-center text-sm font-bold text-white">Log In</button>
+        <button class="bg-[#0C49BE] py-3 hover:bg-opacity-90 transition-all duration-100 mt-6 rounded-lg px-4 w-full text-center text-sm font-bold text-white">Log In</button>
         <div class="flex items-center justify-center flex-wrap text-center mt-4 gap-1">
           <p class="text-white/80 text-sm">Don't have an account?</p>
-          <a href="#" class="text-sm hover:underline font-bold text-[#3FC02F]">Sign up</a>
+          <a href="#" class="text-sm hover:underline font-bold text-[#0C49BE]">Sign up</a>
         </div>
   </div>
   <Contact class="fixed bottom-10 right-12 z-40" />
@@ -226,12 +226,12 @@
         <div class="flex flex-col gap-4">
           <div class="">
               <label for="email" class="text-white text-sm font-semibold">Email</label>
-              <input type="email" name="email" id="email" placeholder="Enter your email" class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
+              <input type="email" name="email" id="email" placeholder="Enter your email" class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
           </div>
           <div class="pt-4 ">
               <label for="password" class="text-white text-sm font-semibold">Password</label>
               <div class="relative">
-              <input type="password" name="password" id="password" placeholder="Password" class="text-white  border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
+              <input type="password" name="password" id="password" placeholder="Password" class="text-white  border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4">
               <div class="w-8 h-8 absolute right-3 top-[13px] rounded-lg hover:bg-white hover:bg-opacity-[7%]  flex items-center cursor-pointer justify-center">
                   <svg viewBox="0 0 26 22" class="w-5 h-5 text-[#BEC3C7]" fill="#BEC3C7" xmlns="http://www.w3.org/2000/svg"><path d="M13 4.125C8.41669 4.125 4.50252 6.97583 2.91669 11C4.50252 15.0242 8.41669 17.875 13 17.875C17.5834 17.875 21.4975 15.0242 23.0834 11C21.4975 6.97583 17.5834 4.125 13 4.125ZM13 15.5833C10.47 15.5833 8.41669 13.53 8.41669 11C8.41669 8.47 10.47 6.41667 13 6.41667C15.53 6.41667 17.5834 8.47 17.5834 11C17.5834 13.53 15.53 15.5833 13 15.5833ZM13 8.25C11.4784 8.25 10.25 9.47833 10.25 11C10.25 12.5217 11.4784 13.75 13 13.75C14.5217 13.75 15.75 12.5217 15.75 11C15.75 9.47833 14.5217 8.25 13 8.25Z"></path></svg>
               </div>
@@ -253,20 +253,20 @@
        type="checkbox"
        />
      <span
-     class="inline-block w-4 h-4 border border-[#233545] rounded relative cursor-pointer after:content-[''] after:absolute after:top-2/4 after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[10px] after:h-[10px] after:bg-[#3FC02F] after:rounded-[2px] after:opacity-0 peer-checked:after:opacity-100"
+     class="inline-block w-4 h-4 border border-[#233545] rounded relative cursor-pointer after:content-[''] after:absolute after:top-2/4 after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[10px] after:h-[10px] after:bg-[#0C49BE] after:rounded-[2px] after:opacity-0 peer-checked:after:opacity-100"
      ></span>
       </label>
        </div>
        <h3 class="text-white font-semibold     text-sm">Agree th the 
-          <a href="#" class="underline transition-all duration-100 hover:text-[#3FC02F]">Terms</a>
+          <a href="#" class="underline transition-all duration-100 hover:text-[#0C49BE]">Terms</a>
           &
-          <a href="#" class="underline transition-all duration-100 hover:text-[#3FC02F]">Privacy Policy</a>
+          <a href="#" class="underline transition-all duration-100 hover:text-[#0C49BE]">Privacy Policy</a>
        </h3>
         </div>
-        <button class="bg-[#3FC02F] py-3 hover:bg-opacity-90 text-center transition-all duration-100  rounded-lg px-4 w-full  text-sm font-bold text-white">Log In</button>
+        <button class="bg-[#0C49BE] py-3 hover:bg-opacity-90 text-center transition-all duration-100  rounded-lg px-4 w-full  text-sm font-bold text-white">Log In</button>
         <div class="flex items-center  flex-wrap mt-4 gap-1">
           <p class="text-white/80 text-sm">Already have an account?</p>
-          <a href="#" class="text-sm hover:underline font-bold text-[#3FC02F]">Log In</a>
+          <a href="#" class="text-sm hover:underline font-bold text-[#0C49BE]">Log In</a>
         </div>
   </div>
   <Contact class="fixed bottom-10 right-12 z-40" />

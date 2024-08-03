@@ -21,10 +21,10 @@
                         <img src="../assets/teamflag.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Hokkaido Nippon Ham..</p>
                     </div>
-                    <p class="text-[#3FC02F] font-bold text-xl">1</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">1</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <p class="text-[#3FC02F] font-bold text-xl">3</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">3</p>
                     <div class="flex flex-col items-center">
                         <img src="../assets/teamflag2.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Saitama Seibu Lions</p>
@@ -69,10 +69,10 @@
                         <img src="../assets/teamflag.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Hokkaido Nippon Ham..</p>
                     </div>
-                    <p class="text-[#3FC02F] font-bold text-xl">1</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">1</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <p class="text-[#3FC02F] font-bold text-xl">3</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">3</p>
                     <div class="flex flex-col items-center">
                         <img src="../assets/teamflag2.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Saitama Seibu Lions</p>
@@ -117,10 +117,10 @@
                         <img src="../assets/teamflag.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Hokkaido Nippon Ham..</p>
                     </div>
-                    <p class="text-[#3FC02F] font-bold text-xl">1</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">1</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <p class="text-[#3FC02F] font-bold text-xl">3</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">3</p>
                     <div class="flex flex-col items-center">
                         <img src="../assets/teamflag2.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Saitama Seibu Lions</p>
@@ -165,10 +165,10 @@
                         <img src="../assets/teamflag.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Hokkaido Nippon Ham..</p>
                     </div>
-                    <p class="text-[#3FC02F] font-bold text-xl">1</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">1</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <p class="text-[#3FC02F] font-bold text-xl">3</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">3</p>
                     <div class="flex flex-col items-center">
                         <img src="../assets/teamflag2.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Saitama Seibu Lions</p>
@@ -213,10 +213,10 @@
                         <img src="../assets/teamflag.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Hokkaido Nippon Ham..</p>
                     </div>
-                    <p class="text-[#3FC02F] font-bold text-xl">1</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">1</p>
                 </div>
                 <div class="flex items-center gap-2">
-                    <p class="text-[#3FC02F] font-bold text-xl">3</p>
+                    <p class="text-[#0C49BE] font-bold text-xl">3</p>
                     <div class="flex flex-col items-center">
                         <img src="../assets/teamflag2.png" alt="" class="w-[58px] h-[58px] object-cover">
                         <p class="truncate text-white text-xs font-bold">Saitama Seibu Lions</p>
