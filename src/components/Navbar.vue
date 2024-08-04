@@ -21,14 +21,22 @@
         </div>
       </div>
       <div class="bg-[#192C3D] p-1 md:flex hidden gap-2 items-center rounded-lg  ">
+        <router-link
+        to="/"
+        >
         <div class="flex items-center pl-2 pr-2.5 py-[6px] hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1">
           <img src="../assets/casino.svg" alt="" class="w-[18px] h-[18px]">
           <h1 class="text-sm text-white font-semibold">Casino</h1>
         </div>
+      </router-link>
+        <router-link
+        to="/inplay"
+        >
         <div class="flex items-center pl-2 pr-2.5 py-[6px] hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1">
           <img src="../assets/Sports.svg" alt="" class="w-[18px] h-[18px]">
-          <h1 class="text-sm text-white font-semibold">Casino</h1>
+          <h1 class="text-sm text-white font-semibold">Sports</h1>
         </div>
+      </router-link>
       </div>
         <div>
           <div class="md:flex hidden lg:hidden">
