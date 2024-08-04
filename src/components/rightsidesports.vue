@@ -21,7 +21,7 @@
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 15l6-6l6 6" />
         </svg>
 
-        <div class="flex px-6 border-b border-[#3FC02F]  h-full cursor-pointer items-center text-white gap-1 ">
+        <div class="flex px-6 border-b border-[#0C49BE]  h-full cursor-pointer items-center text-white gap-1 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"  width="1em" height="1em" viewBox="0 0 24 24">
                 <rect width="24" height="24" fill="none" />
                 <path fill="currentColor" fill-rule="evenodd" d="M3.464 3.464C2 4.93 2 7.286 2 12c0 4.714 0 7.071 1.464 8.535C4.93 22 7.286 22 12 22c4.714 0 7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464M7.53 9.47a.75.75 0 0 0-1.06 1.06l2.293 2.293a1.75 1.75 0 0 0 2.474 0l1.586-1.586a.25.25 0 0 1 .354 0l2.012 2.013H14.5a.75.75 0 0 0 0 1.5H17a.75.75 0 0 0 .75-.75v-2.5a.75.75 0 0 0-1.5 0v.69l-2.013-2.013a1.75 1.75 0 0 0-2.474 0l-1.586 1.586a.25.25 0 0 1-.354 0z" clip-rule="evenodd" />
@@ -46,7 +46,7 @@
     </div>
     </div>
     <div class="flex gap-3 border-b  border-[#415565] items-center h-10 justify-center">
-        <div class="flex px-6 w-1/2 border-b justify-center border-[#3FC02F]  h-full cursor-pointer items-center text-white gap-1 ">
+        <div class="flex px-6 w-1/2 border-b justify-center border-[#0C49BE]  h-full cursor-pointer items-center text-white gap-1 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" width="1em" height="1em" viewBox="0 0 24 24">
                 <rect width="24" height="24" fill="none" />
                 <g fill="none" fill-rule="evenodd">
@@ -56,7 +56,7 @@
             </svg>
            
         </div>
-        <div class="flex px-6 w-1/2 hover:border-b border-[#3FC02F] text-[#77808A] hover:tex-white  h-full justify-center cursor-pointer items-center gap-1 ">
+        <div class="flex px-6 w-1/2 hover:border-b border-[#0C49BE] text-[#77808A] hover:tex-white  h-full justify-center cursor-pointer items-center gap-1 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"  width="1em" height="1em" viewBox="0 0 24 24">
                 <rect width="24" height="24" fill="none" />
                 <path fill="currentColor" fill-rule="evenodd" d="M3.464 3.464C2 4.93 2 7.286 2 12c0 4.714 0 7.071 1.464 8.535C4.93 22 7.286 22 12 22c4.714 0 7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464M7.53 9.47a.75.75 0 0 0-1.06 1.06l2.293 2.293a1.75 1.75 0 0 0 2.474 0l1.586-1.586a.25.25 0 0 1 .354 0l2.012 2.013H14.5a.75.75 0 0 0 0 1.5H17a.75.75 0 0 0 .75-.75v-2.5a.75.75 0 0 0-1.5 0v.69l-2.013-2.013a1.75 1.75 0 0 0-2.474 0l-1.586 1.586a.25.25 0 0 1-.354 0z" clip-rule="evenodd" />
