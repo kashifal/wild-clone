@@ -5,7 +5,7 @@
             @click="modalFunc"
             >
               <router-link
-              to="/"
+              to=""
                role="button" class="text-text-subdued relative flex max-w-[3.75rem] flex-1 cursor-pointer flex-col items-center justify-center p-0 px-2 text-xs font-medium text-[#BBC0C5] hover:text-white"
                 ><span class="h-7 w-7 overflow-visible fill-current group-active:scale-95"
                   ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="current">
@@ -104,11 +104,16 @@
         ]"
       >
       <div
-      @click="modalFunc"
+   
        class="z-40  h-screen w-full fixed left-0 top-0 bg-[#192C3D]"
        >
-       <div class="my-4 flex justify-end">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" width="1em" height="1em" viewBox="0 0 21 21">
+       <div class="flex justify-between pl-4 my-4">
+        <router-link
+        to="/"
+        >
+        <img src="../assets/logo.svg" alt="" class="w-32 h-auto">
+      </router-link>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-8 text-white" width="1em" height="1em" viewBox="0 0 21 21">
           <rect width="21" height="21" fill="none" />
           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m15.5 15.5l-10-10zm0-10l-10 10" />
         </svg>

@@ -31,7 +31,7 @@
                           
                     </div>
                 </div>
-            <div class=" xl:grid-cols-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-between gap-5 sm:gap-16">
+            <div class=" xl:grid-cols-2 grid 2xl:grid-cols-4 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 justify-between gap-5 sm:gap-16">
                
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Slot Games</h3>

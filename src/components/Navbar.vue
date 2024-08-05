@@ -125,16 +125,16 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-2 items-center">
+      <div class="flex gap-[2px] sm:gap-2 items-center">
         <button
           @click="modalOpen"
-          class="font-semibold sm:block hidden text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-5 py-2.5 rounded-[8px]"
+          class="font-semibold  text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
         >
           Log In
         </button>
         <button
           @click="modalSignup"
-          class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-[18px] py-2.5 rounded-[8px]"
+          class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
         >
           Sign Up
         </button>
