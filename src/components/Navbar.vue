@@ -129,7 +129,7 @@
       <div class="flex gap-2 items-center">
         <button
           @click="modalOpen"
-          class="font-semibold text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-5 py-2.5 rounded-[8px]"
+          class="font-semibold sm:block hidden  text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-5 py-2.5 rounded-[8px]"
         >
           Log In
         </button>
