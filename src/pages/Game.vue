@@ -1,7 +1,7 @@
 <template>
     <div>
         <Sidebar />
-        <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+        <Margin>
             <div class="sm:px-8 px-4">
                 <div class="flex md:flex-row py-10 flex-col justify-between md:items-center gap-4">
                     <div class="flex items-center gap-2">
@@ -13,7 +13,7 @@
                     </div>
                     <div class="flex md:flex-row flex-wrap gap-1 items-=center">
                         <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-20 text-sm text-white placeholder:text-gray-400 ">
+                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-[#142535] py-2 pl-4 pr-20 text-sm text-white placeholder:text-gray-400 ">
                               <option value="">Novelty</option>
                               <option value="A-Z">A-Z</option>
                               <option value="nov">Novelty</option>
@@ -22,7 +22,7 @@
                             ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"><path d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"></path></svg>
                           </div>
                           <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
+                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-[#142535]  py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
                               <option value="">Category:All</option>
                               <option value="">All Games</option>
                               <option value="">Bgamming</option>
@@ -41,7 +41,7 @@
                             ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"><path d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"></path></svg>
                           </div>
                           <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
+                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-[#142535]  py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
                               <option value="">Provide:All</option>
                               <option value="">All Games</option>
                               <option value="">Bgamming</option>
@@ -171,11 +171,12 @@
             <Footer />
             <BottomBar />
         </div>
-        </div>
+        </Margin>
     </div>
 </template>
 
 <script setup>
+import Margin from "../layouts/margin.vue";
 import Sidebar from '../components/Sidebar.vue';
 import GamePage from '../components/GamePage.vue';
 import Contact from '../components/Contact.vue';

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Sidebar />
-    <margin class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+    <margin >
       <div class="sm:px-8 px-4">
         <div
           class="flex md:flex-row py-10 flex-col justify-between md:items-center gap-4"
@@ -18,7 +18,7 @@
               <select
                 name="regions"
                 id="regions"
-                class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947] bg-white bg-opacity-[7%] py-2 pl-4 pr-20 text-sm text-white placeholder:text-gray-400"
+                class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947] bg-[#142535] py-2 pl-4 pr-20 text-sm text-white placeholder:text-gray-400"
               >
                 <option value="">Novelty</option>
                 <option value="A-Z">A-Z</option>
@@ -40,7 +40,7 @@
               <select
                 name="regions"
                 id="regions"
-                class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947] bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400"
+                class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947] bg-[#142535] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400"
               >
                 <option value="">Provide:All</option>
                 <option value="">All Games</option>

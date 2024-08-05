@@ -16,7 +16,7 @@ import PromotionsSport from "../pages/PromotionsSport.vue";
 import Schedule from "../pages/Schedule.vue";
 import Result from '../pages/Results.vue';
 import Football from "../pages/Football.vue";
-import SignIn from "../pages/Sign in .vue";
+import Dashboard from "../pages/Dashboard.vue";
 import InPlay from "../pages/In-play.vue";
 
 const router = createRouter({
@@ -108,9 +108,9 @@ const router = createRouter({
       component: Football,
     },
     {
-      path: "/signin",
-      name: "signin",
-      component: SignIn,
+      path: "/dashboard",
+      name: "dashboard",
+      component: Dashboard,
     },
     {
       path: "/inplay",

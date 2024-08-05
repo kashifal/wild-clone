@@ -1,7 +1,7 @@
 <template>
     <div class="overflow-hidden">
         <Sidebar />
-        <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+        <Margin>
             <div class="sm:px-8 px-4">
                 <div class="relative z-10 mx-auto mb-3 bg-[url('./assets/promobg.webp')] grid items-center overflow-hidden bg-cover px-3 py-7 pb-0 md:pt-16 md:pb-12 lg:grid-cols-5 lg:gap-x-5 lg:px-0 2xl:px-8">
                     <div class="z-10 mb-4 flex max-w-sm flex-col lg:col-span-2 lg:mb-8">
@@ -204,11 +204,12 @@
             <Footer />
             <BottomBar />
             </div>
-        </div>
+        </Margin>
     </div>
 </template>
 
 <script setup>
+import Margin from '../layouts/margin.vue';
 import Sidebar from '../components/Sidebar.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';

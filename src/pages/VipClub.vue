@@ -1,7 +1,7 @@
 <template>
     <div class="overflow-hidden">
         <Sidebar />
-        <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+        <Margin>
             <div class="">
                 <div class="relative sm:px-6 px-4  z-10 text-white h-full mx-auto mb-3 bg-gradient-to-b from-[#5967D8] to-[#5967d800]  overflow-hidden bg-center bg-cover pt-8 pb-40 2xl:px-8">
                     <div class="lg:bg-gradient-to-tr lg:from-[#ffffff00] rounded-2xl lg:to-[#ffffff08] p-7">
@@ -403,11 +403,12 @@
             <BottomBar />
         </div>
             </div>
-        </div>
+        </Margin>
     </div>
 </template>
 
 <script setup>
+import Margin from '../layouts/margin.vue';
 import Sidebar from '../components/Sidebar.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';

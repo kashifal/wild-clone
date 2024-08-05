@@ -1,7 +1,7 @@
 <template>
     <div class="overflow-hidden">
         <Sidebar />
-        <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+        <Margin>
             <div class="">
                 <div class="relative z-10 text-white h-full mx-auto mb-3 bg-[url('./assets/tournamentbg.webp')] flex items-center overflow-hidden bg-center bg-cover py-32  2xl:px-8">
                     <div class="flex justify-center w-full h-full flex-col mx-auto items-center gap-2">
@@ -225,11 +225,12 @@
             <BottomBar />
         </div>
             </div>
-        </div>
+        </Margin>
     </div>
 </template>
 
 <script setup>
+import Margin from '../layouts/margin.vue';
 import Sidebar from '../components/Sidebar.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';
