@@ -1,7 +1,13 @@
 <template>
   <div class="relative">
-  <SideBar />
-    <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+    <SideBar />
+    <div
+      :class="[
+        sidebar.open
+          ? 'lg:pl-64 bg-[#0A1C2D] mx-auto z-20'
+          : 'lg:pl-16 bg-[#0A1C2D] mx-auto z-20 ',
+      ]"
+    >
       <div
         class="sm:bg-[url('./assets/herobg.webp')] sm:block hidden z-10 h-fit relative w-full bg-center bg-cover"
       >
@@ -283,47 +289,51 @@
         </div>
       </div>
       <div class="px-8">
-      <Tokens />
-      <CardsOne />
-      <ScrollCards />
-      <Scrollcards2 />
-      <Rekebek />
-      <Sports />
-      <Game />
-      <Table />
-      <TEXT />
-      <LogosBar />
-      <Contact class="fixed bottom-20 right-5 z-40" />
-      <Footer />
-      <BottomBar/>
-    </div>
+        <Tokens />
+        <CardsOne />
+        <ScrollCards />
+        <Scrollcards2 />
+        <Rekebek />
+        <Sports />
+        <Game />
+        <Table />
+        <TEXT />
+        <LogosBar />
+        <Contact class="fixed bottom-20 right-5 z-40" />
+        <Footer />
+        <BottomBar />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import SideBar from '../components/Sidebar.vue';
-import Tokens from '../components/Tokens.vue';
-import CardsOne from '../components/Cards1.vue';
-import ScrollCards from '../components/Scroll cards.vue';
-import Table from '../components/table.vue';
-import Scrollcards2 from '../components/ScrollCards2.vue';
-import Rekebek from '../components/Rekebek.vue';
-import Sports from '../components/Sports.vue';
-import Game from '../components/Game.vue';
-import LogosBar from '../components/logosbar.vue';
-import TEXT from '../components/Text.vue';
-import Contact from '../components/Contact.vue';
+import SideBar from "../components/Sidebar.vue";
+import Tokens from "../components/Tokens.vue";
+import CardsOne from "../components/Cards1.vue";
+import ScrollCards from "../components/Scroll cards.vue";
+import Table from "../components/table.vue";
+import Scrollcards2 from "../components/ScrollCards2.vue";
+import Rekebek from "../components/Rekebek.vue";
+import Sports from "../components/Sports.vue";
+import Game from "../components/Game.vue";
+import LogosBar from "../components/logosbar.vue";
+import TEXT from "../components/Text.vue";
+import Contact from "../components/Contact.vue";
 import Footer from "../components/Footer.vue";
 import BottomBar from "../components/BottomBar.vue";
+
+import { useSidebarStore } from "../store/sidebar";
+
+const sidebar = useSidebarStore();
 </script>
 
 <style>
 .custom-gradient {
-  background: linear-gradient(85deg, #0C49BE0d -0.06%, #0C49BE33 102.57%);
+  background: linear-gradient(85deg, #0c49be0d -0.06%, #0c49be33 102.57%);
 }
 .custom-gradient:hover {
-  background: linear-gradient(83deg, #0C49BE33 -0.06%, #0C49BE33 102.57%);
+  background: linear-gradient(83deg, #0c49be33 -0.06%, #0c49be33 102.57%);
 }
 
 .element {
@@ -376,10 +386,6 @@ import BottomBar from "../components/BottomBar.vue";
   );
 }
 
-
-
-
-.bit{
-  
+.bit {
 }
 </style>
