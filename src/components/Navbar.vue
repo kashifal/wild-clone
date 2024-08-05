@@ -11,10 +11,7 @@
           <button
             class="relative h-8 w-8 hover:bg-green-500 hover:bg-opacity-20 rounded-lg transition-all duration-400 hidden md:flex items-center justify-center"
           >
-            <span
-              v-if="router.currentRoute.value.fullPath === '/'"
-              @click="sidebarFunc"
-            >
+            <span v-if="sidebar.casino" @click="sidebarFunc">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -34,7 +31,7 @@
                 src="../assets/logo.svg"
                 alt=""
                 :class="[
-                  router.currentRoute.value.fullPath === '/'
+                  router.currentRoute.value.fullPath !== '/inplay'
                     ? 'h-auto w-32 ml-3'
                     : 'h-auto w-32 ml-0',
                 ]"
@@ -45,10 +42,10 @@
         <div
           class="bg-[#192C3D] p-1 md:flex hidden gap-2 items-center rounded-lg"
         >
-          <router-link to="/">
+          <router-link @click="casinoFunc" to="/">
             <div
               :class="[
-                router.currentRoute.value.fullPath === '/'
+                sidebar.casino
                   ? 'flex items-center pl-2 pr-2.5 py-[6px] bg-white bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1'
                   : 'flex items-center pl-2 pr-2.5 py-[6px] hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1',
               ]"
@@ -61,10 +58,10 @@
               <h1 class="text-sm text-white font-semibold">Casino</h1>
             </div>
           </router-link>
-          <router-link to="/inplay">
+          <router-link @click="casinoFunc" to="/inplay">
             <div
               :class="[
-                router.currentRoute.value.fullPath === '/inplay'
+                !sidebar.casino
                   ? 'flex items-center pl-2 pr-2.5 py-[6px]  bg-white  bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1'
                   : 'flex items-center pl-2 pr-2.5 py-[6px] hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1',
               ]"
@@ -585,5 +582,9 @@ function modalSignup() {
 
 const sidebarFunc = () => {
   sidebar.setSidebar();
+};
+
+const casinoFunc = () => {
+  sidebar.setCasino();
 };
 </script>

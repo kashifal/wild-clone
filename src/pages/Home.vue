@@ -1,13 +1,7 @@
 <template>
   <div class="relative">
     <SideBar />
-    <div
-      :class="[
-        sidebar.open
-          ? 'lg:pl-64 bg-[#0A1C2D] mx-auto z-20'
-          : 'lg:pl-16 bg-[#0A1C2D] mx-auto z-20 ',
-      ]"
-    >
+    <margin>
       <div
         class="sm:bg-[url('./assets/herobg.webp')] sm:block hidden z-10 h-fit relative w-full bg-center bg-cover"
       >
@@ -303,7 +297,7 @@
         <Footer />
         <BottomBar />
       </div>
-    </div>
+    </margin>
   </div>
 </template>
 
@@ -322,6 +316,7 @@ import TEXT from "../components/Text.vue";
 import Contact from "../components/Contact.vue";
 import Footer from "../components/Footer.vue";
 import BottomBar from "../components/BottomBar.vue";
+import margin from "../layouts/margin.vue";
 
 import { useSidebarStore } from "../store/sidebar";
 
