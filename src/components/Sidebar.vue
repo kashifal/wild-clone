@@ -1,9 +1,12 @@
 <template>
   <div
     v-if="!sidebar.open"
-    class="w-16 z-40 sidebar h-screen fixed lg:block hidden left-0 top-16 bg-[#192C3D]"
+    class="w-16 z-40 sidebar  h-screen fixed lg:block hidden left-0 top-16 bg-[#192C3D]"
   >
     <div class="flex flex-col items-center w-16 py-4 gap-1">
+      <router-link
+      to="/"
+      >
       <div
         class="element group relative cursor-pointer w-fit p-2.5 rounded-[8px]"
       >
@@ -134,6 +137,10 @@
           Fortnite Wheel
         </div>
       </div>
+    </router-link>
+    <router-link
+    to="/"
+    >
       <div
         class="custom-gradient group relative cursor-pointer w-fit p-2.5 rounded-[8px]"
       >
@@ -146,6 +153,10 @@
           Refer Friend
         </div>
       </div>
+    </router-link>
+    <router-link
+    to="/"
+    >
       <div
         class="third relative group cursor-pointer w-fit p-2.5 rounded-[8px]"
       >
@@ -158,6 +169,10 @@
           Wild Lottery
         </div>
       </div>
+    </router-link>
+    <router-link
+    to="/"
+    >
       <div
         class="fourth group relative cursor-pointer w-fit p-2.5 rounded-[8px]"
       >
@@ -170,6 +185,7 @@
           Bonus Shop
         </div>
       </div>
+    </router-link>
     </div>
     <div class="bg-white bg-opacity-[3%] pb-16 w-16 flex flex-col gap-1">
       <div
@@ -185,11 +201,7 @@
               alt=""
               class="w-[20px] h-[20px]"
             />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[82px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              All Games
-            </div>
+            
           </div>
         </router-link>
         <router-link
@@ -198,11 +210,7 @@
         >
           <div class="">
             <img src="../assets/slot.svg" alt="" class="w-[20px] h-[20px]" />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[54px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              Slots
-            </div>
+           
           </div>
         </router-link>
         <router-link
@@ -215,11 +223,7 @@
               alt=""
               class="w-[20px] h-[20px]"
             />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[90px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              Live Casino
-            </div>
+           
           </div>
         </router-link>
         <router-link
@@ -232,11 +236,7 @@
               alt=""
               class="w-[20px] h-[20px]"
             />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[98px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              Table Games
-            </div>
+           
           </div>
         </router-link>
       </div>
@@ -249,11 +249,7 @@
         >
           <div class="">
             <img src="../assets/promo.svg" alt="" class="w-[20px] h-[20px]" />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[92px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              Promotions
-            </div>
+            
           </div>
         </router-link>
         <router-link
@@ -266,11 +262,7 @@
               alt=""
               class="w-[20px] h-[20px]"
             />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[100px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              Tournaments
-            </div>
+           
           </div>
         </router-link>
         <router-link
@@ -279,11 +271,7 @@
         >
           <div class="">
             <img src="../assets/Vipclub.svg" alt="" class="w-[20px] h-[20px]" />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[75px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              VIP Club
-            </div>
+           
           </div>
         </router-link>
         <router-link
@@ -296,11 +284,7 @@
               alt=""
               class="w-[20px] h-[20px]"
             />
-            <div
-              class="bg-[#263747] scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-[88px] text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              Challenges
-            </div>
+           
           </div>
         </router-link>
       </div>
@@ -311,11 +295,7 @@
         >
           <div class="">
             <img src="../assets/live.svg" alt="" class="w-[20px] h-[20px]" />
-            <div
-              class="bg-[#263747] z-40 scale-0 group-hover:scale-100 transition-all duration-300 absolute top-1 -right-8 text-white text-xs font-medium whitespace-nowrap rounded-md p-2.5 shadow"
-            >
-              Live match
-            </div>
+           
           </div>
         </router-link>
       </div>
@@ -611,19 +591,20 @@ const sidebar = useSidebarStore();
 
 <style>
 .sidebar {
-  overflow-y: scroll;
-}
-/* Custom scrollbar styles */
-.sidebar::-webkit-scrollbar {
-  width: 2px; /* Width of the scrollbar */
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: #6b7280; /* Gray color for the scrollbar thumb */
-  border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
-}
-
-.sidebar::-webkit-scrollbar-track {
-  background-color: transparent; /* Transparent track background */
-}
+  overflow-y: auto;
+   
+ }
+ /* Custom scrollbar styles */
+ .sidebar::-webkit-scrollbar {
+   width: 2px; /* Width of the scrollbar */
+ }
+ 
+ .sidebar::-webkit-scrollbar-thumb {
+   background-color: #6b7280; /* Gray color for the scrollbar thumb */
+   border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
+ }
+ 
+ .sidebar::-webkit-scrollbar-track {
+   background-color: transparent; /* Transparent track background */
+ }
 </style>
