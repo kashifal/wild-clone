@@ -9,9 +9,11 @@
         </router-link>
         <div class="md:flex hidden -space-x-2 items-center">
           <button
+            v-if="sidebar.casino"
+            @click="sidebarFunc"
             class="relative h-8 w-8 hover:bg-green-500 hover:bg-opacity-20 rounded-lg transition-all duration-400 hidden md:flex items-center justify-center"
           >
-            <span v-if="sidebar.casino" @click="sidebarFunc">
+            <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -126,7 +128,7 @@
       <div class="flex gap-2 items-center">
         <button
           @click="modalOpen"
-          class="font-semibold sm:block hidden  text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-5 py-2.5 rounded-[8px]"
+          class="font-semibold sm:block hidden text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-5 py-2.5 rounded-[8px]"
         >
           Log In
         </button>
