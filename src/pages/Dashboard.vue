@@ -1,7 +1,7 @@
 <template>
     <div>
         <Sidebar />
-        <div class="lg:pl-72 bg-[#0A1C2D]">
+        <Margin>
             <div class="sm:px-4 px-4">
                 <div class="py-5">
                     <div class="flex items-center gap-2">
@@ -166,11 +166,12 @@
                 </div>
                 <Footer />
             </div>
-        </div>
+        </Margin>
     </div>
 </template>
 
 <script setup>
+import Margin from "../layouts/margin.vue";
 import Sidebar from '../components/Sidebar.vue';
 import Footer from '../components/Footer.vue';
 </script>

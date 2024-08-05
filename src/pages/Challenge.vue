@@ -1,7 +1,7 @@
 <template>
     <div>
         <Sidebar />
-        <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+        <Margin>
             <div class="sm:px-8 px-4">
                 <div class="pt-10 pb-5">
                     <div class="flex items-center gap-2">
@@ -124,12 +124,13 @@
             <Footer />
             <BottomBar />
         </div>
-        </div>
+        </Margin>
        
     </div>
 </template>
 
 <script setup>
+import Margin from '../layouts/margin.vue';
 import Sidebar from '../components/Sidebar.vue';
 import ChallengeCard from '../components/ChallengeGuy.vue';
 import Contact from '../components/Contact.vue';

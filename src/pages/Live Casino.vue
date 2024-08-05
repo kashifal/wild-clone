@@ -1,7 +1,7 @@
 <template>
     <div>
         <Sidebar />
-        <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+        <Margin>
             <div class="sm:px-8 px-4">
                 <div class="flex md:flex-row py-10 flex-col justify-between md:items-center gap-4">
                     <div class="flex items-center gap-2">
@@ -13,7 +13,7 @@
                     </div>
                     <div class="flex md:flex-row flex-wrap gap-1 items-=center">
                         <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-20 text-sm text-white placeholder:text-gray-400 ">
+                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-[#142535] py-2 pl-4 pr-20 text-sm text-white placeholder:text-gray-400 ">
                               <option value="">Novelty</option>
                               <option value="A-Z">A-Z</option>
                               <option value="nov">Novelty</option>
@@ -23,7 +23,7 @@
                           </div>
                         
                           <div class="relative">
-                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-white bg-opacity-[7%] py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
+                            <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947]  bg-[#142535]  py-2 pl-4 pr-12 text-sm text-white placeholder:text-gray-400 ">
                               <option value="">Provide:All</option>
                               <option value="">All Games</option>
                               <option value="">Bgamming</option>
@@ -156,12 +156,13 @@
             <Footer />
             <BottomBar />
         </div>
-        </div>
+        </Margin>
        
     </div>
 </template>
 
 <script setup>
+import Margin from '../layouts/margin.vue';
 import Sidebar from '../components/Sidebar.vue';
 import GamePage from '../components/GamePage.vue';
 import Contact from '../components/Contact.vue';
