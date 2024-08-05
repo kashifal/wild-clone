@@ -1,7 +1,13 @@
 <template>
   <div class="relative">
-  <SideBar />
-    <div class="lg:pl-64 bg-[#0A1C2D] mx-auto z-20">
+    <SideBar />
+    <div
+      :class="[
+        sidebar.open
+          ? 'lg:pl-64 bg-[#0A1C2D] mx-auto z-20'
+          : 'lg:pl-16 bg-[#0A1C2D] mx-auto z-20 ',
+      ]"
+    >
       <div
         class="sm:bg-[url('./assets/herobg.webp')] sm:block hidden z-10 h-fit relative w-full bg-center bg-cover"
       >
@@ -18,7 +24,7 @@
           </h1>
           <h2 class="text-white text-2xl pt-1 font-bold">and 75 Free Spins</h2>
           <button
-            class="text-white py-[11px] my-6 px-7 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#3FC02F] hover:bg-[#4FC541]"
+            class="text-white py-[11px] my-6 px-7 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#0C49BE] hover:bg-[#0C49BE]"
           >
             <h5 class="text-lg font-semibold">Sign Up Now</h5>
             <em class="text-xs font-medium">Only Takes 30 seconds</em>
@@ -156,7 +162,7 @@
             </h1>
             <h2 class="text-white font-bold">and 75 Free Spins</h2>
             <button
-              class="text-white py-1.5 my-6 px-5 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#3FC02F] hover:bg-[#4FC541]"
+              class="text-white py-1.5 my-6 px-5 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#0C49BE] hover:bg-[#0C49BE]"
             >
               <h5 class="text-lg font-semibold">Sign Up Now</h5>
               <em class="text-xs font-medium">Only Takes 30 seconds</em>
@@ -283,47 +289,51 @@
         </div>
       </div>
       <div class="px-8">
-      <Tokens />
-      <CardsOne />
-      <ScrollCards />
-      <Scrollcards2 />
-      <Rekebek />
-      <Sports />
-      <Game />
-      <Table />
-      <TEXT />
-      <LogosBar />
-      <Contact class="fixed bottom-20 right-5 z-40" />
-      <Footer />
-      <BottomBar/>
-    </div>
+        <Tokens />
+        <CardsOne />
+        <ScrollCards />
+        <Scrollcards2 />
+        <Rekebek />
+        <Sports />
+        <Game />
+        <Table />
+        <TEXT />
+        <LogosBar />
+        <Contact class="fixed bottom-20 right-5 z-40" />
+        <Footer />
+        <BottomBar />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import SideBar from '../components/Sidebar.vue';
-import Tokens from '../components/Tokens.vue';
-import CardsOne from '../components/Cards1.vue';
-import ScrollCards from '../components/Scroll cards.vue';
-import Table from '../components/table.vue';
-import Scrollcards2 from '../components/ScrollCards2.vue';
-import Rekebek from '../components/Rekebek.vue';
-import Sports from '../components/Sports.vue';
-import Game from '../components/Game.vue';
-import LogosBar from '../components/logosbar.vue';
-import TEXT from '../components/Text.vue';
-import Contact from '../components/Contact.vue';
+import SideBar from "../components/Sidebar.vue";
+import Tokens from "../components/Tokens.vue";
+import CardsOne from "../components/Cards1.vue";
+import ScrollCards from "../components/Scroll cards.vue";
+import Table from "../components/table.vue";
+import Scrollcards2 from "../components/ScrollCards2.vue";
+import Rekebek from "../components/Rekebek.vue";
+import Sports from "../components/Sports.vue";
+import Game from "../components/Game.vue";
+import LogosBar from "../components/logosbar.vue";
+import TEXT from "../components/Text.vue";
+import Contact from "../components/Contact.vue";
 import Footer from "../components/Footer.vue";
 import BottomBar from "../components/BottomBar.vue";
+
+import { useSidebarStore } from "../store/sidebar";
+
+const sidebar = useSidebarStore();
 </script>
 
 <style>
 .custom-gradient {
-  background: linear-gradient(85deg, #3fc02f0d -0.06%, #3fc02f33 102.57%);
+  background: linear-gradient(85deg, #0c49be0d -0.06%, #0c49be33 102.57%);
 }
 .custom-gradient:hover {
-  background: linear-gradient(83deg, #3fc02f33 -0.06%, #3fc02f33 102.57%);
+  background: linear-gradient(83deg, #0c49be33 -0.06%, #0c49be33 102.57%);
 }
 
 .element {
@@ -376,10 +386,6 @@ import BottomBar from "../components/BottomBar.vue";
   );
 }
 
-
-
-
-.bit{
-  
+.bit {
 }
 </style>
