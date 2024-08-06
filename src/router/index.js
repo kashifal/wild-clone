@@ -4,21 +4,21 @@ import Test from "@/pages/Test.vue";
 import Game from "@/pages/Game.vue";
 import Slot from "@/pages/Slot.vue";
 import LiveCasino from "@/pages/Live Casino.vue";
-import Promotion from '@/pages/Promotion.vue';
+import Promotion from "@/pages/Promotion.vue";
 import TableGAmes from "../pages/TableGAmes.vue";
 import Tournament from "../pages/Tournament.vue";
 import VipClub from "../pages/VipClub.vue";
-import Challenge from '../pages/Challenge.vue';
-import Live from '../pages/Live.vue';
+import Challenge from "../pages/Challenge.vue";
+import Live from "../pages/Live.vue";
 import Sports from "../pages/Sports.vue";
 import Esports from "../pages/Esports.vue";
 import PromotionsSport from "../pages/PromotionsSport.vue";
 import Schedule from "../pages/Schedule.vue";
-import Result from '../pages/Results.vue';
+import Result from "../pages/Results.vue";
 import Football from "../pages/Football.vue";
 import Dashboard from "../pages/Dashboard.vue";
 import InPlay from "../pages/In-play.vue";
-import SportsBet from "../pages/SportsBet.vue";
+import SportsBet from "../pages/sportsbet.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -104,7 +104,7 @@ const router = createRouter({
       component: Result,
     },
     {
-      path: "/football", 
+      path: "/football",
       name: "football",
       component: Football,
     },
