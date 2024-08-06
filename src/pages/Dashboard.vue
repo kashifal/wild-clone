@@ -2,13 +2,13 @@
     <div>
         <Sidebar />
         <Margin>
-            <div class="sm:px-4 px-4">
+            <div class="sm:px-4 overflow-x-hidden px-4">
                 <div class="py-5">
                     <div class="flex items-center gap-2">
                         <img src="../assets/profile.svg" alt="" class="w-6 h-6">
                         <h1 class="text-white text-2xl font-semibold">Account</h1>
                     </div>
-                    <div class="flex p-1 w-fit mt-4 gap-1 bg-[#192C3D] rounded-full">
+                    <div class="flex buttonsscrl p-1 whitespace-nowrap w-full sm:w-fit mt-4 gap-1 bg-[#192C3D] rounded-full">
                         <button class="px-3 text-sm bg-white bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold">General</button>
                         <button class="px-3 text-sm hover:bg-white hover:bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold">Security</button>
                         <button class="px-3 text-sm hover:bg-white hover:bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold">Active Session</button>
@@ -175,3 +175,22 @@ import Margin from "../layouts/margin.vue";
 import Sidebar from '../components/Sidebar.vue';
 import Footer from '../components/Footer.vue';
 </script>
+
+<style>
+.buttonsscrl {
+  overflow-x: auto;
+}
+/* Custom scrollbar styles */
+.buttonsscrl::-webkit-scrollbar {
+  height: 2px; /* Width of the scrollbar */
+}
+
+.buttonsscrl::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Gray color for the scrollbar thumb */
+  border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
+}
+
+.buttonsscrl::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track background */
+}
+</style>

@@ -5,7 +5,7 @@
     
         <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
     
-            <div class="lg:w-[74%] w-full">
+            <div class="lg:w-[69%] w-full">
                 
            <div class="bg-[url('./assets/footballbg.png')] w-full  bg-cover bg-center">
             <div class="flex gap-2 pb-5 px-3 py-3 items-center">
@@ -611,7 +611,7 @@
             </div>
     
         </div>
-    <BottomBar />
+    <BottomBarSport />
     </div>
   </template>
   
@@ -621,7 +621,7 @@
   import rightsidesports from "../components/rightsidesports.vue";
   import SportCards from "../components/SportCards.vue";
   import Footer from '../components/Footer.vue';
-  import BottomBar from '../components/BottomBar.vue';
+  import BottomBarSport from '../components/BottomBarSports.vue';
   import Footersport from "../components/Footersport.vue";
   const show = ref(false);
   
