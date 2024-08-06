@@ -9,7 +9,7 @@
         </router-link>
         <div class="md:flex hidden -space-x-2 items-center">
           <button
-            v-if="sidebar.casino"
+            v-if="sidebar.casino === 'Casino'"
             @click="sidebarFunc"
             class="relative h-8 w-8 hover:bg-green-500 hover:bg-opacity-20 rounded-lg transition-all duration-400 hidden md:flex items-center justify-center"
           >
@@ -44,10 +44,10 @@
         <div
           class="bg-[#192C3D] p-1 md:flex hidden gap-2 items-center rounded-lg"
         >
-          <router-link @click="casinoFunc" to="/">
+          <router-link @click="casinoFunc('Casino')" to="/">
             <div
               :class="[
-                sidebar.casino
+                sidebar.casino === 'Casino'
                   ? 'flex items-center pl-2 pr-2.5 py-[6px] bg-white bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1'
                   : 'flex items-center pl-2 pr-2.5 py-[6px] hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1',
               ]"
@@ -60,10 +60,11 @@
               <h1 class="text-sm text-white font-semibold">Casino</h1>
             </div>
           </router-link>
-          <router-link @click="casinoFunc" to="/inplay">
+
+          <router-link @click="casinoFunc('Sports')" to="/inplay">
             <div
               :class="[
-                !sidebar.casino
+                sidebar.casino === 'Sports'
                   ? 'flex items-center pl-2 pr-2.5 py-[6px]  bg-white  bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1'
                   : 'flex items-center pl-2 pr-2.5 py-[6px] hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1',
               ]"
@@ -93,8 +94,9 @@
             </svg>
           </div>
           <div
-          @click="SearchModal"
-          class="relative cursor-pointer hidden lg:flex items-center">
+            @click="SearchModal"
+            class="relative cursor-pointer hidden lg:flex items-center"
+          >
             <input
               type="text"
               name="search"
@@ -130,7 +132,7 @@
       <div class="flex gap-[2px] sm:gap-2 items-center">
         <button
           @click="modalOpen"
-          class="font-semibold  text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
+          class="font-semibold text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
         >
           Log In
         </button>
@@ -557,152 +559,217 @@
     </div>
   </div>
 
-
   <div class="">
     <div
-    @click="SearchModal"
-    :class="[
-      ModalSearch
-        ? 'h-[100vh] block z-50 w-screen bg-black/80 fixed top-0 left-0'
-        : 'h-[100vh] hidden z-50 w-screen bg-black/80 fixed top-0 left-0',
-    ]"
-  ></div>
+      @click="SearchModal"
+      :class="[
+        ModalSearch
+          ? 'h-[100vh] block z-50 w-screen bg-black/80 fixed top-0 left-0'
+          : 'h-[100vh] hidden z-50 w-screen bg-black/80 fixed top-0 left-0',
+      ]"
+    ></div>
 
-
-  <div
-  :class="[
-    ModalSearch
-      ? 'h-[82%]  overflow-y-auto block z-50 md:px-0 px-6  rounded-lg fixed inset-0  m-auto'
-      : 'h-[82%]  hidden z-50 overflow-y-auto  md:px-0 px-6 rounded-lg fixed inset-0 m-auto',
-  ]"
->
-<div class="bg-[#263747] rounded-2xl p-5 mx-auto max-w-xl">
-  <div class="flex justify-between items-center gap-3">
-    <div class="flex p-1 gap-1 bg-[#192C3D] rounded-full">
-      <button class="px-3 text-sm bg-white bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold">Game</button>
-      <button class="px-3 text-sm hover:bg-white hover:bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold">Providers</button>
-  </div>
-  <button
-  @click="SearchModal"
-  class="">
     <div
-      class="w-8 h-8  rounded-lg hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
+      :class="[
+        ModalSearch
+          ? 'h-[82%]  overflow-y-auto block z-50 md:px-0 px-6  rounded-lg fixed inset-0  m-auto'
+          : 'h-[82%]  hidden z-50 overflow-y-auto  md:px-0 px-6 rounded-lg fixed inset-0 m-auto',
+      ]"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-5 h-5 text-white"
-        width="1em"
-        height="1em"
-        viewBox="0 0 21 21"
-      >
-        <rect width="21" height="21" fill="none" />
-        <path
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="m15.5 15.5l-10-10zm0-10l-10 10"
-        />
-      </svg>
-    </div>
-  </button>
-  </div>
-  <div class="relative mt-5 cursor-pointer hidden lg:flex items-center">
-    <input
-      type="text"
-      name="search"
-      id="search"
-      placeholder="Search for Games"
-      class="block cursor-pointer w-full rounded-[8px] border-0 bg-[#2F3F4E] py-[8px] pl-12 placeholder:text-[#CFD2D5] shadow-sm ring-1 ring-inset ring-gray-600 text-white focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-    />
-    <div class="absolute left-3">
-      <span class="border-r flex pr-3 border-gray-600">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 16 16"
-          fill="currentColor"
-          class="size-4 text-white"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-            clip-rule="evenodd"
+      <div class="bg-[#263747] rounded-2xl p-5 mx-auto max-w-xl">
+        <div class="flex justify-between items-center gap-3">
+          <div class="flex p-1 gap-1 bg-[#192C3D] rounded-full">
+            <button
+              class="px-3 text-sm bg-white bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold"
+            >
+              Game
+            </button>
+            <button
+              class="px-3 text-sm hover:bg-white hover:bg-opacity-[7%] rounded-full py-1.5 text-white font-semibold"
+            >
+              Providers
+            </button>
+          </div>
+          <button @click="SearchModal" class="">
+            <div
+              class="w-8 h-8 rounded-lg hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-white"
+                width="1em"
+                height="1em"
+                viewBox="0 0 21 21"
+              >
+                <rect width="21" height="21" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m15.5 15.5l-10-10zm0-10l-10 10"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+        <div class="relative mt-5 cursor-pointer hidden lg:flex items-center">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search for Games"
+            class="block cursor-pointer w-full rounded-[8px] border-0 bg-[#2F3F4E] py-[8px] pl-12 placeholder:text-[#CFD2D5] shadow-sm ring-1 ring-inset ring-gray-600 text-white focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
-        </svg>
-      </span>
-    </div>
-    <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
-      <div
-      class="w-8 h-8 absolute right-2 top-1 rounded-lg hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="w-5 h-5 text-white"
-        width="1em"
-        height="1em"
-        viewBox="0 0 21 21"
-      >
-        <rect width="21" height="21" fill="none" />
-        <path
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="m15.5 15.5l-10-10zm0-10l-10 10"
-        />
-      </svg>
-    </div>
+          <div class="absolute left-3">
+            <span class="border-r flex pr-3 border-gray-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="size-4 text-white"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
+            <div
+              class="w-8 h-8 absolute right-2 top-1 rounded-lg hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-white"
+                width="1em"
+                height="1em"
+                viewBox="0 0 21 21"
+              >
+                <rect width="21" height="21" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m15.5 15.5l-10-10zm0-10l-10 10"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="relative text-white z-40 pt-3">
+          <h1 class="text-white pb-3">Popular Searches</h1>
+          <div class="flex flex-col gap-1">
+            <div
+              class="hover:bg-white px-4 py-2 cursor-pointer transition-all duration-700 group rounded-xl hover:bg-opacity-[7%] flex items-center justify-between"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/truegame.webp"
+                  alt=""
+                  class="w-8 h-auto rounded-lg"
+                />
+                <div class="">
+                  <h5 class="text-white text-sm font-semibold">
+                    Stampade Gold
+                  </h5>
+                  <p class="text-white/80 text-xs">Bsg</p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <rect width="24" height="24" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m10 17l5-5m0 0l-5-5"
+                />
+              </svg>
+            </div>
+            <div
+              class="hover:bg-white px-4 py-2 cursor-pointer transition-all duration-700 group rounded-xl hover:bg-opacity-[7%] flex items-center justify-between"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/truegame.webp"
+                  alt=""
+                  class="w-8 h-auto rounded-lg"
+                />
+                <div class="">
+                  <h5 class="text-white text-sm font-semibold">
+                    Stampade Gold
+                  </h5>
+                  <p class="text-white/80 text-xs">Bsg</p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <rect width="24" height="24" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m10 17l5-5m0 0l-5-5"
+                />
+              </svg>
+            </div>
+            <div
+              class="hover:bg-white px-4 py-2 cursor-pointer transition-all duration-700 group rounded-xl hover:bg-opacity-[7%] flex items-center justify-between"
+            >
+              <div class="flex items-center gap-2">
+                <img
+                  src="../assets/truegame.webp"
+                  alt=""
+                  class="w-8 h-auto rounded-lg"
+                />
+                <div class="">
+                  <h5 class="text-white text-sm font-semibold">
+                    Stampade Gold
+                  </h5>
+                  <p class="text-white/80 text-xs">Bsg</p>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <rect width="24" height="24" fill="none" />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m10 17l5-5m0 0l-5-5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="relative text-white z-40 pt-3">
-    <h1 class="text-white pb-3">Popular Searches</h1>
-    <div class="flex flex-col gap-1">
-      <div class="hover:bg-white px-4 py-2 cursor-pointer transition-all duration-700 group rounded-xl hover:bg-opacity-[7%] flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <img src="../assets/truegame.webp" alt="" class="w-8 h-auto rounded-lg">
-          <div class="">
-          <h5 class="text-white text-sm font-semibold">Stampade Gold</h5>
-          <p class="text-white/80 text-xs">Bsg</p>
-        </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto  " width="1em" height="1em" viewBox="0 0 24 24">
-          <rect width="24" height="24" fill="none" />
-          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 17l5-5m0 0l-5-5" />
-        </svg>
-      </div>
-      <div class="hover:bg-white px-4 py-2 cursor-pointer transition-all duration-700 group rounded-xl hover:bg-opacity-[7%] flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <img src="../assets/truegame.webp" alt="" class="w-8 h-auto rounded-lg">
-          <div class="">
-          <h5 class="text-white text-sm font-semibold">Stampade Gold</h5>
-          <p class="text-white/80 text-xs">Bsg</p>
-        </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto  " width="1em" height="1em" viewBox="0 0 24 24">
-          <rect width="24" height="24" fill="none" />
-          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 17l5-5m0 0l-5-5" />
-        </svg>
-      </div>
-      <div class="hover:bg-white px-4 py-2 cursor-pointer transition-all duration-700 group rounded-xl hover:bg-opacity-[7%] flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <img src="../assets/truegame.webp" alt="" class="w-8 h-auto rounded-lg">
-          <div class="">
-          <h5 class="text-white text-sm font-semibold">Stampade Gold</h5>
-          <p class="text-white/80 text-xs">Bsg</p>
-        </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto  " width="1em" height="1em" viewBox="0 0 24 24">
-          <rect width="24" height="24" fill="none" />
-          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 17l5-5m0 0l-5-5" />
-        </svg>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
-
-  
 </template>
 
 <script setup>
@@ -740,7 +807,7 @@ const sidebarFunc = () => {
   sidebar.setSidebar();
 };
 
-const casinoFunc = () => {
-  sidebar.setCasino();
+const casinoFunc = (i) => {
+  sidebar.setCasino(i);
 };
 </script>

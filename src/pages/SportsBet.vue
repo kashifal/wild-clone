@@ -399,13 +399,14 @@
                   class="bg-[#273E50] hover:bg-opacity-70 transition-all duration-300 w-1/2 rounded-br-xl py-2 px-2 flex flex-col items-center text-center"
                 >
                   <p class="text-white/70">Germany</p>
-                  <h5 class="text-2xl text-white">1.35</h5>
+                  <h5 class="text-2xl text-white">1.34</h5>
                 </button>
               </div>
             </div>
+
             <div
-              v-for="(i, index) in 10"
-              :key="i"
+              v-for="(match, index) in matches"
+              :key="match.team0"
               class="flex flex-col gap-[1px]"
             >
               <div
@@ -455,16 +456,18 @@
               </div>
               <div v-if="isCollapsed(index)" class="flex gap-[2px]">
                 <button
+                  @click="setMatch(match.team0)"
                   class="bg-[#273E50] w-1/2 hover:bg-opacity-70 transition-all duration-300 rounded-bl-xl py-3 px-4 flex justify-between items-center text-center"
                 >
-                  <p class="text-white/70 text-sm">France</p>
-                  <h5 class="text-white text-sm">1.40</h5>
+                  <p class="text-white/70 text-sm">{{ match.team0.team }}</p>
+                  <h5 class="text-white text-sm">{{ match.team0.score }}</h5>
                 </button>
                 <button
-                  class="bg-[#273E50] hover:bg-opacity-70 transition-all duration-300 w-1/2 rounded-br-xl py-3 px-4 flex justify-between items-center text-center"
+                  @click="setMatch(match.team1)"
+                  class="bg-[#273E50] w-1/2 hover:bg-opacity-70 transition-all duration-300 rounded-br-xl py-3 px-4 flex justify-between items-center text-center"
                 >
-                  <p class="text-white/70 text-sm">Germany</p>
-                  <h5 class="text-white text-sm">1.15</h5>
+                  <p class="text-white/70 text-sm">{{ match.team1.team }}</p>
+                  <h5 class="text-white text-sm">{{ match.team1.score }}</h5>
                 </button>
               </div>
             </div>
@@ -489,9 +492,12 @@ import SportsSidebar from "../components/SportsSidebar.vue";
 import rightsidesports from "../components/rightsidesports.vue";
 import SportCards from "../components/SportCards.vue";
 import Footer from "../components/Footer.vue";
-import BottomBar from "../components/BottomBar.vue";
+import BottomBar from "../components/BottomBarSports.vue";
 import Footersport from "../components/Footersport.vue";
+import { useSidebarStore } from "../store/sidebar";
 const show = ref(false);
+import { useBetStore } from "../store/bets";
+const bets = useBetStore();
 
 function modalFunc() {
   show.value = !show.value;
@@ -512,6 +518,21 @@ const up = ref(true);
 
 const setUp = () => {
   up.value = !up.value;
+};
+
+const matches = ref([
+  {
+    team0: { id: 1, team: "Serbia", score: 1 },
+    team1: { id: 2, team: "India", score: 4 },
+  },
+  {
+    team0: { id: 3, team: "Iran", score: 5 },
+    team1: { id: 4, team: "China", score: 6 },
+  },
+]);
+
+const setMatch = (match) => {
+  bets.setBets(match);
 };
 </script>
 
