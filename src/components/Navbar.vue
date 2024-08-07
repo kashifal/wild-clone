@@ -822,8 +822,17 @@
             class="w-36 h-auto mx-auto mb-5 mt-10"
           />
         </router-link>
+        <div class="px-3">
+        <button class="bg-[#0C49BE] py-2 px-4 w-full rounded-lg hover:bg-opacity-50 transition-all duration-500 text-sm text-white font-bold flex items-center text-center justify-center">Wallet
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M21 18v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2m0-2h10V8H12m4 5.5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5" />
+          </svg>
+        </button>
+      </div>
         <div class="flex flex-col py-5">
           <div
+          @click="SearchModalSports"
             class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
           >
             <svg
@@ -1063,6 +1072,77 @@
       </div>
     </div>
   </div>
+
+  <div class="">
+    <div
+      @click="SearchModalSports"
+      :class="[
+        shown
+          ? 'h-[100vh] block z-50 w-screen bg-[#1F3342] bg-opacity-50 fixed top-0 left-0'
+          : 'h-[100vh] hidden z-50 w-screen bg-[#1F3342] bg-opacity-50 fixed top-0 left-0',
+      ]"
+    ></div>
+
+    <div
+      :class="[
+        shown
+          ? 'h-[90%]  overflow-y-auto block z-50 md:px-0 px-6  rounded-lg fixed inset-0  m-auto'
+          : 'h-[90%]  hidden z-50 overflow-y-auto  md:px-0 px-6 rounded-lg fixed inset-0 m-auto',
+      ]"
+    >
+      <div class="bg-[#1C2C3C]  rounded-2xl p-3 sm:p-5 mx-auto max-w-5xl h-[80vh]" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+        <div class="flex items-center gap-4">
+        <div class="relative w-full mt-5 flex items-center">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search"
+            class="block  placeholder:font-medium sm:placeholder:text-lg  placeholder:text-xs w-full placeholder:truncate rounded-[8px] border-0 bg-[#1C2C3C] py-4 pl-12 placeholder:text-[#77808A] shadow-sm ring-1 ring-inset ring-[#28333E] text-white sm:text-sm sm:leading-6"
+          />
+          <div class="text-[#77808A] absolute right-3 font-bold text-sm hover:text-white cursor-not-allowed">Clear</div>
+          <div class="absolute left-3">
+            <span class=" flex pr-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="size-6 text-[#77808A]"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+          <div
+            class="w-8 h-8 mt-5 rounded-lg text-[#77808A] hover:text-white hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 "
+              width="1em"
+              height="1em"
+              viewBox="0 0 21 21"
+            >
+              <rect width="21" height="21" fill="none" />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m15.5 15.5l-10-10zm0-10l-10 10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="text-[#77808A] text-center font-bold w-full py-3 text-lg  hover:text-white ">Type at least 3 letters</div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -1099,6 +1179,11 @@ function modalSignup() {
 const ModalSearch = ref(false);
 function SearchModal() {
   ModalSearch.value = !ModalSearch.value;
+}
+
+const shown = ref(false);
+function SearchModalSports() {
+  shown.value = !shown.value;
 }
 
 const sidebarFunc = () => {
