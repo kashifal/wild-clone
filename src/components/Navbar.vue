@@ -4,6 +4,28 @@
   >
     <div class="h-full flex items-center justify-between mx-auto">
       <div class="flex items-center gap-2.5">
+        <button
+          @click="SidebarModal"
+          class="relative sm:h-8 w-4 h-4 flex xl:hidden sm:w-8 hover:bg-green-500 hover:bg-opacity-20 rounded-lg transition-all duration-400 items-center justify-center"
+        >
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="sm:w-6 text-gray-400 sm:h-6"
+              width="1em"
+              height="1em"
+              viewBox="0 0 15 15"
+            >
+              <rect width="15" height="15" fill="none" />
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1.5 3a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1zM1 7.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </button>
         <router-link class="fonnt-bold flex md:hidden" to="/">
           <img src="../assets/logo.svg" alt="" class="w-32 h-auto" />
         </router-link>
@@ -132,13 +154,13 @@
       <div class="flex gap-[2px] sm:gap-2 items-center">
         <button
           @click="modalOpen"
-          class="font-semibold text-white text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
+          class="font-semibold text-white truncate text-[14px] hover:bg-white transition-all duration-300 hover:bg-opacity-[7%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
         >
           Log In
         </button>
         <button
           @click="modalSignup"
-          class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
+          class="font-semibold text-white truncate text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
         >
           Sign Up
         </button>
@@ -770,6 +792,275 @@
       </div>
     </div>
   </div>
+
+  <div class="">
+    <div
+      @click="SidebarModal"
+      :class="[
+        Visible
+          ? 'h-[100vh] block z-50 w-screen bg-black/60 fixed top-0 left-0'
+          : 'h-[100vh] hidden z-50 w-screen bg-black/60 fixed top-0 left-0',
+      ]"
+    ></div>
+
+    <div
+      :class="[
+        Visible
+          ? 'h-[100%]  block z-50 md:px-0 translate-x-0 duration-1000 rounded-lg fixed left-0 top-0'
+          : 'h-[100%] hidden z-50 md:px-0 -translate-x-80 duration-1000 rounded-lg left-0 fixed top-0',
+      ]"
+    >
+      <div
+        class="relative h-screen SportsSidebar bg-[#1C2C3C] max-w-1/2 sm:max-w-[325px]"
+      >
+        <router-link to="/sports">
+          <img
+            src="../assets/logo.svg"
+            alt=""
+            class="w-36 h-auto mx-auto mb-5 mt-10"
+          />
+        </router-link>
+        <div class="flex flex-col py-5">
+          <div
+            class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-[#77808A]"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <rect width="24" height="24" fill="none" />
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m16.325 14.899l5.38 5.38a1.008 1.008 0 0 1-1.427 1.426l-5.38-5.38a8 8 0 1 1 1.426-1.426M10 16a6 6 0 1 0 0-12a6 6 0 0 0 0 12"
+              />
+            </svg>
+            <p class="text-white">Search</p>
+          </div>
+          <router-link to="/sports">
+            <div
+              class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-[#77808A]"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+              >
+                <rect width="16" height="16" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"
+                />
+              </svg>
+              <p class="text-white">Sports</p>
+            </div>
+          </router-link>
+          <router-link to="/inplay">
+            <div
+              class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-[#0C49BE]"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <rect width="24" height="24" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M6.343 4.938a1 1 0 0 1 0 1.415a8.003 8.003 0 0 0 0 11.317a1 1 0 1 1-1.414 1.414c-3.907-3.906-3.907-10.24 0-14.146a1 1 0 0 1 1.414 0m12.732 0c3.906 3.907 3.906 10.24 0 14.146a1 1 0 0 1-1.415-1.414a8.003 8.003 0 0 0 0-11.317a1 1 0 0 1 1.415-1.415M9.31 7.812a1 1 0 0 1 0 1.414a3.92 3.92 0 0 0 0 5.544a1 1 0 1 1-1.415 1.414a5.92 5.92 0 0 1 0-8.372a1 1 0 0 1 1.415 0m6.958 0a5.92 5.92 0 0 1 0 8.372a1 1 0 0 1-1.414-1.414a3.92 3.92 0 0 0 0-5.544a1 1 0 0 1 1.414-1.414m-4.186 2.77a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"
+                />
+              </svg>
+              <p class="text-white font-semibold">
+                In-Play <span class="text-gray-500 pl-1 font-medium">75</span>
+              </p>
+            </div>
+          </router-link>
+
+          <router-link to="/esports">
+            <div
+              class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-[#77808A]"
+                width="1em"
+                height="1em"
+                viewBox="0 0 20 20"
+              >
+                <rect width="20" height="20" fill="none" />
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M19.444 9.361c-.882-4.926-2.854-6.379-3.903-6.379c-1.637 0-2.057 1.217-5.541 1.258c-3.484-.041-3.904-1.258-5.541-1.258c-1.049 0-3.022 1.453-3.904 6.379c-.503 2.812-1.049 7.01.252 7.514c1.619.627 2.168-.941 3.946-2.266C6.558 13.266 7.424 12.95 10 12.95s3.442.316 5.247 1.659c1.778 1.324 2.327 2.893 3.946 2.266c1.301-.504.755-4.701.251-7.514M6 10a2 2 0 1 1 0-4a2 2 0 0 1 0 4m7 0a1 1 0 1 1 0-2a1 1 0 1 1 0 2m2-2a1 1 0 1 1 0-2a1 1 0 1 1 0 2"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="text-white">Esports</p>
+            </div>
+          </router-link>
+          <router-link to="/poromoSport">
+            <div
+              class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-[#77808A]"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+              >
+                <rect width="16" height="16" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M3 2.5a2.5 2.5 0 0 1 5 0a2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9z"
+                />
+              </svg>
+              <p class="text-white">Promotions</p>
+            </div>
+          </router-link>
+          <router-link to="/schedule">
+            <div
+              class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-[#77808A]"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <rect width="24" height="24" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="m15.3 16.7l1.4-1.4l-3.7-3.7V7h-2v5.4zM12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.325 0 5.663-2.337T20 12t-2.337-5.663T12 4T6.337 6.338T4 12t2.338 5.663T12 20"
+                />
+              </svg>
+              <p class="text-white">Schedule</p>
+            </div>
+          </router-link>
+          <router-link to="/results">
+            <div
+              class="flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-[#77808A]"
+                width="20"
+                height="20"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M208 32H48a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16M64 72h128a8 8 0 0 1 0 16H64a8 8 0 0 1 0-16m0 48h32a8 8 0 0 1 0 16H64a8 8 0 0 1 0-16m40 64H64a8 8 0 0 1 0-16h40a8 8 0 0 1 0 16m94.55-40.71L180.69 158l5.44 22a4 4 0 0 1-1.49 4.17a4.05 4.05 0 0 1-2.39.79a4 4 0 0 1-2-.55L160 172.54l-20.22 11.91a4 4 0 0 1-5.91-4.41l5.44-22l-17.86-14.75a4 4 0 0 1 2.24-7.07l23.58-1.82l9.06-21a4 4 0 0 1 7.34 0l9.06 21l23.58 1.82a4 4 0 0 1 2.24 7.07"
+                />
+              </svg>
+              <p class="text-white">Results</p>
+            </div>
+          </router-link>
+        </div>
+        <div class="px-3">
+          <div class="border-t border-[#384654] py-5">
+            <div class="relative">
+              <select
+                name="regions"
+                id="regions"
+                class="block w-full appearance-none text-ellipsis rounded-md border border-[#293947] bg-[#1C2C3C] py-2 pl-4 pr-20 text-sm text-white"
+              >
+                <option value="">Europian</option>
+                <option value="A-Z">Asia</option>
+                <option value="nov">South America</option>
+                <option value="popu">Africa</option></select
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+                class="pointer-events-none absolute right-4 top-1/2 size-3 -translate-y-1/2 text-white fill-white/80"
+              >
+                <path
+                  d="M4.47 6.97a.75.75 0 0 1 1.06 0L10 11.44l4.47-4.47a.75.75 0 1 1 1.06 1.06l-5 5a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06Z"
+                ></path>
+              </svg>
+              <div class="font-bold text-white absolute top-1.5 right-8">
+                1.95
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#233342] py-1 justify-between grid grid-cols-2 gap-2 px-3 w-full items-center rounded-lg"
+          >
+            <router-link to="/">
+              <div
+                class="flex items-center px-4 py-2 w-full justify-between hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-[#77808A]"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 50 50"
+                >
+                  <rect width="50" height="50" fill="none"></rect>
+                  <path
+                    fill="currentColor"
+                    d="M49 10.489c.604-.457 1-1.173 1-1.989a2.5 2.5 0 1 0-5 0a2.49 2.49 0 0 0 1 1.989V26h-9v8h10v-.297A3.99 3.99 0 0 0 49.5 30c0-.691-.191-1.332-.5-1.899zM6 17c1.021 0 1.73.172 3 0c0 0-4.016 2.666-4.016 6H10s.006-5.554 3-9l-1-1s-2 1-4 0c0 0-2 0-4 1v-1H3v6h1s0-2 2-2m14 0c1.021 0 1.73.172 3 0c0 0-4.016 2.666-4.016 6H24s.006-5.554 3-9l-1-1s-2 1-4 0c0 0-2 0-4 1v-1h-1v6h1s0-2 2-2M38 7V5H25.88c-.456-2.002-2.239-3.5-4.38-3.5S17.576 2.998 17.12 5H5v2H0v41h44V7zm-22 4h12v14H16zM2 11h12v14H2zm36 32H5v-7h33zm4-18H30V11h12zm-8-8c1.021 0 1.73.172 3 0c0 0-4.016 2.666-4.016 6H38s.006-5.554 3-9l-1-1s-2 1-4 0c0 0-2 0-4 1v-1h-1v6h1s0-2 2-2"
+                  ></path>
+                </svg>
+
+                <h1 class="text-white font-semibold">Casino</h1>
+              </div>
+            </router-link>
+            <router-link to="/inplay">
+              <div
+                class="flex items-center px-4 py-2 w-full justify-between hover:bg-white hover:bg-opacity-[7%] rounded-[8px] cursor-pointer transition-all duration-300 gap-1"
+              >
+                <img
+                  src="../assets/Sports.svg"
+                  alt=""
+                  class="w-[22px] h-[22px]"
+                />
+                <h1 class="text-white font-semibold">Sports</h1>
+              </div>
+            </router-link>
+          </div>
+        </div>
+
+        <div
+          class="hover:bg-[#1C2C3C] cursor-pointer hover:text-white text-[#77808A] z-20 hover:shadow-2xl hover:border-t gap-3 group border-[#384654] py-4 mt-4 flex items-center justify-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+          >
+            <rect width="16" height="16" fill="none" />
+            <path
+              fill="currentColor"
+              d="M8 15c-3.86 0-7-3.14-7-7s3.14-7 7-7s7 3.14 7 7s-3.14 7-7 7M8 2C4.69 2 2 4.69 2 8s2.69 6 6 6s6-2.69 6-6s-2.69-6-6-6"
+            />
+            <path
+              fill="currentColor"
+              d="M8 4.5c-1.11 0-2 .89-2 2h1c0-.55.45-1 1-1s1 .45 1 1c0 1-1.5.88-1.5 2.5h1c0-1.12 1.5-1.25 1.5-2.5c0-1.11-.89-2-2-2"
+            />
+            <circle cx="8" cy="11" r=".62" fill="currentColor" />
+            <circle cx="6.5" cy="6.5" r=".5" fill="currentColor" />
+            <circle cx="8" cy="9" r=".5" fill="currentColor" />
+          </svg>
+          <p class="font-semibold text-lg">Support</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -793,6 +1084,11 @@ function modalOpen() {
   show.value = !show.value;
 }
 
+const Visible = ref(false);
+function SidebarModal() {
+  Visible.value = !Visible.value;
+}
+
 const ShowSignup = ref(false);
 function modalSignup() {
   ShowSignup.value = !ShowSignup.value;
@@ -811,3 +1107,22 @@ const casinoFunc = (i) => {
   sidebar.setCasino(i);
 };
 </script>
+
+<style>
+.SportsSidebar {
+  overflow-y: auto;
+}
+/* Custom scrollbar styles */
+.SportsSidebar::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+}
+
+.SportsSidebar::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Gray color for the scrollbar thumb */
+  border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
+}
+
+.SportsSidebar::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track background */
+}
+</style>

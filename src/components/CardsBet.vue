@@ -11,10 +11,10 @@
         </svg>
         <p class="text-xs font-medium text-[#B0B5BB]">Japan,NPB</p>
       </div>
-      <div class="flex sm:w-1/4 2xl:w-[400px] w-1/2 items-center justify-between gap-1  text-[#B0B5BB]">
+      <div class="flex sm:w-1/4 lg:w-1/5 xl:w-1/3 2xl:w-[400px] w-1/3 items-center justify-between gap-1  text-[#B0B5BB]">
    
         <div class="2xl:flex 2xl:justify-between  items-center 2xl:gap-28">
-          <div class="flex sm:w-[110px] w-[50px] justify-between 2xl:gap-24">
+          <div class="flex sm:w-[110px] w-[50px]  justify-between 2xl:gap-24">
         <p class="text-sm">1</p>
         <p class="text-sm">2</p>
       </div>
@@ -33,12 +33,12 @@
     <div class="text-xs rounded-b-md bg-[#1C2C3C] px-3 pt-3 pb-2 font-bold text-[#B0B5BB]">
         <div class="divide w-full flex-col items-center justify-between gap-3  flex md:flex-row">
           <div class="sm:flex-row justify-between flex-col flex w-full gap-3">
-            <p class="truncatex text-xs font-semibold text-[#B0B5BB]">Inning 5</p>
-            <div class="divide flex sm:flex-row flex-col sm:divide-y-0 w-full justify-between gap-2 divide-y sm:divide-x">
+            <p class="truncatex text-xs font-semibold truncate text-[#B0B5BB]">Inning 5</p>
+            <div class="divide flex flex-row  w-full justify-between gap-2 divide divide-x">
               <div class="w-full">
                 <div class="flex w-full items-center justify-between gap-2">
                   <div class="flex items-center justify-between gap-2">
-                    <img src="../assets/dragon.png" alt="" class="h-[18px] w-[18px]" />
+                    <img src="../assets/jersy.png" alt="" class="h-[17px] w-[17px]" />
                     <p class="truncate text-[#0C49BE]">Chunichi Dragons *</p>
                   </div>
                   <div class="flex items-center gap-3 truncate">
@@ -47,9 +47,9 @@
                     
                   </div>
                 </div>
-                <div class="flex w-full items-center justify-between gap-2">
+                <div class="flex w-full mt-1 items-center justify-between gap-2">
                   <div class="flex items-center justify-between gap-2">
-                    <img src="../assets/boy.png" alt="" class="h-[18px] w-[18px]" />
+                    <img src="../assets/jersey2.png" alt="" class="h-[17px] w-[17px]" />
                     <p class="truncatetext-[#0C49BE]">Chunichi Dragons *</p>
                   </div>
                   <div class="flex items-center gap-3 truncate">
@@ -72,7 +72,7 @@
             </div>
           </div>
           
-          <div class="sm:flex 2xl:w-1/2  items-center gap-1  md:w-auto">
+          <div class="sm:flex 2xl:w-1/2  w-full items-center gap-1  md:w-auto">
             <div class="flex  w-full  justify-between gap-[2px]">
               <button class="flex w-1/2 cursor-not-allowed justify-center gap-2 rounded-l-md bg-[#273E50] px-10 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
                 <p class="text-sm font-bold text-white">12.00</p>
