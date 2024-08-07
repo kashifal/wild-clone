@@ -84,8 +84,8 @@
       @click="SidemodalFunc"
       :class="[
         show
-          ? 'h-[100vh] block z-50 w-screen bg-black/80 fixed top-0 left-0'
-          : 'h-[100vh] hidden z-50 w-screen bg-black/80 fixed top-0 left-0',
+          ? 'h-[100vh] block z-50 w-screen lg:hidden  bg-black/80 fixed top-0 left-0'
+          : 'h-[100vh]  z-50 w-screen hidden  bg-black/80 fixed top-0 left-0',
       ]"
     ></div>
   
@@ -93,8 +93,8 @@
     <div
     :class="[
       show
-        ? 'h-[90%] w-[100%] overflow-y-auto block z-50  top-6  fixed  inset-0 '
-        : 'h-[90%] w-[100%] hidden z-50 overflow-y-auto  md:px-0 px-6 top-6 fixed inset-0 m-auto ',
+        ? 'h-[90%] w-[100%] overflow-y-auto  z-50 lg:hidden block top-6  fixed  inset-0 '
+        : 'h-[90%] w-[100%]  z-50 overflow-y-auto hidden md:px-0 px-6 top-6 fixed inset-0 m-auto ',
     ]"
   >
   <div class="z-40  pt-4 px-4 pb-10 top-0  bg-[#1C2C3C]">
@@ -215,8 +215,8 @@
         <div class="text-center pt-5">
             <h5 class="text-white font-bold text-sm">Some odds have changed.</h5>
             <p class="text-white/80 ">Please review and accept changes</p>
-            <div class="flex gap-2 justify-center items-center pt-4 px-3">
-                <button class="bg-[#0C49BE] w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md">Accept changes</button>
+            <div class="flex flex-wrap gap-2 justify-center items-center pt-4 px-3">
+                <button class="bg-[#0C49BE] sm:w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md">Accept changes</button>
                 <div class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" width="1em" height="1em" viewBox="0 0 24 24">
                     <rect width="24" height="24" fill="none" />

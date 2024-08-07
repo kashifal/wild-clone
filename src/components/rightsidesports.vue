@@ -97,7 +97,7 @@
     </div>
 </div>
     </div>
-    <div class="z-40 overflow-hidden lg:block hidden h-screen p-1.5 w-[24%] fixed right-0 top-16 bg-[#1C2C3C]">
+    <div class="z-40 overflow-hidden lg:block hidden h-screen p-1.5 w-[31%] xl:w-[24%] fixed right-0 top-16 bg-[#1C2C3C]">
         <div class="flex justify-between mt-8 items-center gap-2">
             <div class="flex items-center  gap-3">
                 <label class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]" for="switchToggle"
@@ -215,7 +215,7 @@
             <div class="text-center pt-5">
                 <h5 class="text-white font-bold text-sm">Some odds have changed.</h5>
                 <p class="text-white/80 ">Please review and accept changes</p>
-                <div class="flex gap-2 justify-center items-center pt-4 px-3">
+                <div class="flex flex-wrap gap-2 justify-center items-center pt-4 px-3">
                     <button class="bg-[#0C49BE] w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md">Accept changes</button>
                     <div class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" width="1em" height="1em" viewBox="0 0 24 24">

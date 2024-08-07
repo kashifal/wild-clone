@@ -18,7 +18,7 @@ import Result from "../pages/Results.vue";
 import Football from "../pages/Football.vue";
 import Dashboard from "../pages/Dashboard.vue";
 import InPlay from "../pages/In-play.vue";
-import SportsBet from "../pages/sportsbet.vue";
+import SportsBet from "../pages/SportsBet.vue";
 
 const router = createRouter({
   history: createWebHistory(),
