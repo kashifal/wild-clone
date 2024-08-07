@@ -115,7 +115,9 @@
         >
         <img src="../assets/logo.svg" alt="" class="w-32 h-auto">
       </router-link>
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-8 text-white" width="1em" height="1em" viewBox="0 0 21 21">
+        <svg
+        @click="modalFunc"
+        xmlns="http://www.w3.org/2000/svg" class="w-6 h-8 text-white" width="1em" height="1em" viewBox="0 0 21 21">
           <rect width="21" height="21" fill="none" />
           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m15.5 15.5l-10-10zm0-10l-10 10" />
         </svg>

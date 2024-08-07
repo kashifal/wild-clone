@@ -5,7 +5,7 @@
     
         <div class="sm:px-4 lg:flex justify-between gap-5 py-6 px-4">
     
-            <div class="lg:w-[69%] w-full">
+            <div class="xl:w-[69%] w-[100%]">
               <div class="flex w-full flex-col gap-6">
                 <div class="relative w-full">
                   <img src="../assets/profit.avif" alt="" class="h-40 rounded object-cover w-full">

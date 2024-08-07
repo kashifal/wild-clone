@@ -97,11 +97,26 @@
         : 'h-[90%] w-[100%]  z-50 overflow-y-auto hidden md:px-0 px-6 top-6 fixed inset-0 m-auto ',
     ]"
   >
-  <div class="z-40  pt-4 px-4 pb-10 top-0  bg-[#1C2C3C]">
-    <div class="flex justify-between mt-3 items-center gap-2">
+  <div class="z-40   pb-10 top-0  bg-[#1C2C3C]">
+    <div class="flex   w-full  border-b bg-[#273E50] border-[#415565] items-center min-h-16 justify-between">
+      <div class="flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1 ">
+         
+          <p class="text-sm uppercase font-bold">Best Slip</p>
+      </div>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="rotate-180 cursor-pointer text-[#526573] hover:text-white w-6 h-6"  width="1em" height="1em" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="none" />
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 15l6-6l6 6" />
+      </svg>
+
+      <div class="flex px-6 h-full cursor-pointer items-center hover:text-white text-[#526573] gap-1 ">
+          <p class="text-sm uppercase font-bold">My Bets</p>
+      </div>
+  </div>
+    <div class="flex justify-between px-4 mt-3 items-center gap-2">
         <div class="flex items-center  gap-3">
-            <label class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]" for="switchToggle"
-><input class="peer sr-only" id="switchToggle" type="checkbox" />
+            <label class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]" for="switchhToggle"
+><input class="peer sr-only" id="switchhToggle" type="checkbox" />
 <span class="absolute inset-0 m-auto h-2.5 rounded-full bg-stone-600"> </span>
 <span class="peer-che peer-checked:[&amp;_>_*]:scale-0 absolute inset-y-0 start-0 m-auto size-3.5 rounded-full bg-[#CFCFCF] transition-all peer-checked:start-4 peer-checked:bg-[#F44336]"> </span>
 </label> 
@@ -119,7 +134,7 @@
             <p class="text-white/70 text-sm">Setting</p>
          </div>
     </div>
-    <div class="py-2  mt-8">
+    <div class="py-2  px-4 mt-8">
         <div class="flex py-2 justify-between gap-1 px-2 items-center">
             <h4 class="uppercase  cursor-pointer text-white/50 text-xs hover:text-white">Singles</h4>
             <h4 class="uppercase cursor-pointer text-xs text-white">Combo</h4>
