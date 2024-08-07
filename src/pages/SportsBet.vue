@@ -5,7 +5,7 @@
     
         <div class="sm:px-0 w-full  justify-between gap-5 py-4 px-4">
     
-            <div class="lg:w-[75.3%] w-full">
+            <div class="lg:w-[70.4%] w-full">
                 <div class="bg-[url('./assets/badminton.avif')] bg-cover w-full h-fit  px-3 bg-black/70 bg-blend-multiply">
                     <div class="flex items-center text-[#A0A0A2] font-medium text-sm gap-3  py-1">
                         <div class="flex items-center gap-2">
@@ -330,7 +330,7 @@
             </div>
            
         </div>
-    <BottomBar />
+    <BottomBarSports />
     </div>
 </template>
 
@@ -340,7 +340,7 @@ import SportsSidebar from "../components/SportsSidebar.vue";
 import rightsidesports from "../components/rightsidesports.vue";
 import SportCards from "../components/SportCards.vue";
 import Footer from '../components/Footer.vue';
-import BottomBar from '../components/BottomBar.vue';
+import BottomBarSports from "../components/BottomBarSports.vue";
 import Footersport from "../components/Footersport.vue";
 const show = ref(false);
 
