@@ -3,7 +3,7 @@
 
   <div class="xl:pl-64 w-full bg-[#091B29]">
     <div class="sm:px-0 w-full justify-between gap-5 py-4 px-4">
-      <div class="lg:w-[70.4%] 2xl:px-4 w-full">
+      <div class="xl:w-[70.4%] 2xl:px-4 w-full">
         <div
           class="bg-[url('./assets/badminton.avif')] bg-cover mx-auto w-full h-fit px-3 bg-black/70 bg-blend-multiply"
         >
