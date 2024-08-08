@@ -155,6 +155,16 @@
           </svg>
         </div>
       </div>
+      <div class="">
+        <img src="../assets/bg.jpg" alt="" class="h-40 hover:scale-150 transition-all duration-500 object-cover w-full">
+    </div>
+    <div class="flex items-center justify-center group text-[#77808A]  hover:text-white cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2 px-4 gap-1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="1em" height="1em" viewBox="0 0 24 24">
+          <rect width="24" height="24" fill="none" />
+          <path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V5h14zM9 17H7v-5h2zm4 0h-2V7h2zm4 0h-2v-7h2z" />
+      </svg>
+      <p class="text-sm ">Sports</p>
+    </div>
       <!-- Div - Hidden and Show -->
       <div
         :class="[

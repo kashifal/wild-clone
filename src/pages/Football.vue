@@ -5,7 +5,7 @@
     
         <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
     
-            <div class="xl:w-[70%] w-full">
+            <div class="xl:w-[74.7%] w-full">
                 
            <div class="bg-[url('./assets/footballbg.png')] w-full  bg-cover bg-center">
             <div class="flex gap-2 pb-5 px-3 py-3 items-center">
