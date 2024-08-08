@@ -95,7 +95,7 @@
         >
       </div>
 
-      <div class="group" >
+      <div class="group">
         <router-link
           to="/"
           @click="casinoFunc"
@@ -148,7 +148,12 @@
           class="flex w-full border-b bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
         >
           <div
-            class="flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1"
+            @click="combo = true"
+            :class="[
+              combo
+                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+                : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
+            ]"
           >
             <p class="text-sm uppercase font-bold">Best Slip</p>
           </div>
@@ -166,13 +171,18 @@
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="1.5"
+              stroke-width="3"
               d="m6 15l6-6l6 6"
             />
           </svg>
 
           <div
-            class="flex px-6 h-full cursor-pointer items-center hover:text-white text-[#526573] gap-1"
+            @click="combo = false"
+            :class="[
+              !combo
+                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+                : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
+            ]"
           >
             <p class="text-sm uppercase font-bold">My Bets</p>
           </div>
@@ -224,7 +234,8 @@
             <p class="text-white/70 text-sm">Setting</p>
           </div>
         </div>
-        <div class="py-2 px-4 mt-8">
+        <!-- code here -->
+        <div v-if="combo" class="py-2 px-4 mt-8">
           <div class="flex py-2 justify-between gap-1 px-2 items-center">
             <h4
               class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
@@ -402,6 +413,7 @@ const HIDE = ref(false);
 function SidemodalFunc() {
   HIDE.value = !HIDE.value;
 }
+const combo = ref(true);
 
 const bets = useBetStore();
 
