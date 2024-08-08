@@ -241,7 +241,14 @@
             <p class="text-sm uppercase font-bold">My Bets</p>
           </div>
         </div>
-        <div :class="[bottomBar ? 'px-2' : 'px-2.5 hidden']">
+        <div class="px-1 py-3 ml-2 w-full buttonsRightSide">
+        <div class="flex p-1 w-full mx-auto justify-between whitespace-nowrap bg-[#2B4658] rounded-full">
+          <button class="px-[18px] w-1/3 text-sm bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold">All</button>
+          <button class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C]  rounded-full py-1.5 text-white font-semibold">Opened</button>
+          <button class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C]  rounded-full py-1.5 text-white font-semibold">Setteled</button>
+      </div>
+    </div>
+        <div :class="[bottomBar ? 'px-2 hidden' : 'px-2.5 hidden']">
           <div class="flex justify-between mt-8 items-center gap-2">
             <div class="flex items-center gap-3">
               <label
@@ -441,8 +448,8 @@
       <div
         :class="[
           bottomBar
-            ? 'text-center pt-5 bottom-10 w-full z-50 absolute'
-            : 'text-center pt-5 bottom-10 w-full z-50 absolute hidden',
+            ? 'text-center hidden pt-5 bottom-10 w-full z-50 absolute'
+            : 'text-center hidden pt-5 bottom-10 w-full z-50 absolute',
         ]"
       >
         <h5 class="text-white font-bold text-sm">Some odds have changed.</h5>
@@ -542,6 +549,23 @@ const removeBetFunc = (id) => {
 }
 
 .sidebar::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent track background */
+}
+
+.buttonsRightSide {
+  overflow-y: scroll;
+}
+/* Custom scrollbar styles */
+.buttonsRightSide::-webkit-scrollbar {
+  height: 2px; /* Width of the scrollbar */
+}
+
+.buttonsRightSide::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Gray color for the scrollbar thumb */
+  border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
+}
+
+.buttonsRightSide::-webkit-scrollbar-track {
   background-color: transparent; /* Transparent track background */
 }
 </style>
