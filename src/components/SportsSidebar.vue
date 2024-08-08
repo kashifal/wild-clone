@@ -4,7 +4,9 @@
   >
   <div class="relative">
   <div class="flex flex-col py-5">
-    <div class="flex items-center  cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3">
+    <div
+    @click="SearchModalSports"
+    class="flex items-center  cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#77808A]" width="1em" height="1em" viewBox="0 0 24 24">
         <rect width="24" height="24" fill="none" />
         <path fill="currentColor" fill-rule="evenodd" d="m16.325 14.899l5.38 5.38a1.008 1.008 0 0 1-1.427 1.426l-5.38-5.38a8 8 0 1 1 1.426-1.426M10 16a6 6 0 1 0 0-12a6 6 0 0 0 0 12" />
@@ -357,9 +359,88 @@
   </div>
 </div>
   </div>
+
+
+  <div class="">
+    <div
+      @click="SearchModalSports"
+      :class="[
+        show
+          ? 'h-[100vh] block z-50 w-screen bg-[#1F3342] bg-opacity-50 fixed top-0 left-0'
+          : 'h-[100vh] hidden z-50 w-screen bg-[#1F3342] bg-opacity-50 fixed top-0 left-0',
+      ]"
+    ></div>
+
+    <div
+      :class="[
+        show
+          ? 'h-[90%]  overflow-y-auto block z-50 md:px-0 px-6  rounded-lg fixed inset-0  m-auto'
+          : 'h-[90%]  hidden z-50 overflow-y-auto  md:px-0 px-6 rounded-lg fixed inset-0 m-auto',
+      ]"
+    >
+      <div class="bg-[#1C2C3C] rounded-2xl p-3 sm:p-5 mx-auto max-w-5xl h-[90vh]" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+        <div class="flex items-center gap-4">
+        <div class="relative w-full mt-5 flex items-center">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search"
+            class="block  placeholder:font-medium sm:placeholder:text-lg  placeholder:text-xs w-full placeholder:truncate rounded-[8px] border-0 bg-[#1C2C3C] py-4 pl-12 placeholder:text-[#77808A] shadow-sm ring-1 ring-inset ring-[#28333E] text-white sm:text-sm sm:leading-6"
+          />
+          <div class="text-[#77808A] absolute right-3 font-bold text-sm hover:text-white cursor-not-allowed">Clear</div>
+          <div class="absolute left-3">
+            <span class=" flex pr-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="size-6 text-[#77808A]"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+          <div
+            class="w-8 h-8 mt-5 rounded-lg text-[#77808A] hover:text-white hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 "
+              width="1em"
+              height="1em"
+              viewBox="0 0 21 21"
+            >
+              <rect width="21" height="21" fill="none" />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m15.5 15.5l-10-10zm0-10l-10 10"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="text-[#77808A] text-center font-bold w-full py-3 text-lg  hover:text-white ">Type at least 3 letters</div>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+
+const show = ref(false);
+function SearchModalSports() {
+  show.value = !show.value;
+}
+</script>
 
 <style>
 .sidebar {
