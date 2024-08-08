@@ -156,15 +156,30 @@
         </div>
       </div>
       <div class="">
-        <img src="../assets/bg.jpg" alt="" class="h-40 hover:scale-150 transition-all duration-500 object-cover w-full">
-    </div>
-    <div class="flex items-center justify-center group text-[#77808A]  hover:text-white cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2 px-4 gap-1">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="1em" height="1em" viewBox="0 0 24 24">
+        <img
+          src="../assets/bg.jpg"
+          alt=""
+          class="h-40 hover:scale-150 transition-all duration-500 object-cover w-full"
+        />
+      </div>
+      <div
+        class="flex items-center justify-center group text-[#77808A] hover:text-white cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2 px-4 gap-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
           <rect width="24" height="24" fill="none" />
-          <path fill="currentColor" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V5h14zM9 17H7v-5h2zm4 0h-2V7h2zm4 0h-2v-7h2z" />
-      </svg>
-      <p class="text-sm ">Sports</p>
-    </div>
+          <path
+            fill="currentColor"
+            d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H5V5h14zM9 17H7v-5h2zm4 0h-2V7h2zm4 0h-2v-7h2z"
+          />
+        </svg>
+        <p class="text-sm">Sports</p>
+      </div>
       <!-- Div - Hidden and Show -->
       <div
         :class="[
@@ -226,14 +241,28 @@
             <p class="text-sm uppercase font-bold">My Bets</p>
           </div>
         </div>
-        <div class="px-1 py-3 ml-2 w-full buttonsRightSide">
-        <div class="flex p-1 w-full mx-auto justify-between whitespace-nowrap bg-[#2B4658] rounded-full">
-          <button class="px-[18px] w-1/3 text-sm bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold">All</button>
-          <button class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C]  rounded-full py-1.5 text-white font-semibold">Opened</button>
-          <button class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C]  rounded-full py-1.5 text-white font-semibold">Setteled</button>
-      </div>
-    </div>
-        <div :class="[bottomBar ? 'px-2 hidden' : 'px-2.5 hidden']">
+        <div v-if="!combo" class="px-1 py-3 ml-2 w-full buttonsRightSide">
+          <div
+            class="flex p-1 w-full mx-auto justify-between whitespace-nowrap bg-[#2B4658] rounded-full"
+          >
+            <button
+              class="px-[18px] w-1/3 text-sm bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold"
+            >
+              All
+            </button>
+            <button
+              class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold"
+            >
+              Opened
+            </button>
+            <button
+              class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold"
+            >
+              Setteled
+            </button>
+          </div>
+        </div>
+        <div v-else :class="[bottomBar ? 'px-2 ' : 'px-2.5 hidden']">
           <div class="flex justify-between mt-8 items-center gap-2">
             <div class="flex items-center gap-3">
               <label
@@ -431,9 +460,10 @@
         </div>
       </div>
       <div
+        v-if="combo"
         :class="[
           bottomBar
-            ? 'text-center hidden pt-5 bottom-10 w-full z-50 absolute'
+            ? 'text-center  pt-5 bottom-10 w-full z-50 absolute'
             : 'text-center hidden pt-5 bottom-10 w-full z-50 absolute',
         ]"
       >
