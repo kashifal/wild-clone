@@ -8,4 +8,7 @@ import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
 const sidebar = useSidebarStore();
+onMounted(() => {
+  router.push("/");
+});
 </script>
