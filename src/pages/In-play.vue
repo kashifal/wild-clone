@@ -3,7 +3,7 @@
     
     <div class="xl:pl-64 bg-[#091B29]">
     
-        <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
+        <div class="md:px-4 flex justify-between gap-5 py-6">
     
             <div class="xl:w-[74.7%] 2xl:w-[76%] w-full">
     
@@ -11,7 +11,7 @@
     
                 <div class="py-5">
     
-                  <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
+                  <div class="flex flex-wrap px-3 justify-between items-center gap-3">
     
                     <h1 class="font-bold text-xl text-white">In-Play</h1>
 
@@ -32,7 +32,7 @@
 
                       <p class="text-white text-sm">Only with video</p>
 
-                      <div class="flex p-1 bg-[#2B4658] rounded-full">
+                      <div class="md:flex hidden p-1 bg-[#2B4658] rounded-full">
                         <button class="px-7 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2  text-[#0C49BE] transition-all duration-500 font-bold">All</button>
                         <button class="px-4 text-sm hover:bg-[#1C2C3C] rounded-full py-2 hover:text-white  text-[#B5BEC5] transition-all duration-500 font-bold">Sports</button>
                         <button class="px-4 text-sm hover:bg-[#1C2C3C] rounded-full py-2  hover:text-white text-[#B5BEC5] transition-all duration-500 font-bold">Esports</button> 
@@ -47,7 +47,13 @@
                     </div>
 
                 </div>
-
+                <div class="px-3">
+                <div class="flex p-1 mt-3 md:hidden bg-[#2B4658] justify-center rounded-full">
+                    <button class="px-7 w-1/3 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2  text-[#0C49BE] transition-all duration-500 font-bold">All</button>
+                    <button class="px-4 w-1/3 text-sm hover:bg-[#1C2C3C] rounded-full py-2 hover:text-white  text-[#B5BEC5] transition-all duration-500 font-bold">Sports</button>
+                    <button class="px-4 w-1/3 text-sm hover:bg-[#1C2C3C] rounded-full py-2  hover:text-white text-[#B5BEC5] transition-all duration-500 font-bold">Esports</button> 
+                </div>
+            </div>
                     <div class="flex flex-row gap-[2px] boxscr w-[100%] overflow-x-auto justify-between pt-5">
                         <div class="bg-[#1C2C3C] hover:bg-[#214058] transition-all duration-500 min-w-[84px] rounded-l-md h-[70px] cursor-pointer flex flex-col items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-[#F67C0B]  w-9 h-9" width="1em" height="1em" viewBox="0 0 24 24">

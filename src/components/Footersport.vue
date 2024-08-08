@@ -1,4 +1,5 @@
 <template>
+    <div class="px-3">
     <footer class="w-full  border-t  border-gray-600 mt-10 pt-20 pb-40">
         <div class="max-w-7xl mx-auto">
             <div class="flex xl:flex-row flex-col gap-4 lg:gap-6 xl:gap-12 2xl:gap-12 justify-between ">
@@ -98,6 +99,7 @@
            
         </div>
     </footer>
+</div>
 </template>
 
 <script setup></script>

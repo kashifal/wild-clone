@@ -28,10 +28,11 @@
           <div class="w-4 h-2 bg-[#0C49BE] cursor-pointer rounded-full"></div>
         </div>
            </div>
-           <div class="px-4 ">
+           <div class="md:px-4 ">
               <SportCards />
 
              <div class="py-5">
+              <div class="px-4 md:px-0">
               <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
   
                 <h1 class="font-bold text-xl text-white">Top leagues</h1>
@@ -52,6 +53,7 @@
                 </div>
 
             </div>
+          </div>
             <div class="flex gap-1 boxscr pt-4 whitespace-nowrap overflow-x-auto">
               <button class="flex text-white text-sm items-center gap-1 bg-[#1C2C3C] px-2 py-1.5 rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-[#77808A] w-5 h-5"  width="1em" height="1em" viewBox="0 0 24 24">
@@ -74,14 +76,14 @@
                 </svg>
                 Football olympic games
               </button>
-              <button class="flex text-white text-sm items-center gap-1 bg-[#1C2C3C] px-2 py-1.5 rounded-full">
+              <button class="md:flex hidden text-white text-sm items-center gap-1 bg-[#1C2C3C] px-2 py-1.5 rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-[#77808A] w-5 h-5"  width="1em" height="1em" viewBox="0 0 24 24">
                   <rect width="24" height="24" fill="none" />
                   <path fill="currentColor" d="M6.014 8.666c-.07-.487-.221-1.066-.402-1.758l-.54-2.076l-.01-.037A10.015 10.015 0 0 1 7.47 3.08l1.632 1.238c.56.424 1.03.781 1.447 1.027c.218.13.437.238.666.316v3.022c-.123.057-.24.13-.351.216l-1.932 1.519a1.814 1.814 0 0 0-.2.183L6.053 9.44a3.73 3.73 0 0 0-.04-.774m-1.968 1.537c-.295.254-.71.537-1.335.961l-.704.479a9.957 9.957 0 0 1 1.865-5.47l.28 1.073c.193.743.321 1.24.378 1.635c.055.376.032.582-.03.748c-.06.165-.174.333-.454.574m1.256 6.682c.695 0 1.28 0 1.759.056c.252.03.493.077.723.154l1.415-1.852a1.848 1.848 0 0 1-.127-.316L8.31 12.4a1.859 1.859 0 0 1-.071-.379l-2.727-1.18a3.732 3.732 0 0 1-.489.498c-.368.317-.856.648-1.436 1.043l-1.492 1.013a9.94 9.94 0 0 0 1.175 3.49zm6.491-6.807a.281.281 0 0 1 .174-.062c.06 0 .12.02.175.062l1.932 1.518c.052.04.091.098.111.166a.36.36 0 0 1 0 .207l-.758 2.526a.33.33 0 0 1-.108.164a.282.282 0 0 1-.178.064h-2.347a.282.282 0 0 1-.178-.065a.33.33 0 0 1-.108-.163l-.759-2.526a.36.36 0 0 1 0-.207a.331.331 0 0 1 .112-.166zm1.584-4.702c.422-.237.9-.584 1.468-.995l1.74-1.262a10.04 10.04 0 0 1 2.35 1.694l-.546 2.095c-.18.692-.331 1.271-.402 1.758a3.74 3.74 0 0 0-.04.77l-2.743 1.167a1.817 1.817 0 0 0-.203-.186l-1.932-1.519a1.797 1.797 0 0 0-.352-.216v-3.01c.226-.072.444-.175.66-.296m-2.063-1.323c-.333-.197-.735-.5-1.337-.957l-.883-.67A9.977 9.977 0 0 1 11.99 2c1.032 0 2.028.157 2.965.448l-.956.693c-.612.443-1.02.738-1.357.927c-.32.18-.507.224-.666.222c-.16-.002-.345-.05-.662-.237m7.662 7.287c.368.316.856.648 1.436 1.042l1.47.998a9.94 9.94 0 0 1-1.176 3.505h-1.858c-.695 0-1.28 0-1.759.056a3.49 3.49 0 0 0-.751.164l-1.59-1.89a1.85 1.85 0 0 0 .114-.288l.76-2.527c.036-.123.06-.25.07-.375l2.792-1.188c.143.18.309.345.492.502m-4.168 7.288c-.201.446-.386 1.014-.606 1.694l-.496 1.532a10.04 10.04 0 0 1-3.253.03l-.506-1.562c-.22-.68-.405-1.248-.606-1.695a3.75 3.75 0 0 0-.356-.634l1.39-1.819c.135.033.275.05.418.05h2.347c.153 0 .303-.02.447-.057l1.559 1.852a3.81 3.81 0 0 0-.338.608m-6.275 2.197c-.237-.73-.396-1.218-.56-1.578c-.155-.345-.283-.5-.418-.6c-.132-.098-.31-.172-.67-.214c-.381-.045-.878-.046-1.627-.046h-.957a10.005 10.005 0 0 0 4.438 3.074zm8.731-2.392c.381-.045.878-.046 1.627-.046h.785a10.01 10.01 0 0 1-4.243 3.005l.183-.567c.237-.73.396-1.218.56-1.578c.155-.345.283-.5.418-.6c.132-.098.31-.172.67-.214M19.47 8.88c.058-.393.187-.891.38-1.634l.273-1.05a9.957 9.957 0 0 1 1.847 5.43l-.68-.461c-.625-.425-1.04-.708-1.335-.962c-.28-.241-.393-.409-.454-.573c-.062-.167-.085-.373-.03-.75" />
                 </svg>
                 Football olympic games
               </button>
-              <button class="flex text-white text-sm items-center gap-1 bg-[#1C2C3C] px-2 py-1.5 rounded-full">
+              <button class="md:flex hidden text-white text-sm items-center gap-1 bg-[#1C2C3C] px-2 py-1.5 rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" class="text-[#77808A] w-5 h-5"  width="1em" height="1em" viewBox="0 0 24 24">
                   <rect width="24" height="24" fill="none" />
                   <path fill="currentColor" d="M6.014 8.666c-.07-.487-.221-1.066-.402-1.758l-.54-2.076l-.01-.037A10.015 10.015 0 0 1 7.47 3.08l1.632 1.238c.56.424 1.03.781 1.447 1.027c.218.13.437.238.666.316v3.022c-.123.057-.24.13-.351.216l-1.932 1.519a1.814 1.814 0 0 0-.2.183L6.053 9.44a3.73 3.73 0 0 0-.04-.774m-1.968 1.537c-.295.254-.71.537-1.335.961l-.704.479a9.957 9.957 0 0 1 1.865-5.47l.28 1.073c.193.743.321 1.24.378 1.635c.055.376.032.582-.03.748c-.06.165-.174.333-.454.574m1.256 6.682c.695 0 1.28 0 1.759.056c.252.03.493.077.723.154l1.415-1.852a1.848 1.848 0 0 1-.127-.316L8.31 12.4a1.859 1.859 0 0 1-.071-.379l-2.727-1.18a3.732 3.732 0 0 1-.489.498c-.368.317-.856.648-1.436 1.043l-1.492 1.013a9.94 9.94 0 0 0 1.175 3.49zm6.491-6.807a.281.281 0 0 1 .174-.062c.06 0 .12.02.175.062l1.932 1.518c.052.04.091.098.111.166a.36.36 0 0 1 0 .207l-.758 2.526a.33.33 0 0 1-.108.164a.282.282 0 0 1-.178.064h-2.347a.282.282 0 0 1-.178-.065a.33.33 0 0 1-.108-.163l-.759-2.526a.36.36 0 0 1 0-.207a.331.331 0 0 1 .112-.166zm1.584-4.702c.422-.237.9-.584 1.468-.995l1.74-1.262a10.04 10.04 0 0 1 2.35 1.694l-.546 2.095c-.18.692-.331 1.271-.402 1.758a3.74 3.74 0 0 0-.04.77l-2.743 1.167a1.817 1.817 0 0 0-.203-.186l-1.932-1.519a1.797 1.797 0 0 0-.352-.216v-3.01c.226-.072.444-.175.66-.296m-2.063-1.323c-.333-.197-.735-.5-1.337-.957l-.883-.67A9.977 9.977 0 0 1 11.99 2c1.032 0 2.028.157 2.965.448l-.956.693c-.612.443-1.02.738-1.357.927c-.32.18-.507.224-.666.222c-.16-.002-.345-.05-.662-.237m7.662 7.287c.368.316.856.648 1.436 1.042l1.47.998a9.94 9.94 0 0 1-1.176 3.505h-1.858c-.695 0-1.28 0-1.759.056a3.49 3.49 0 0 0-.751.164l-1.59-1.89a1.85 1.85 0 0 0 .114-.288l.76-2.527c.036-.123.06-.25.07-.375l2.792-1.188c.143.18.309.345.492.502m-4.168 7.288c-.201.446-.386 1.014-.606 1.694l-.496 1.532a10.04 10.04 0 0 1-3.253.03l-.506-1.562c-.22-.68-.405-1.248-.606-1.695a3.75 3.75 0 0 0-.356-.634l1.39-1.819c.135.033.275.05.418.05h2.347c.153 0 .303-.02.447-.057l1.559 1.852a3.81 3.81 0 0 0-.338.608m-6.275 2.197c-.237-.73-.396-1.218-.56-1.578c-.155-.345-.283-.5-.418-.6c-.132-.098-.31-.172-.67-.214c-.381-.045-.878-.046-1.627-.046h-.957a10.005 10.005 0 0 0 4.438 3.074zm8.731-2.392c.381-.045.878-.046 1.627-.046h.785a10.01 10.01 0 0 1-4.243 3.005l.183-.567c.237-.73.396-1.218.56-1.578c.155-.345.283-.5.418-.6c.132-.098.31-.172.67-.214M19.47 8.88c.058-.393.187-.891.38-1.634l.273-1.05a9.957 9.957 0 0 1 1.847 5.43l-.68-.461c-.625-.425-1.04-.708-1.335-.962c-.28-.241-.393-.409-.454-.573c-.062-.167-.085-.373-.03-.75" />
@@ -92,8 +94,8 @@
              </div>
 
              
-              <div class="py-5">
-  
+              <div class="py-2">
+                <div class="px-4 md:px-0">
                   <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
   
                       <h1 class="font-bold text-xl text-white">In-Play</h1>
@@ -108,6 +110,7 @@
                     </div>
                      </div>
                   </div>
+                </div>
 
                   
                   <div class="flex flex-col gap-1 mt-6">
@@ -125,13 +128,13 @@
               </div>
 
               <div class="py-5">
-    
-                <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
+                <div class="md:px-0 px-4">
+                <div class="flex flex-wrap justify-between items-center gap-3">
   
                   <h1 class="font-bold text-xl text-white">Upcoming</h1>
 
                   <div class="flex flex-wrap items-center gap-3">
-                      <label class="relative h-8 w-7 cursor-pointer [-webkit-tap-highlight-color:_transparent]" for="switch">
+                      <label class="relative md:block hidden h-8 w-7 cursor-pointer [-webkit-tap-highlight-color:_transparent]" for="switch">
 
 <input class="peer sr-only" id="switch" type="checkbox" />
 <span class="absolute inset-0 m-auto h-3  rounded-full bg-stone-600  "></span>
@@ -145,9 +148,9 @@
 
                     </label>
 
-                    <p class="text-white text-sm">Only with video</p>
-
-                    <div class="flex p-1 bg-[#2B4658] rounded-full">
+                    <p class="md:block hidden text-white text-sm">Only with video</p>
+                    <p class=" text-gray-500 md:hidden block text-sm">Show All</p>
+                    <div class=" p-1 md:flex hidden bg-[#2B4658] rounded-full">
                       <button class="px-7 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2  text-[#0C49BE] transition-all duration-500 font-bold">All</button>
                       <button class="px-4 text-sm hover:bg-[#1C2C3C] rounded-full py-2 hover:text-white  text-[#B5BEC5] transition-all duration-500 font-bold">Sports</button>
                       <button class="px-4 text-sm hover:bg-[#1C2C3C] rounded-full py-2  hover:text-white text-[#B5BEC5] transition-all duration-500 font-bold">Esports</button> 
@@ -162,6 +165,7 @@
                   </div>
 
               </div>
+            </div>
 
                   <div class="flex flex-row gap-[2px] boxscr w-[100%] overflow-x-auto justify-between pt-5">
                       <div class="bg-[#1C2C3C] hover:bg-[#214058] transition-all duration-500 min-w-[84px] rounded-l-md h-[70px] cursor-pointer flex flex-col items-center justify-center">

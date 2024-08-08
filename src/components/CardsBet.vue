@@ -60,9 +60,23 @@
                 </div>
               </div>
               <div class="flex items-center gap-2 pl-2">
-                <div class="flex flex-col">
+                <div class=" md:flex hidden flex-col">
                   <p class="text-xs font-bold text-[#0C49BE]">1</p>
                   <p class="text-xs font-bold text-[#0C49BE]">3</p>
+                </div>
+                <div class=" md:hidden flex    flex-col">
+                  <p class="text-xs font-bold text-[#77808A]">Set2</p>
+                  <router-link 
+                  to="/sportsbet"
+                  >
+                  <div class="flex md:hidden sm:justify-start justify-center items-center text-[#B0B5BB]">
+                    <p class="text-xs font-bold text-[#B0B5BB]">17</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                      <rect width="24" height="24" fill="none" />
+                      <path fill="currentColor" d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z" />
+                    </svg>
+                  </div>
+                </router-link>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#77808A]" width="1em" height="1em" viewBox="0 0 24 24">
                   <rect width="24" height="24" fill="none" />
@@ -95,7 +109,7 @@
             <router-link
             to="/sportsbet"
             >
-            <div class="flex sm:justify-start justify-center items-center text-[#B0B5BB]">
+            <div class="md:flex hidden sm:justify-start justify-center items-center text-[#B0B5BB]">
               <p class="text-sm font-bold text-[#B0B5BB]">17</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                 <rect width="24" height="24" fill="none" />
