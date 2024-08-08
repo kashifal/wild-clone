@@ -3,9 +3,9 @@
 
   <div class="xl:pl-64 w-full bg-[#091B29]">
     <div class="sm:px-0 w-full justify-between gap-5 py-4 px-4">
-      <div class="xl:w-[70.4%] 2xl:px-4 w-full">
+      <div class="xl:w-[77%] w-full">
         <div
-          class="bg-[url('./assets/badminton.avif')] bg-cover mx-auto w-full h-fit px-3 bg-black/70 bg-blend-multiply"
+          class="bg-[url('./assets/badminton.avif')] bg-cover w-full mx-auto h-fit px-3 bg-black/70 bg-blend-multiply"
         >
           <div
             class="flex items-center text-[#A0A0A2] font-medium text-sm gap-3 py-4"
@@ -528,6 +528,22 @@ const matches = ref([
   {
     team0: { id: 3, team: "Iran", score: 5 },
     team1: { id: 4, team: "China", score: 6 },
+  },
+  {
+    team0: { id: 5, team: "Iran", score: 5 },
+    team1: { id: 6, team: "China", score: 6 },
+  },
+  {
+    team0: { id: 7, team: "Iran", score: 5 },
+    team1: { id: 8, team: "China", score: 6 },
+  },
+  {
+    team0: { id: 9, team: "Iran", score: 5 },
+    team1: { id: 10, team: "China", score: 6 },
+  },
+  {
+    team0: { id: 11, team: "Iran", score: 5 },
+    team1: { id: 12, team: "China", score: 6 },
   },
 ]);
 
