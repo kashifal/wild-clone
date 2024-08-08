@@ -3,9 +3,9 @@
   
   <div class="xl:pl-64 bg-[#091B29]">
   
-      <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
+      <div class=" flex justify-between gap-5 py-6 ">
   
-          <div class="xl:w-[69%] 2xl:w-[71.6%] w-full">
+          <div class="xl:w-[71%] 2xl:w-[71.6%] w-full">
            <div class="mb-10 relative group overflow-hidden w-full">
             <img src="../assets/tennis.avif" alt="" class="h-44 w-full object-cover">
             <div class="w-5 absolute top-[50%] left-3 cursor-not-allowed group-hover:translate-x-0 transition-all duration-1000 -translate-x-96 -translate-y-[100%] h-5 bg-[#223849] flex items-center justify-center rounded-full">
@@ -28,6 +28,7 @@
           <div class="w-4 h-2 bg-[#0C49BE] cursor-pointer rounded-full"></div>
         </div>
            </div>
+           <div class="px-4 ">
               <SportCards />
 
              <div class="py-5">
@@ -304,6 +305,7 @@
               </div>
               <button class="bg-[#1C2C3C] rounded-md py-3 w-full text-sm mt-2 text-center hover:opacity-90 font-bold text-white">Show all</button>
               <Footersport />
+              </div>
           </div>
   
           <div class="w-[240px]">

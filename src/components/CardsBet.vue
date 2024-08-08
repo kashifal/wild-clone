@@ -11,14 +11,14 @@
         </svg>
         <p class="text-xs font-medium text-[#B0B5BB]">Japan,NPB</p>
       </div>
-      <div class="flex sm:w-1/4 lg:w-1/5 xl:w-1/3 2xl:w-[400px] w-1/3 items-center justify-between gap-1  text-[#B0B5BB]">
+      <div class="flex sm:w-1/4 lg:w-1/5 xl:w-1/4 2xl:w-[400px] w-1/3 items-center justify-between gap-1  text-[#B0B5BB]">
    
         <div class="2xl:flex 2xl:justify-between  items-center 2xl:gap-28">
           <div class="flex sm:w-[110px] w-[50px]  justify-between 2xl:gap-24">
         <p class="text-sm">1</p>
         <p class="text-sm">2</p>
       </div>
-       <div class="2xl:flex items-center justify-end gap-8 w-[150px] relative -left-10 hidden">
+       <div class="2xl:flex items-center justify-end gap-3 w-[155px] relative -left-10 hidden">
           <p class="text-sm">Under</p>
           <p class="text-sm">Total</p>
           <p class="text-sm">Over</p>

@@ -1,7 +1,7 @@
 <template>
   <div class="z-20">
     <div
-      class="fixed lg:hidden z-20 inset-x-0 bottom-0 flex w-full justify-between bg-[#263747] px-4 py-2.5 shadow"
+      class="fixed xl:hidden z-20 inset-x-0 bottom-0 flex w-full justify-between bg-[#263747] px-4 py-2.5 shadow"
       style="z-index: 999"
     >
       <div class="group" @click="modalFunc">
@@ -95,7 +95,7 @@
         >
       </div>
 
-      <div class="group" @click="SearchModal">
+      <div class="group" >
         <router-link
           to="/"
           @click="casinoFunc"
@@ -130,7 +130,7 @@
     <div
       @click="SidemodalFunc"
       :class="[
-        show
+        HIDE
           ? 'h-[100vh] block z-50 w-screen lg:hidden  bg-black/80 fixed top-0 left-0'
           : 'h-[100vh]  z-50 w-screen hidden  bg-black/80 fixed top-0 left-0',
       ]"
@@ -138,7 +138,7 @@
 
     <div
       :class="[
-        show
+        HIDE
           ? 'h-[90%] w-[100%] overflow-y-auto  z-50 lg:hidden block top-6  fixed  inset-0 '
           : 'h-[90%] w-[100%]  z-50 overflow-y-auto hidden md:px-0 px-6 top-6 fixed inset-0 m-auto ',
       ]"
@@ -398,9 +398,9 @@ import { ref } from "vue";
 import { useBetStore } from "../store/bets";
 import { useSidebarStore } from "../store/sidebar";
 const sidebar = useSidebarStore();
-const show = ref(false);
+const HIDE = ref(false);
 function SidemodalFunc() {
-  show.value = !show.value;
+  HIDE.value = !HIDE.value;
 }
 
 const bets = useBetStore();

@@ -101,7 +101,9 @@
           </router-link>
         </div>
         <div>
-          <div class="md:flex hidden lg:hidden">
+          <div class="md:flex hidden lg:hidden"
+          @click="SearchModal"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -598,7 +600,7 @@
           : 'h-[82%]  hidden z-50 overflow-y-auto  md:px-0 px-6 rounded-lg fixed inset-0 m-auto',
       ]"
     >
-      <div class="bg-[#263747] rounded-2xl p-5 mx-auto max-w-xl">
+      <div class="bg-[#263747] rounded-2xl p-3 sm:p-5 mx-auto max-w-xl">
         <div class="flex justify-between items-center gap-3">
           <div class="flex p-1 gap-1 bg-[#192C3D] rounded-full">
             <button
@@ -635,13 +637,13 @@
             </div>
           </button>
         </div>
-        <div class="relative mt-5 cursor-pointer hidden lg:flex items-center">
+        <div class="relative mt-5 cursor-pointer flex items-center">
           <input
             type="text"
             name="search"
             id="search"
             placeholder="Search for Games"
-            class="block cursor-pointer w-full rounded-[8px] border-0 bg-[#2F3F4E] py-[8px] pl-12 placeholder:text-[#CFD2D5] shadow-sm ring-1 ring-inset ring-gray-600 text-white focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            class="block cursor-pointer sm:placeholder:text-[16px] placeholder:text-xs w-full placeholder:truncate rounded-[8px] border-0 bg-[#2F3F4E] py-[8px] pl-12 placeholder:text-[#CFD2D5] shadow-sm ring-1 ring-inset ring-gray-600 text-white focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
           <div class="absolute left-3">
             <span class="border-r flex pr-3 border-gray-600">
