@@ -537,7 +537,7 @@
     <div
       @click="SearchModal"
       :class="[
-        ModalSearch
+        shown
           ? 'h-[100vh] block z-50 w-screen bg-black/80 fixed top-0 left-0'
           : 'h-[100vh] hidden z-50 w-screen bg-black/80 fixed top-0 left-0',
       ]"
@@ -545,7 +545,7 @@
 
     <div
       :class="[
-        ModalSearch
+        shown
           ? 'h-[82%]  overflow-y-auto block z-50 md:px-0 px-6  rounded-lg fixed inset-0  m-auto'
           : 'h-[82%]  hidden z-50 overflow-y-auto  md:px-0 px-6 rounded-lg fixed inset-0 m-auto',
       ]"
@@ -587,7 +587,7 @@
             </div>
           </button>
         </div>
-        <div class="relative mt-5 cursor-pointer hidden lg:flex items-center">
+        <div class="relative mt-5 cursor-pointer flex items-center">
           <input
             type="text"
             name="search"
@@ -754,8 +754,8 @@ function modalFunc() {
   show.value = !show.value;
 }
 
-const ModalSearch = ref(false);
+const shown = ref(false);
 function SearchModal() {
-  ModalSearch.value = !ModalSearch.value;
+  shown.value = !shown.value;
 }
 </script>

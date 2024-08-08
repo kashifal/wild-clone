@@ -139,11 +139,11 @@
     <div
       :class="[
         HIDE
-          ? 'h-[90%] w-[100%] overflow-y-auto  z-50 lg:hidden block top-6  fixed  inset-0 '
-          : 'h-[90%] w-[100%]  z-50 overflow-y-auto hidden md:px-0 px-6 top-6 fixed inset-0 m-auto ',
+          ? 'h-[90%] w-[100%] overflow-y-auto sidebarer z-50 lg:hidden block top-6  fixed  inset-0 '
+          : 'h-[90%] w-[100%]  z-50 overflow-y-auto sidebarer hidden md:px-0 px-6 top-6 fixed inset-0 m-auto ',
       ]"
     >
-      <div class="z-40 pb-10 top-0 bg-[#1C2C3C]">
+      <div class="z-40 pb-10 top-0 h-screen  sidebarer  bg-[#1C2C3C]">
         <div
           class="flex w-full border-b bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
         >
@@ -155,7 +155,7 @@
                 : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
             ]"
           >
-            <p class="text-sm uppercase font-bold">Best Slip</p>
+            <p class="text-sm uppercase font-bold">Bet Slip</p>
           </div>
 
           <svg
@@ -188,7 +188,7 @@
           </div>
         </div>
         <div class="flex justify-between px-4 mt-3 items-center gap-2">
-          <div class="flex items-center gap-3">
+          <div class="flex items-center   gap-3">
             <label
               class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
               for="switchhToggle"
@@ -234,7 +234,28 @@
             <p class="text-white/70 text-sm">Setting</p>
           </div>
         </div>
-        <!-- code here -->
+        <!-- done here -->
+        <div v-if="!combo" class="px-1 py-3 ml-2 w-full buttonsRightSide">
+          <div
+            class="flex p-1 w-full mx-auto justify-between whitespace-nowrap bg-[#2B4658] rounded-full"
+          >
+            <button
+              class="px-[18px] w-1/3 text-sm bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold"
+            >
+              All
+            </button>
+            <button
+              class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold"
+            >
+              Opened
+            </button>
+            <button
+              class="px-[18px] w-1/3 text-sm hover:bg-[#1C2C3C] rounded-full py-1.5 text-white font-semibold"
+            >
+              Setteled
+            </button>
+          </div>
+        </div>
         <div v-if="combo" class="py-2 px-4 mt-8">
           <div class="flex py-2 justify-between gap-1 px-2 items-center">
             <h4
@@ -263,7 +284,71 @@
                 System
               </h4>
             </div>
-            <div class="h-96 sidebar overflow-auto flex flex-col gap-1">
+            <div class="bg-[#273E50] mx-2 my-5 rounded-md p-3 border border-[#343A40]">
+              <div class="flex justify-between items-center gap-1">
+                <div class="flex items-center gap-1.5">
+                  <h1 class="text-white font-medium">Trebles</h1>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="text-[#77808A] w-3.5 h-3.5"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                  >
+                    <rect width="16" height="16" fill="none" />
+                    <path
+                      fill="currentColor"
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2a1 1 0 0 1 0 2"
+                    />
+                  </svg>
+                </div>
+                <div class="flex items-center gap-1">
+                  <div class="flex items-center -space-x-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6 text-[#0C49BE]"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 24 24"
+                    >
+                      <rect width="24" height="24" fill="none" />
+                      <path fill="currentColor" d="m7 15l5-5l5 5z" />
+                    </svg>
+                    <p class="txt-xs font-medium text-white">12.92</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-1">
+                <input
+                  type="number"
+                  class="bg-[#1C2C3C] text-white px-2 py-1.5 rounded-md w-full mt-3"
+                />
+                <p class="text-white/80 mt-2">BTC</p>
+              </div>
+              <div class="grid grid-cols-4 gap-3 pt-4">
+                <div
+                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                >
+                  0.0005
+                </div>
+                <div
+                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                >
+                  0.0005
+                </div>
+                <div
+                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                >
+                  0.0005
+                </div>
+                <div
+                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                >
+                  0.0005
+                </div>
+              </div>
+            </div>
+            <div class="h-36 sidebar overflow-auto flex flex-col gap-1">
               <div
                 v-for="match in bets.all_bets"
                 :key="match"
@@ -427,20 +512,20 @@ const casinoFunc = () => {
 </script>
 
 <style>
-.sidebar {
+.sidebarer {
   overflow-y: scroll;
 }
 /* Custom scrollbar styles */
-.sidebar::-webkit-scrollbar {
+.sidebarer::-webkit-scrollbar {
   width: 2px; /* Width of the scrollbar */
 }
 
-.sidebar::-webkit-scrollbar-thumb {
+.sidebarer::-webkit-scrollbar-thumb {
   background-color: #6b7280; /* Gray color for the scrollbar thumb */
   border-radius: 10px; /* Optional: rounded corners for the scrollbar thumb */
 }
 
-.sidebar::-webkit-scrollbar-track {
+.sidebarer::-webkit-scrollbar-track {
   background-color: transparent; /* Transparent track background */
 }
 </style>

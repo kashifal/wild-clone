@@ -895,21 +895,21 @@
     <div
       @click="SearchModalSports"
       :class="[
-        show
-          ? 'h-[100vh] block z-50 w-screen bg-[#1F3342] bg-opacity-50 fixed top-0 left-0'
-          : 'h-[100vh] hidden z-50 w-screen bg-[#1F3342] bg-opacity-50 fixed top-0 left-0',
+        shown
+          ? 'h-[100vh] block z-50 w-[100vw] bg-[#1F3342] bg-opacity-50 fixed top-0 left-0'
+          : 'h-[100vh] hidden z-50 w-[100vw] bg-[#1F3342] bg-opacity-50 fixed top-0 left-0',
       ]"
     ></div>
 
     <div
       :class="[
-        show
+        shown
           ? 'h-[90%]  overflow-y-auto block z-50 md:px-0 px-6  rounded-lg fixed inset-0  m-auto'
           : 'h-[90%]  hidden z-50 overflow-y-auto  md:px-0 px-6 rounded-lg fixed inset-0 m-auto',
       ]"
     >
       <div
-        class="bg-[#1C2C3C] rounded-2xl p-3 sm:p-5 mx-auto max-w-5xl h-[90vh]"
+        class="bg-[#1C2C3C] rounded-2xl relative p-3 sm:p-5 mx-auto max-w-5xl h-[90vh]"
         style="
           box-shadow:
             rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -919,6 +919,26 @@
             rgba(0, 0, 0, 0.09) 0px -3px 5px;
         "
       >
+      <div
+      @click="SearchModalSports"
+      class="text-gray-400 flex justify-end cursor-pointer hover:text-white">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        width="1em"
+        height="1em"
+        viewBox="0 0 21 21"
+      >
+        <rect width="21" height="21" fill="none" />
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m15.5 15.5l-10-10zm0-10l-10 10"
+        />
+      </svg>
+      </div>
         <div class="flex items-center gap-4">
           <div class="relative w-full mt-5 flex items-center">
             <input
@@ -985,9 +1005,9 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 const router = useRouter();
-const show = ref(false);
+const shown = ref(false);
 function SearchModalSports() {
-  show.value = !show.value;
+  shown.value = !shown.value;
 }
 </script>
 

@@ -9,7 +9,7 @@
           :class="[
             sidebar.casino === 'Casino'
               ? 'hidden'
-              : 'relative sm:h-8 w-4 h-4 flex xl:hidden sm:w-8 hover:bg-green-500 hover:bg-opacity-20 rounded-lg transition-all duration-400 items-center justify-center',
+              : 'relative sm:h-8 w-4 h-4 flex xl:hidden sm:w-8 sm:hover:bg-green-500 hover:bg-opacity-20 rounded-lg transition-all duration-400 items-center justify-center',
           ]"
         >
           <span>
@@ -1120,6 +1120,26 @@
             rgba(0, 0, 0, 0.09) 0px -3px 5px;
         "
       >
+      <div
+      @click="SearchModalSports"
+       class="text-gray-400 flex justify-end hover:text-white cursor-pointer">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        width="1em"
+        height="1em"
+        viewBox="0 0 21 21"
+      >
+        <rect width="21" height="21" fill="none" />
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m15.5 15.5l-10-10zm0-10l-10 10"
+        />
+      </svg>
+      </div>
         <div class="flex items-center gap-4">
           <div class="relative w-full mt-5 flex items-center">
             <input
