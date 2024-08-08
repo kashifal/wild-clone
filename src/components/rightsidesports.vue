@@ -1,6 +1,6 @@
 <template>
   <div
-    class="z-40 xl:block hidden overflow-hidden h-screen w-[24%] fixed right-0 top-16 bg-[#1C2C3C]"
+    class="z-40 xl:block hidden overflow-hidden h-screen w-[20%] fixed right-0 top-16 bg-[#1C2C3C]"
   >
     <div class="relative h-full">
       <div
@@ -155,21 +155,41 @@
           </svg>
         </div>
       </div>
+      <!-- Div - Hidden and Show -->
       <div
-        class="h-[500px] sidebar overflow-auto top-[20%] bg-[#1C2C3C] absolute w-full"
+        :class="[
+          bottomBar
+            ? ' h-[500px] sidebar overflow-auto top-[14%] bg-[#1C2C3C] absolute w-full'
+            : 'h-[120px] sidebar overflow-auto bottom-[0%] bg-[#1C2C3C] absolute w-full',
+        ]"
       >
         <div
-          class="flex w-full border-b bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
+          class="flex w-full border-b sticky top-0 z-50 bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
         >
           <div
-            class="flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1"
+            @click="combo = true"
+            :class="[
+              combo
+                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+                : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
+            ]"
           >
-            <p class="text-sm uppercase font-bold">Best Slip</p>
+            <p class="text-sm uppercase font-bold">
+              Combo
+              <span class="px-2 ml-2 rounded-full py-0.5 bg-blue-400">{{
+                bets.all_bets.length
+              }}</span>
+            </p>
           </div>
 
           <svg
+            @click="bottomBar = !bottomBar"
             xmlns="http://www.w3.org/2000/svg"
-            class="rotate-180 cursor-pointer text-[#526573] hover:text-white w-6 h-6"
+            :class="[
+              bottomBar
+                ? 'rotate-180 cursor-pointer font-bold text-[#526573] hover:text-white w-6 h-6'
+                : 'rotate-270 cursor-pointer font-bold   text-[#526573] hover:text-white w-6 h-6',
+            ]"
             width="1em"
             height="1em"
             viewBox="0 0 24 24"
@@ -180,18 +200,23 @@
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="1.5"
+              stroke-width="3"
               d="m6 15l6-6l6 6"
             />
           </svg>
 
           <div
-            class="flex px-6 h-full cursor-pointer items-center hover:text-white text-[#526573] gap-1"
+            @click="combo = false"
+            :class="[
+              !combo
+                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+                : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
+            ]"
           >
             <p class="text-sm uppercase font-bold">My Bets</p>
           </div>
         </div>
-        <div class="px-2.5">
+        <div :class="[bottomBar ? 'px-2' : 'px-2.5 hidden']">
           <div class="flex justify-between mt-8 items-center gap-2">
             <div class="flex items-center gap-3">
               <label
@@ -257,8 +282,13 @@
                 System
               </h4>
             </div>
-            <div class="h-60 sidebar overflow-auto flex flex-col gap-1">
-              <div class="bg-[#273E50] rounded-md p-3 border border-[#343A40]">
+
+            <div class="h-80 sidebar overflow-auto flex flex-col gap-1">
+              <div
+                v-for="bet in bets.all_bets"
+                :key="bet"
+                class="bg-[#273E50] rounded-md p-3 border border-[#343A40]"
+              >
                 <div class="flex justify-between items-center gap-1">
                   <div class="flex items-center gap-1.5">
                     <svg
@@ -275,7 +305,7 @@
                       />
                     </svg>
                     <h6 class="text-white truncate text-sm font-medium">
-                      Match Winner ・ China (Wom)
+                      Match Winner ・ {{ bet.team }} (Wom)
                     </h6>
                   </div>
                   <div class="flex items-center gap-1">
@@ -290,12 +320,15 @@
                         <rect width="24" height="24" fill="none" />
                         <path fill="currentColor" d="m7 15l5-5l5 5z" />
                       </svg>
-                      <p class="txt-xs font-medium text-white">1.92</p>
+                      <p class="txt-xs font-medium text-white">
+                        {{ bet.score }}
+                      </p>
                     </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="text-white/80 cursor-pointer w-4 h-4"
                       width="1em"
+                      @click="removeBetFunc(bet.id)"
                       height="1em"
                       viewBox="0 0 15 15"
                     >
@@ -311,59 +344,7 @@
                 </div>
                 <p class="text-white/80 text-sm">China (Wom) — Turkiye (Wom)</p>
               </div>
-              <div class="bg-[#273E50] rounded-md p-3 border border-[#343A40]">
-                <div class="flex justify-between items-center gap-1">
-                  <div class="flex items-center gap-1.5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-3 h-3 text-[#F4D136]"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <rect width="512" height="512" fill="none" />
-                      <path
-                        fill="currentColor"
-                        d="M511.8 267.4c-26.1 8.7-53.4 13.8-81 15.1C440 177.2 399.3 78.3 327.6 10.1C434.1 41.1 512 139.5 512 256c0 3.8-.1 7.6-.2 11.4m-3.9 34.7c-5.8 32-17.6 62-34.2 88.7c-97.5 48.5-217.7 42.6-311.9-24.5c23.7-36.2 55.4-67.7 94.5-91.8c79.9 43.2 170.1 50.8 251.6 27.6m-236-55.5C269.4 155.7 230.8 73.9 170 14.9C196.8 5.2 225.8 0 256 0c2.7 0 5.3 0 7.9.1c90.8 60.2 145.7 167.2 134.7 282.3c-43.1-2.4-86.4-14.1-126.8-35.9zM138 28.8c20.6 18.3 38.7 39.4 53.7 62.6C95.9 136.1 30.6 220.8 7.3 316.9C2.5 297.4 0 277 0 256C0 157.2 56 71.5 138 28.8m69.6 90.5c19.5 38.6 31 81.9 32.3 127.7c-77.4 47.6-129 121.9-149.7 204c-24.2-20.6-44.6-45.6-59.8-73.8c6.7-108.7 71.9-209.9 177.1-257.9zM256 512c-50.7 0-98-14.7-137.8-40.2c5.6-27 14.8-53.1 27.4-77.7c86.6 60.5 192.5 74.7 287.4 46.9c-46 44-108.3 71-177 71"
-                      />
-                    </svg>
-                    <h6 class="text-white truncate text-sm font-medium">
-                      Match Winner ・ China (Wom)
-                    </h6>
-                  </div>
-                  <div class="flex items-center gap-1">
-                    <div class="flex items-center -space-x-1">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-6 h-6 text-[#0C49BE]"
-                        width="1em"
-                        height="1em"
-                        viewBox="0 0 24 24"
-                      >
-                        <rect width="24" height="24" fill="none" />
-                        <path fill="currentColor" d="m7 15l5-5l5 5z" />
-                      </svg>
-                      <p class="txt-xs font-medium text-white">1.92</p>
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="text-white/80 cursor-pointer w-4 h-4"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 15 15"
-                    >
-                      <rect width="15" height="15" fill="none" />
-                      <path
-                        fill="currentColor"
-                        fill-rule="evenodd"
-                        d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <p class="text-white/80 text-sm">China (Wom) — Turkiye (Wom)</p>
-              </div>
+
               <div class="bg-[#273E50] rounded-md p-3 border border-[#343A40]">
                 <div class="flex justify-between items-center gap-1">
                   <div class="flex items-center gap-1.5">
@@ -429,87 +410,94 @@
                 </div>
               </div>
             </div>
-            <div class="text-center pt-5">
-              <h5 class="text-white font-bold text-sm">
-                Some odds have changed.
-              </h5>
-              <p class="text-white/80">Please review and accept changes</p>
-              <div
-                class="flex flex-wrap gap-2 justify-center items-center pt-4 px-3"
-              >
-                <button
-                  class="bg-[#0C49BE] w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md"
-                >
-                  Accept changes
-                </button>
-                <div
-                  class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                  >
-                    <rect width="24" height="24" fill="none" />
-                    <path
-                      fill="currentColor"
-                      d="M22 18.605a.75.75 0 0 1-.75.75h-5.1a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h7.74a2.93 2.93 0 0 1 5.66 0h5.1a.75.75 0 0 1 .75.75m0-13.21a.75.75 0 0 1-.75.75H18.8a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h10.39a2.93 2.93 0 0 1 5.66 0h2.45a.74.74 0 0 1 .75.75m0 6.6a.74.74 0 0 1-.75.75H9.55a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h1.14a2.93 2.93 0 0 1 5.66 0h11.7a.75.75 0 0 1 .75.75"
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 1024 1024"
-                  >
-                    <rect width="1024" height="1024" fill="none" />
-                    <path
-                      fill="currentColor"
-                      d="M608 704v160a96 96 0 0 1-192 0V704h-96a128 128 0 0 1-128-128h640a128 128 0 0 1-128 128zM192 512V128.064h640V512z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <button
-                class="hover:bg-[#0C49BE] flex items-center justify-center gap-1 mt-6 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
-              >
-                Share Bet
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                >
-                  <rect width="24" height="24" fill="none" />
-                  <path
-                    fill="currentColor"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z"
-                  />
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
+      </div>
+      <div
+        :class="[
+          bottomBar
+            ? 'text-center pt-5 bottom-10 w-full z-50 absolute'
+            : 'text-center pt-5 bottom-10 w-full z-50 absolute hidden',
+        ]"
+      >
+        <h5 class="text-white font-bold text-sm">Some odds have changed.</h5>
+        <p class="text-white/80">Please review and accept changes</p>
+        <div class="flex flex-wrap gap-2 justify-center items-center pt-4 px-3">
+          <button
+            class="bg-[#0C49BE] w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md"
+          >
+            Accept changes
+          </button>
+          <div
+            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <rect width="24" height="24" fill="none" />
+              <path
+                fill="currentColor"
+                d="M22 18.605a.75.75 0 0 1-.75.75h-5.1a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h7.74a2.93 2.93 0 0 1 5.66 0h5.1a.75.75 0 0 1 .75.75m0-13.21a.75.75 0 0 1-.75.75H18.8a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h10.39a2.93 2.93 0 0 1 5.66 0h2.45a.74.74 0 0 1 .75.75m0 6.6a.74.74 0 0 1-.75.75H9.55a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h1.14a2.93 2.93 0 0 1 5.66 0h11.7a.75.75 0 0 1 .75.75"
+              />
+            </svg>
+          </div>
+          <div
+            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              width="1em"
+              height="1em"
+              viewBox="0 0 1024 1024"
+            >
+              <rect width="1024" height="1024" fill="none" />
+              <path
+                fill="currentColor"
+                d="M608 704v160a96 96 0 0 1-192 0V704h-96a128 128 0 0 1-128-128h640a128 128 0 0 1-128 128zM192 512V128.064h640V512z"
+              />
+            </svg>
+          </div>
+        </div>
+        <button
+          class="hover:bg-[#0C49BE] flex items-center justify-center gap-1 mt-6 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
+        >
+          Share Bet
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <rect width="24" height="24" fill="none" />
+            <path
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 </template>
 <script setup>
 import { useBetStore } from "../store/bets";
+import { ref } from "vue";
 const bets = useBetStore();
+const bottomBar = ref(true);
+const removeFunc = (id) => {};
 
-const removeFunc = (id) => {
+const combo = ref(true);
+
+const removeBetFunc = (id) => {
   bets.removeBet(id);
 };
 </script>
