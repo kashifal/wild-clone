@@ -5,7 +5,7 @@
     
         <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
     
-            <div class="xl:w-[70%] w-full">
+            <div class="xl:w-[74.7%] 2xl:w-[76%] w-full">
            
   
                 <div class="py-5 ">

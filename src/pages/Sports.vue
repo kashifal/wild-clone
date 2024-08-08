@@ -5,7 +5,7 @@
   
       <div class=" flex justify-between gap-5 py-6 ">
   
-          <div class="xl:w-[71%] 2xl:w-[71.6%] w-full">
+          <div class="xl:w-[75.3%] 2xl:w-[76.3%] w-full">
            <div class="mb-10 relative group overflow-hidden w-full">
             <img src="../assets/tennis.avif" alt="" class="h-44 w-full object-cover">
             <div class="w-5 absolute top-[50%] left-3 cursor-not-allowed group-hover:translate-x-0 transition-all duration-1000 -translate-x-96 -translate-y-[100%] h-5 bg-[#223849] flex items-center justify-center rounded-full">
