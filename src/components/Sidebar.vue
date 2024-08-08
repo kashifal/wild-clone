@@ -485,7 +485,11 @@
       >
         <router-link to="/Game">
           <div
-            class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+            :class="[
+              router.currentRoute.value.fullPath === '/Game'  
+            ? 'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            : 'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            ]"
           >
             <img src="../assets/playgames.svg" alt="" class="w-5 h-5" />
             <h3 class="text-sm text-white/80 group-hover:text-white">
@@ -496,7 +500,11 @@
 
         <router-link to="/slot">
           <div
-            class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+            :class="[
+              router.currentRoute.value.fullPath === '/slot' 
+            ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            ]"
           >
             <img src="../assets/slot.svg" alt="" class="w-5 h-5" />
             <h3 class="text-sm text-white/80 group-hover:text-white">Slots</h3>
@@ -505,7 +513,11 @@
 
         <router-link to="/livecasino">
           <div
-            class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+            :class="[
+              router.currentRoute.value.fullPath === '/livecasino' 
+            ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            ]"
           >
             <img src="../assets/live casino.svg" alt="" class="w-5 h-5" />
             <h3 class="text-sm text-white/80 group-hover:text-white">
@@ -516,7 +528,11 @@
 
         <router-link to="/tablegames">
           <div
-            class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+            :class="[
+              router.currentRoute.value.fullPath === '/tablegames' 
+            ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            ]"
           >
             <img src="../assets/tablegam.svg" alt="" class="w-5 h-5" />
             <h3 class="text-sm text-white/80 group-hover:text-white">
@@ -530,7 +546,11 @@
       >
         <router-link to="/promotion">
           <div
-            class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+            :class="[
+              router.currentRoute.value.fullPath === '/promotion' 
+            ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+            ]"
           >
             <img src="../assets/promo.svg" alt="" class="w-5 h-5" />
             <h3 class="text-sm text-white/80 group-hover:text-white">
@@ -541,7 +561,11 @@
 
         <router-link
           to="/tournament"
-          class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+          :class="[
+            router.currentRoute.value.fullPath === '/tournament' 
+          ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          ]"
         >
           <img src="../assets/tournament.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">
@@ -550,7 +574,11 @@
         </router-link>
         <router-link
           to="/vipclub"
-          class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+          :class="[
+            router.currentRoute.value.fullPath === '/vipclub' 
+          ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          ]"
         >
           <img src="../assets/Vipclub.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">VIP Club</h3>
@@ -558,7 +586,11 @@
 
         <router-link
           to="/challenge"
-          class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+          :class="[
+            router.currentRoute.value.fullPath === '/challenge' 
+          ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          ]"
         >
           <img src="../assets/challenges.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">
@@ -571,7 +603,11 @@
       >
         <router-link
           to="/live"
-          class="rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2"
+          :class="[
+            router.currentRoute.value.fullPath === '/live' 
+          ?  'rounded-md bg-white group cursor-pointer bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          :  'rounded-md hover:bg-white group cursor-pointer hover:bg-opacity-[6%] py-2.5 px-3 text-white flex items-center gap-2'
+          ]"
         >
           <img src="../assets/live.svg" alt="" class="w-5 h-5" />
           <h3 class="text-sm text-white/80 group-hover:text-white">
@@ -585,7 +621,8 @@
 
 <script setup>
 import { useSidebarStore } from "../store/sidebar";
-
+import { useRouter } from "vue-router";
+const router = useRouter();
 const sidebar = useSidebarStore();
 </script>
 

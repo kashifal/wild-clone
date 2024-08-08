@@ -1,4 +1,5 @@
 <template>
+    <Sidebar />
     <div class="bg-[#0A1C2D]  h-fit flex items-center justify-center">
         <div class="md:w-[400px] relative h-[90vh] overflow-hidden w-full mx-auto  rounded-2xl bg-gradient-to-b from-[#1B3A52] to-[#A3AEB6]" style="background: linear-gradient(to bottom, #1B3A52 80%, #A3AEB6 100%);">
           <div class="p-5">
@@ -78,7 +79,9 @@
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Sidebar from '../components/Sidebar.vue';
+</script>
 
 <style>
 .box {
