@@ -202,17 +202,17 @@
                     <div class="flex flex-col gap-1 mt-6">
                     <div class="">
                       
-                        <CardsBet />
+                      <CardsBet :items="[1, 2]" />
                         
                       </div>
                       <div class="">
                        
-                        <CardsBet />
+                        <CardsBet :items="[1, 2, 3]" />
                         
                       </div>
                       <div class="">
                        
-                        <CardsBet />
+                        <CardsBet :items="[1, 2]" />
                         
                       </div>
                     </div>

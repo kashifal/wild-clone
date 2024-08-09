@@ -1,5 +1,5 @@
 <template>
-  <div class="" v-if="items.length === 2">
+  <div class="" v-if="items?.length === 2">
     <div
       class="flex items-center justify-between rounded-t-md border-b border-[#283D4B] bg-[#1C2C3C] p-2"
     >
@@ -28,7 +28,7 @@
         class="flex sm:w-1/4 lg:w-1/5 xl:w-1/4 2xl:w-[400px] w-1/3 items-center justify-between gap-1 text-[#B0B5BB]"
       >
         <div class="2xl:flex 2xl:justify-between items-center 2xl:gap-28">
-          <div class="flex sm:w-[110px] w-[50px] justify-between 2xl:gap-24">
+          <div class="md:flex hidden sm:w-[110px] w-[50px] justify-between 2xl:gap-24">
             <p class="text-sm">1</p>
             <p class="text-sm">2</p>
           </div>
@@ -438,7 +438,7 @@
     </div>
   </div>
 
-  <div class="" v-if="items.length === 3">
+  <div class="" v-if="items?.length === 3">
     <div
       class="flex items-center justify-between rounded-t-md border-b border-[#283D4B] bg-[#1C2C3C] p-2"
     >
@@ -464,15 +464,16 @@
         <p class="text-xs font-medium text-[#B0B5BB]">Japan,NPB</p>
       </div>
       <div
-        class="flex sm:w-1/4 lg:w-1/5 xl:w-1/4 2xl:w-[400px] w-1/3 items-center justify-between gap-1 text-[#B0B5BB]"
+        class="flex sm:w-1/3 md:w-[300px] lg:w-[300px] xl:w-[300px] 2xl:w-[400px] w-1/3 items-center justify-between gap-1 text-[#B0B5BB]"
       >
-        <div class="2xl:flex 2xl:justify-between items-center 2xl:gap-28">
-          <div class="flex sm:w-[110px] w-[50px] justify-between 2xl:gap-24">
+        <div class="2xl:flex 2xl:justify-between mx-auto items-center 2xl:gap-28">
+          <div class="md:flex hidden sm:w-[110px] md:w-[200px] lg:w-[200px] xl:w-[200px] 2xl:w-[150px] mx-auto w-[50px] justify-between 2xl:gap-14">
             <p class="text-sm">1</p>
+            <p class="text-sm">X</p>
             <p class="text-sm">2</p>
           </div>
           <div
-            class="2xl:flex items-center justify-end gap-3 w-[155px] relative -left-10 hidden"
+            class="2xl:flex items-center justify-end gap-3 2xl:gap-6 w-[155px] 2xl:w-[120px] relative -left-10 hidden"
           >
             <p class="text-sm">Under</p>
             <p class="text-sm">Total</p>
@@ -586,14 +587,31 @@
         <div class="sm:flex 2xl:w-1/2 w-full items-center gap-1 md:w-auto">
           <div class="flex w-full justify-between gap-[2px]">
             <button
-              class="flex w-1/2 cursor-not-allowed justify-center gap-2 rounded-l-md bg-[#273E50] px-10 py-3 text-center transition-all duration-500 hover:bg-opacity-50"
+              class="flex w-1/2 xl:px-7 md:px-7 cursor-not-allowed justify-between 2xl:px-5 gap-2 rounded-l-md bg-[#273E50] px-2 sm:px-8 py-3 text-center transition-all duration-500 hover:bg-opacity-50"
             >
-              <p class="text-sm font-bold text-white">12.00</p>
+              <p class="text-sm block 2xl:block md:hidden text-gray-400">1</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#526573]" width="1em" height="1em" viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="none" />
+                <path fill="currentColor" d="M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1t3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15t-.587-1.412T12 13t-1.412.588T10 15t.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3t-2.125.875T9 6z" />
+              </svg>
             </button>
             <button
-              class="flex w-1/2 cursor-not-allowed justify-center gap-2 rounded-r-md bg-[#273E50] px-10 py-3 text-center transition-all duration-500 hover:bg-opacity-50"
+            class="flex w-1/2 xl:px-7 md:px-7 cursor-not-allowed justify-between 2xl:px-5 gap-2 bg-[#273E50] px-2 sm:px-8 py-3 text-center transition-all duration-500 hover:bg-opacity-50"
+          >
+            <p class="text-sm block 2xl:block md:hidden text-gray-400">X</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#526573]" width="1em" height="1em" viewBox="0 0 24 24">
+              <rect width="24" height="24" fill="none" />
+              <path fill="currentColor" d="M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1t3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15t-.587-1.412T12 13t-1.412.588T10 15t.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3t-2.125.875T9 6z" />
+            </svg>
+          </button>
+            <button
+              class="flex w-1/2 md:px-7 xl:px-7 cursor-not-allowed items-center justify-between 2xl:px-5 gap-2 rounded-r-md bg-[#273E50] px-2 sm:px-8 py-3 text-center transition-all duration-500 hover:bg-opacity-50"
             >
-              <p class="text-sm font-bold text-white">12.00</p>
+              <p class="text-sm block 2xl:block md:hidden text-gray-400">2</p>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#526573]" width="1em" height="1em" viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="none" />
+                <path fill="currentColor" d="M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1t3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15t-.587-1.412T12 13t-1.412.588T10 15t.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3t-2.125.875T9 6z" />
+              </svg>
             </button>
           </div>
           <div
@@ -602,7 +620,8 @@
             <button
               class="flex w-1/3 cursor-not-allowed justify-center gap-2 rounded-l-md bg-[#273E50] px-6 py-3 text-center transition-all duration-500 hover:bg-opacity-50"
             >
-              <p class="text-sm font-bold text-white">12.00</p>
+              <p class="text-sm font-bold  text-white">12.00</p>
+             
             </button>
             <button
               class="flex w-1/3 cursor-not-allowed justify-center gap-2 px-6 py-3 text-center transition-all duration-500 hover:bg-opacity-50"
