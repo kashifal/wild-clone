@@ -30,7 +30,7 @@
         </svg>
       </div>
     </div>
-    <div class="text-xs rounded-b-md bg-[#1C2C3C] px-3 pt-3 pb-2 font-bold text-[#B0B5BB]">
+    <div class="text-xs  bg-[#1C2C3C] px-3 pt-3 pb-2 font-bold text-[#B0B5BB]">
         <div class="divide w-full flex-col items-center justify-between gap-3  flex md:flex-row">
           <div class="sm:flex-row justify-between flex-col flex w-full gap-3">
             <p class="truncatex text-xs font-semibold truncate text-[#B0B5BB]">Inning 5</p>
@@ -128,7 +128,131 @@
           </svg>
         </div>
       </div>
-
+      <div class="rounded-b-md bg-[#1C2C3C] p-4 mt-[2px]">
+        <div class="">
+        <div class="flex items-center justify-between px-3 gap-2">
+          <h3 class="text-white font-semibold text-sm">Double Chance</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#828B94]" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2L9.19 8.62L2 9.24l5.45 4.73L5.82 21z" />
+          </svg>
+        </div>
+        <div class="flex md:flex-row flex-col  w-full pt-3  justify-between gap-[2px]">
+          <button class="flex md:w-1/2  w-full cursor-not-allowed justify-between gap-2 rounded-t-md md:rounded-t-none md:rounded-bl-md bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">1X</p>
+            <h6 class="text-white text-sm">1.75</h6>
+          </button>
+          <button class="flex md:w-1/2  w-full cursor-not-allowed justify-between gap-2  bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">12</p>
+            <h6 class="text-white text-sm">1.23</h6>
+          </button>
+          <button class="flex md:w-1/2 w-full cursor-not-allowed justify-between gap-2 md:rounded-b-none rounded-b-md md:rounded-br-md bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">X2</p>
+            <h6 class="text-white text-sm">1.35</h6>
+          </button>
+        </div>
+      </div>
+      <div class="pt-4">
+        <div class="flex items-center justify-between px-3 gap-2">
+          <h3 class="text-white font-semibold text-sm">Team 1 Total Goals</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#828B94]" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2L9.19 8.62L2 9.24l5.45 4.73L5.82 21z" />
+          </svg>
+        </div>
+        <div class="flex md:flex-row flex-col w-full pt-3 justify-between gap-[2px]">
+          <button class="flex w-full md:w-1/2  cursor-not-allowed justify-between gap-2 md:rounded-t-none rounded-t-md md:rounded-bl-md bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">Over (1.5)</p>
+            <h6 class="text-white text-sm">1.79</h6>
+          </button>
+          <button class="flex md:w-1/2 w-full  cursor-not-allowed justify-between gap-2 md:rounded-b-none rounded-b-md md:rounded-br-md  bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">Under (0.5)</p>
+            <h6 class="text-white text-sm">1.44</h6>
+          </button>
+          
+        </div>
+      </div>
+      <div class="pt-4">
+        <div class="flex items-center justify-between px-3 gap-2">
+          <h3 class="text-white font-semibold text-sm">Team 2 Total Goals</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#828B94]" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2L9.19 8.62L2 9.24l5.45 4.73L5.82 21z" />
+          </svg>
+        </div>
+        <div class="flex md:flex-row flex-col w-full pt-3 justify-between gap-[2px]">
+          <button class="flex md:w-1/2 w-full cursor-not-allowed justify-between gap-2 md:rounded-t-none rounded-t-md md:rounded-bl-md bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">Over (1.5)</p>
+            <h6 class="text-white text-sm">1.09</h6>
+          </button>
+          <button class="flex md:w-1/2 w-full cursor-not-allowed justify-between gap-2 md:rounded-b-none rounded-b-md md:rounded-br-md  bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">Under (0.5)</p>
+            <h6 class="text-white text-sm">1.34</h6>
+          </button>
+          
+        </div>
+      </div>
+      <div class="pt-4">
+        <div class="flex items-center justify-between px-3 gap-2">
+          <h3 class="text-white font-semibold text-sm">Goals Handicap</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#828B94]" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2L9.19 8.62L2 9.24l5.45 4.73L5.82 21z" />
+          </svg>
+        </div>
+        <div class="flex md:flex-row flex-col w-full pt-3 justify-between gap-[2px]">
+          <button class="flex md:w-1/2 w-full cursor-not-allowed justify-between gap-2 md:rounded-t-none rounded-t-md md:rounded-bl-md bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">CSM Targu Jiu (+1.5)</p>
+            <h6 class="text-white text-sm">1.32</h6>
+          </button>
+          <button class="flex md:w-1/2 w-full cursor-not-allowed justify-between gap-2 md:rounded-b-none rounded-b-md md:rounded-br-md  bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">CS Vulturii Farcasesti (-1.5)</p>
+            <h6 class="text-white text-sm">3.10</h6>
+          </button>
+          
+        </div>
+      </div>
+      <div class="pt-4">
+        <div class="flex items-center justify-between px-3 gap-2">
+          <h3 class="text-white font-semibold text-sm">Draw No Bet</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#828B94]" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2L9.19 8.62L2 9.24l5.45 4.73L5.82 21z" />
+          </svg>
+        </div>
+        <div class="flex md:flex-row flex-col w-full pt-3 justify-between gap-[2px]">
+          <button class="flex w-full md:w-1/2  cursor-not-allowed justify-between gap-2 md:rounded-t-none rounded-t-md md:rounded-bl-md bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">CSM Targu Jiu</p>
+            <h6 class="text-white text-sm">1.52</h6>
+          </button>
+          <button class="flex w-full md:w-1/2  cursor-not-allowed justify-between gap-2 md:rounded-b-none rounded-b-md md:rounded-br-md  bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">CS Vulturii Farcasesti</p>
+            <h6 class="text-white text-sm">1.46</h6>
+          </button>
+          
+        </div>
+      </div>
+      <div class="pt-4">
+        <div class="flex items-center justify-between px-3 gap-2">
+          <h3 class="text-white font-semibold text-sm">Both Teams To Score</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#828B94]" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2L9.19 8.62L2 9.24l5.45 4.73L5.82 21z" />
+          </svg>
+        </div>
+        <div class="flex md:flex-row flex-col w-full pt-3 justify-between gap-[2px]">
+          <button class="flex md:w-1/2 w-full cursor-not-allowed justify-between gap-2 md:rounded-t-none rounded-t-md md:rounded-bl-md bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">Yes</p>
+            <h6 class="text-white text-sm">1.99</h6>
+          </button>
+          <button class="flex md:w-1/2 w-full cursor-not-allowed justify-between gap-2 md:rounded-b-none rounded-b-md md:rounded-br-md  bg-[#273E50] px-4 py-3 text-center transition-all duration-500 hover:bg-opacity-50">
+            <p class="text-sm  text-[#828B94]">No</p>
+            <h6 class="text-white text-sm">1.64</h6>
+          </button>
+          
+        </div>
+      </div>
+      </div>
       </div>
 </template>
 
