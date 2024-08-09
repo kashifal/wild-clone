@@ -3,7 +3,7 @@
     
     <div class="xl:pl-64 bg-[#091B29]">
     
-        <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
+        <div class="md:px-4 flex justify-between gap-5 py-6 ">
     
             <div class="xl:w-[74.7%] w-full">
            
@@ -13,8 +13,8 @@
   
                
                 <div class="py-5">
-    
-                    <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
+                  <div class="px-4 md:px-0">
+                    <div class="flex flex-wrap justify-between items-center gap-3">
     
                         <h1 class="font-bold text-xl text-white">In-Play</h1>
     
@@ -28,6 +28,7 @@
                       </div>
                        </div>
                     </div>
+                  </div>
   
                     
                     <div class="flex flex-col gap-1 mt-6">
@@ -44,7 +45,7 @@
                 </div>
   
                 <div class="py-5">
-      
+                  <div class="md:px-0 px-4">
                   <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
     
                     <h1 class="font-bold text-xl text-white">Upcoming</h1>
@@ -60,6 +61,7 @@
                     </div>
   
                 </div>
+              </div>
   
                     <div class="flex flex-row gap-[2px] boxscr w-[100%] overflow-x-auto justify-between pt-5">
                         <div class="bg-[#1C2C3C] hover:bg-[#214058] transition-all duration-500 min-w-[84px] rounded-l-md h-[70px] cursor-pointer flex flex-col items-center justify-center">
@@ -203,7 +205,7 @@
                 </div>
                 <button class="bg-[#1C2C3C] rounded-md py-3 w-full text-sm mt-2 text-center hover:opacity-90 font-bold text-white">Show all</button>
                 <div class="py-5">
-                  <h1 class="text-white font-bold text-xl">Leagues</h1>
+                  <h1 class="text-white md:pl-0 pl-4 font-bold text-xl">Leagues</h1>
                   <div class="flex flex-col gap-[2px] pt-5">
                     <div class="bg-[#1C2C3C] px-3 py-2.5 group  text-[#7C858F] hover:text-white cursor-pointer hover:bg-opacity-80 rounded-md flex justify-between items-center gap-2">
                       <div class="flex gap-2 items-center">

@@ -3,19 +3,19 @@
     
     <div class="xl:pl-64 bg-[#091B29]">
     
-        <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
+        <div class="md:px-4 flex justify-between gap-5 py-6">
     
             <div class="xl:w-[74.7%] 2xl:w-[76%] w-full">
            
   
                 <div class="py-5 ">
       
-                  <div class="flex  sm:flex-row flex-col justify-between items-center gap-3">
+                  <div class="flex md:px-0 px-4 flex-wrap justify-between items-center gap-3">
     
                     <h1 class="font-bold text-xl text-white">Upcoming</h1>
   
                     <div class="flex flex-wrap items-center gap-3">
-                        <div class="flex rounded-full bg-[#2B4658] p-1"><button class="rounded-full bg-[#1C2C3C] px-7 py-2 text-sm font-bold text-[#0C49BE] transition-all duration-500 hover:bg-[#091B29]">All</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Sports</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Esports</button></div>
+                        <div class="md:flex hidden rounded-full bg-[#2B4658] p-1"><button class="rounded-full bg-[#1C2C3C] px-7 py-2 text-sm font-bold text-[#0C49BE] transition-all duration-500 hover:bg-[#091B29]">All</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Sports</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Esports</button></div>
 
                     <div class="bg-[#2B4658] rounded-full h-9 hover:bg-[#1C2C3C] transition-all duration-500 text-[#80909B] cursor-pointer w-9 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" width="1em" height="1em" viewBox="0 0 24 24">
@@ -25,6 +25,13 @@
                     </div>
                     </div>
   
+                </div>
+                <div class="px-4">
+                <div class="flex md:hidden rounded-full mt-2 bg-[#2B4658] p-1">
+                    <button class="rounded-full w-1/3 bg-[#1C2C3C] px-7 py-2 text-sm font-bold text-[#0C49BE] transition-all duration-500 hover:bg-[#091B29]">All</button>
+                    <button class="rounded-full w-1/3 px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Sports</button>
+                    <button class="rounded-full w-1/3 px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Esports</button>
+                </div>
                 </div>
                 <div class="">
                     <div class="flex flex-row gap-[2px] boxscr w-[100%] overflow-x-auto justify-between pt-5">
@@ -148,7 +155,7 @@
                       
                         
                         </div>
-                        <div class="flex justify-center pt-5">
+                        <div class="md:flex hidden justify-center pt-5">
                         <nav class="isolate mx-auto inline-flex gap-[2px] justify-center rounded-md" aria-label="Pagination">
                             <a href="#" class="relative inline-flex  items-center bg-[#1C2C3C]  rounded-l px-2 py-2.5 text-white ">
                               <span class="sr-only">Previous</span>
@@ -172,10 +179,29 @@
                             </a>
                           </nav>
                         </div>
+                        <div class="flex md:hidden justify-center pt-5">
+                            <nav class="isolate mx-auto inline-flex gap-[2px] justify-center rounded-md" aria-label="Pagination">
+                                <a href="#" class="relative inline-flex  items-center bg-[#1C2C3C]  rounded-l px-2 py-2.5 text-white ">
+                                  <span class="sr-only">Previous</span>
+                                  <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                                  </svg>
+                                </a>
+                                <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+                                <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-[#1C2C3C] px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">1/10</a>
+                                
+                                <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 bg-[#1C2C3C] focus:z-20 text-white focus:outline-offset-0">
+                                  <span class="sr-only">Next</span>
+                                  <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                                  </svg>
+                                </a>
+                              </nav>
+                            </div>
                         </div>
                     <div class="flex flex-col gap-1 mt-6">
                     <div class="">
-                     
+                      
                         <CardsBet />
                         
                       </div>
@@ -190,7 +216,7 @@
                         
                       </div>
                     </div>
-                    <div class="flex justify-center pt-5">
+                    <div class="md:flex hidden justify-center pt-5">
                         <nav class="isolate mx-auto inline-flex gap-[2px] justify-center rounded-md" aria-label="Pagination">
                             <a href="#" class="relative inline-flex  items-center bg-[#1C2C3C]  rounded-l px-2 py-2.5 text-white ">
                               <span class="sr-only">Previous</span>
@@ -214,10 +240,29 @@
                             </a>
                           </nav>
                         </div>
+                        <div class="flex md:hidden justify-center pt-5">
+                            <nav class="isolate mx-auto inline-flex gap-[2px] justify-center rounded-md" aria-label="Pagination">
+                                <a href="#" class="relative inline-flex  items-center bg-[#1C2C3C]  rounded-l px-2 py-2.5 text-white ">
+                                  <span class="sr-only">Previous</span>
+                                  <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                                  </svg>
+                                </a>
+                                <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+                                <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-[#1C2C3C] px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">1/10</a>
+                                
+                                <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 bg-[#1C2C3C] focus:z-20 text-white focus:outline-offset-0">
+                                  <span class="sr-only">Next</span>
+                                  <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                                  </svg>
+                                </a>
+                              </nav>
+                            </div>
                 </div>
                
                 
-                <Footersport />
+               <Footersport />
             </div>
     
             <div class="w-[240px]">
@@ -227,7 +272,7 @@
             </div>
     
         </div>
-    <BottomBarSport />
+    <BottomBarSport/>
     </div>
   </template>
   
@@ -239,7 +284,7 @@
   import SportCards from "../components/SportCards.vue";
   import Footer from '../components/Footer.vue';
   import BottomBarSport from '../components/BottomBarSports.vue';
-  import Footersport from "../components/Footersport.vue";
+import Footersport from "../components/Footersport.vue";
   const show = ref(false);
   
   function modalFunc() {

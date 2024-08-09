@@ -3,7 +3,7 @@
     
     <div class="xl:pl-64 bg-[#091B29]">
     
-        <div class="sm:px-4 flex justify-between gap-5 py-6 px-4">
+        <div class="md:px-4 flex justify-between gap-5 py-6 ">
     
             <div class="xl:w-[74.7%] w-full">
                 
@@ -41,7 +41,7 @@
                
                 <div class="py-5">
     
-                    <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
+                    <div class="flex flex-wrap md:px-0 px-4 justify-between items-center gap-3">
     
                         <h1 class="font-bold text-xl text-white">In-Play</h1>
     
@@ -63,7 +63,7 @@
   
                 <div class="py-5">
       
-                  <div class="flex sm:flex-row flex-col justify-between items-center gap-3">
+                  <div class="flex flex-wrap md:px-0 px-4 justify-between items-center gap-3">
     
                     <h1 class="font-bold text-xl text-white">Upcoming</h1>
   
@@ -99,7 +99,7 @@
 
 
                 <div class="py-5">
-                    <h1 class="text-white font-bold text-xl">Outrights</h1>
+                    <h1 class="text-white font-bold md:pl-0 pl-4 text-xl">Outrights</h1>
                     <div class="flex flex-col gap-[2px] pt-5">
                         <div class="">
                             <h1 class="text-white font-bold px-3 py-3">Next Permanent Manchester United Manager</h1>
@@ -193,7 +193,7 @@
 
 
                 <div class="py-5">
-                  <h1 class="text-white font-bold text-xl">Leagues</h1>
+                  <h1 class="text-white font-bold md:pl-0 pl-4 text-xl">Leagues</h1>
                   <div class="flex flex-col gap-[2px] pt-5">
                     <div class="bg-[#1C2C3C] px-3 py-2.5 group  text-[#7C858F] hover:text-white cursor-pointer hover:bg-opacity-80 rounded-md flex justify-between items-center gap-2">
                       <div class="flex gap-2 items-center">
