@@ -495,6 +495,13 @@
           </div>
         </div>
       </div>
+
+      <div
+        v-if="combo && bets.all_bets.length <= 0"
+        class="text-center pt-5 bottom-40 w-full z-50 absolute"
+      >
+        Here
+      </div>
       <div
         v-if="combo && bets.all_bets.length > 0"
         :class="[
