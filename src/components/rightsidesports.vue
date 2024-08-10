@@ -496,7 +496,7 @@
         </div>
       </div>
       <div
-        v-if="combo"
+        v-if="combo && bets.all_bets.length > 0"
         :class="[
           bottomBar
             ? 'text-center  pt-5 bottom-16 w-full z-50 absolute'
