@@ -446,7 +446,7 @@
         <h4
           class="uppercase flex md:flex-col flex-row leading-none text-xs text-white md:space-x-0 space-x-1 text-left"
         >
-          <span class="text-[#0C49BE]">Refer</span>
+          <span class="text-[#3FC02F]">Refer</span>
           <p class="whitespace-nowrap">a Friend</p>
         </h4>
       </div>

@@ -25,7 +25,7 @@
           <div class="w-2 h-2 bg-[#747E86] cursor-pointer rounded-full"></div>
           <div class="w-2 h-2 bg-[#747E86] cursor-pointer rounded-full"></div>
           <div class="w-2 h-2 bg-[#747E86] cursor-pointer rounded-full"></div>
-          <div class="w-4 h-2 bg-[#0C49BE] cursor-pointer rounded-full"></div>
+          <div class="w-4 h-2 bg-[#3FC02F] cursor-pointer rounded-full"></div>
         </div>
            </div>
            <div class="md:px-4 ">
@@ -151,7 +151,7 @@
                     <p class="md:block hidden text-white text-sm">Only with video</p>
                     <p class=" text-gray-500 md:hidden block text-sm">Show All</p>
                     <div class=" p-1 md:flex hidden bg-[#2B4658] rounded-full">
-                      <button class="px-7 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2  text-[#0C49BE] transition-all duration-500 font-bold">All</button>
+                      <button class="px-7 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2  text-[#3FC02F] transition-all duration-500 font-bold">All</button>
                       <button class="px-4 text-sm hover:bg-[#1C2C3C] rounded-full py-2 hover:text-white  text-[#B5BEC5] transition-all duration-500 font-bold">Sports</button>
                       <button class="px-4 text-sm hover:bg-[#1C2C3C] rounded-full py-2  hover:text-white text-[#B5BEC5] transition-all duration-500 font-bold">Esports</button> 
                   </div>

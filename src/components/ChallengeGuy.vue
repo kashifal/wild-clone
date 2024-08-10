@@ -11,7 +11,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -55,7 +55,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -99,7 +99,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -143,7 +143,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -187,7 +187,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -231,7 +231,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -275,7 +275,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -319,7 +319,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -363,7 +363,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -407,7 +407,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -451,7 +451,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -495,7 +495,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -539,7 +539,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"
@@ -583,7 +583,7 @@
                       <p data-slot="text" class="text-white text-base font-semibold leading-6">Book of Vlad</p>
                       <div class="text-white overflow-hidden text-sm leading-5">
                         First to hit&nbsp;
-                        <span class="text-[#0C49BE]">5555x</span> with min&nbsp;
+                        <span class="text-[#3FC02F]">5555x</span> with min&nbsp;
                         <span class="text-white text-sm"
                           ><span class="text-primary"
                             ><span class="flex items-center truncate"

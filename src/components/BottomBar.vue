@@ -387,7 +387,7 @@
             <h4
               class="uppercase flex md:flex-col flex-row leading-none text-xs text-white md:space-x-0 space-x-1 text-left"
             >
-              <span class="text-[#0C49BE]">Refer</span>
+              <span class="text-[#3FC02F]">Refer</span>
               <p class="whitespace-nowrap">a Friend</p>
             </h4>
           </div>
@@ -655,7 +655,7 @@
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                class="w-6 text-[#3FC02F] group-hover:block hidden transition-all duration-700 h-auto"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -689,7 +689,7 @@
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                class="w-6 text-[#3FC02F] group-hover:block hidden transition-all duration-700 h-auto"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -723,7 +723,7 @@
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                class="w-6 text-[#3FC02F] group-hover:block hidden transition-all duration-700 h-auto"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"

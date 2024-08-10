@@ -15,7 +15,7 @@
                     <h1 class="font-bold text-xl text-white">Upcoming</h1>
   
                     <div class="flex flex-wrap items-center gap-3">
-                        <div class="md:flex hidden rounded-full bg-[#2B4658] p-1"><button class="rounded-full bg-[#1C2C3C] px-7 py-2 text-sm font-bold text-[#0C49BE] transition-all duration-500 hover:bg-[#091B29]">All</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Sports</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Esports</button></div>
+                        <div class="md:flex hidden rounded-full bg-[#2B4658] p-1"><button class="rounded-full bg-[#1C2C3C] px-7 py-2 text-sm font-bold text-[#3FC02F] transition-all duration-500 hover:bg-[#091B29]">All</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Sports</button><button class="rounded-full px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Esports</button></div>
 
                     <div class="bg-[#2B4658] rounded-full h-9 hover:bg-[#1C2C3C] transition-all duration-500 text-[#80909B] cursor-pointer w-9 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" width="1em" height="1em" viewBox="0 0 24 24">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="px-4">
                 <div class="flex md:hidden rounded-full mt-2 bg-[#2B4658] p-1">
-                    <button class="rounded-full w-1/3 bg-[#1C2C3C] px-7 py-2 text-sm font-bold text-[#0C49BE] transition-all duration-500 hover:bg-[#091B29]">All</button>
+                    <button class="rounded-full w-1/3 bg-[#1C2C3C] px-7 py-2 text-sm font-bold text-[#3FC02F] transition-all duration-500 hover:bg-[#091B29]">All</button>
                     <button class="rounded-full w-1/3 px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Sports</button>
                     <button class="rounded-full w-1/3 px-4 py-2 text-sm font-bold text-[#B5BEC5] transition-all duration-500 hover:bg-[#1C2C3C] hover:text-white">Esports</button>
                 </div>
@@ -164,7 +164,7 @@
                               </svg>
                             </a>
                             <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
-                            <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-[#1C2C3C] px-4 py-2 text-sm font-semibold text-[#0C49BE] focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">1</a>
+                            <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-[#1C2C3C] px-4 py-2 text-sm font-semibold text-[#3FC02F] focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">1</a>
                             <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold bg-[#1C2C3C] text-white  focus:z-20 focus:outline-offset-0">2</a>
                             <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold bg-[#1C2C3C] text-white   focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
                             <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold bg-[#1C2C3C] text-white   focus:z-20 focus:outline-offset-0 md:inline-flex">4</a>
@@ -225,7 +225,7 @@
                               </svg>
                             </a>
                             <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
-                            <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-[#1C2C3C] px-4 py-2 text-sm font-semibold text-[#0C49BE] focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">1</a>
+                            <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-[#1C2C3C] px-4 py-2 text-sm font-semibold text-[#3FC02F] focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">1</a>
                             <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold bg-[#1C2C3C] text-white  focus:z-20 focus:outline-offset-0">2</a>
                             <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold bg-[#1C2C3C] text-white   focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
                             <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold bg-[#1C2C3C] text-white   focus:z-20 focus:outline-offset-0 md:inline-flex">4</a>

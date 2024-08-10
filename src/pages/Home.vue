@@ -18,7 +18,7 @@
           </h1>
           <h2 class="text-white text-2xl pt-1 font-bold">and 75 Free Spins</h2>
           <button
-            class="text-white py-[11px] my-6 px-7 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#0C49BE] hover:bg-[#0C49BE]"
+            class="text-white py-[11px] my-6 px-7 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#3FC02F] hover:bg-[#3FC02F]"
           >
             <h5 class="text-lg font-semibold">Sign Up Now</h5>
             <em class="text-xs font-medium">Only Takes 30 seconds</em>
@@ -156,7 +156,7 @@
             </h1>
             <h2 class="text-white font-bold">and 75 Free Spins</h2>
             <button
-              class="text-white py-1.5 my-6 px-5 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#0C49BE] hover:bg-[#0C49BE]"
+              class="text-white py-1.5 my-6 px-5 flex flex-col -space-x-2 text-center items-center justify-center rounded-xl bg-[#3FC02F] hover:bg-[#3FC02F]"
             >
               <h5 class="text-lg font-semibold">Sign Up Now</h5>
               <em class="text-xs font-medium">Only Takes 30 seconds</em>
@@ -325,10 +325,10 @@ const sidebar = useSidebarStore();
 
 <style>
 .custom-gradient {
-  background: linear-gradient(85deg, #0c49be0d -0.06%, #0c49be33 102.57%);
+  background: linear-gradient(85deg, #3FC02F0d -0.06%, #3FC02F33 102.57%);
 }
 .custom-gradient:hover {
-  background: linear-gradient(83deg, #0c49be33 -0.06%, #0c49be33 102.57%);
+  background: linear-gradient(83deg, #3FC02F33 -0.06%, #3FC02F33 102.57%);
 }
 
 .element {

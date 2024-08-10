@@ -35,7 +35,7 @@
                                       </svg>
                                       <div class="text-text-default absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 transform-gpu items-center justify-center text-xs font-semibold leading-4">
                                         <div class="relative h-[2.375rem] w-[2.375rem] overflow-visible focus:outline-none focus-visible:outline-none">
-                                          <div class="absolute bg-[#0C49BE] -bottom-1 -right-1 flex h-4 w-4 items-center justify-center overflow-hidden rounded-full text-[8px] text-white">1</div>
+                                          <div class="absolute bg-[#3FC02F] -bottom-1 -right-1 flex h-4 w-4 items-center justify-center overflow-hidden rounded-full text-[8px] text-white">1</div>
                                           <div class="bg-base-primary flex h-[2.375rem] w-[2.375rem] items-center justify-center overflow-hidden rounded-full">
                                             <img alt="User Avatar" src="../assets/profo.webp" loading="lazy" width="38" height="38" decoding="async" data-nimg="1"  style="color: transparent;" />
                                         </div>
@@ -59,32 +59,32 @@
                             <div class="pt-4 flex flex-col gap-4">
                             <div class="">
                                 <label for="fname" class="text-white text-sm font-semibold">First name <span class="text-[#E06059]">*</span></label>
-                                <input type="name" name="fname" id="fname" placeholder="Enter your first name" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
+                                <input type="name" name="fname" id="fname" placeholder="Enter your first name" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
                             </div>
                             <div class="">
                                 <label for="lname" class="text-white text-sm font-semibold">Last name <span class="text-[#E06059]">*</span></label>
-                                <input type="name" name="lname" id="lname" placeholder="Enter your last name" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
+                                <input type="name" name="lname" id="lname" placeholder="Enter your last name" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
                             </div>
                             <div class="">
                                 <label for="email" class="text-[#9DA4A2] text-sm font-semibold">Email</label>
-                                <input type="email" name="email" id="email" disabled placeholder="sanwalsulehri077@gmail.com" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#9DA4A2] bg-[#2F3F4E] px-4">
+                                <input type="email" name="email" id="email" disabled placeholder="sanwalsulehri077@gmail.com" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#9DA4A2] bg-[#2F3F4E] px-4">
                             </div>
                             <div class="">
                                 <label for="uname" class="text-white text-sm font-semibold">Username</label>
-                                <input type="name" name="uname" id="uname" placeholder="Enter your username" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
+                                <input type="name" name="uname" id="uname" placeholder="Enter your username" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
                             </div>
                             <div class="">
                                 <label for="address" class="text-white text-sm font-semibold">Address</label>
-                                <input type="name" name="address" id="address" placeholder="Enter your address" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
+                                <input type="name" name="address" id="address" placeholder="Enter your address" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
                             </div>
                             <div class="">
                                 <label for="city" class="text-white text-sm font-semibold">City</label>
-                                <input type="name" name="city" id="city" placeholder="Enter your city" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
+                                <input type="name" name="city" id="city" placeholder="Enter your city" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
                             </div>
                             <div class="">
                                 <label for="country" class="text-white text-sm font-semibold">Country <span class="text-[#E06059]">*</span></label>
                                 <div class="relative pt-2">
-                                    <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#42505E] bg-[#2F3F4E]  py-2 pl-4 pr-12 text-sm text-[#CFD2D5] outline-[#0C49BE] placeholder:text-gray-400 ">
+                                    <select name="regions" id="regions" class="block w-full appearance-none text-ellipsis rounded-md border border-[#42505E] bg-[#2F3F4E]  py-2 pl-4 pr-12 text-sm text-[#CFD2D5] outline-[#3FC02F] placeholder:text-gray-400 ">
                                       <option value="">Pakistan</option>
                                       <option value="">Turkey</option>
                                       <option value="">Iraq</option>
@@ -105,12 +105,12 @@
                             </div>
                             <div class="">
                                 <label for="postal" class="text-white text-sm font-semibold">Postal code</label>
-                                <input type="name" name="postal" id="postal" placeholder="Enter your postal code" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
+                                <input type="name" name="postal" id="postal" placeholder="Enter your postal code" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
                             </div>
                             <div class="">
                                 <label for="gender" class="text-white text-sm font-semibold">Gender</label>
                                 <div class="relative pt-2">
-                                    <select name="gender" id="gender" class="block w-full appearance-none text-ellipsis rounded-md border border-[#42505E] bg-[#2F3F4E]  py-2 pl-4 pr-12 text-sm text-[#CFD2D5] outline-[#0C49BE] placeholder:text-gray-400 ">
+                                    <select name="gender" id="gender" class="block w-full appearance-none text-ellipsis rounded-md border border-[#42505E] bg-[#2F3F4E]  py-2 pl-4 pr-12 text-sm text-[#CFD2D5] outline-[#3FC02F] placeholder:text-gray-400 ">
                                         <option value="">Select your gender</option>
                                       <option value="">Male</option>
                                       <option value="">Female</option>
@@ -120,10 +120,10 @@
                             </div>
                             <div class="">
                                 <label for="date" class="text-white text-sm font-semibold">Date of birth</label>
-                                <input type="date" name="date" id="date" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
+                                <input type="date" name="date" id="date" class="text-white border-[#42505E] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#CFD2D5] bg-[#2F3F4E] px-4">
                             </div>
                             <button
-                            class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-[18px] py-2.5 rounded-[8px] w-fit">Save changes</button>
+                            class="font-semibold text-white text-[14px] bg-[#3FC02F] transition-all duration-300 hover:bg-opacity-[70%] px-[18px] py-2.5 rounded-[8px] w-fit">Save changes</button>
                         </div>
                         </form>
                     </div>
@@ -137,7 +137,7 @@
                             <div class="">
                                 <label class="relative inline-flex items-center cursor-pointer">
                                     <input class="sr-only peer" value="" type="checkbox">
-                                    <div class="group peer ring-0 bg-[#0C49BE] rounded-full outline-none duration-700 after:duration-200 w-[50px] h-6  shadow-md peer-checked:bg-gradient-to-r  peer-focus:outline-none  after:content-[''] after:rounded-full after:absolute after:bg-white after:translate-x-[27px] after:outline-none after:h-4 after:w-4 after:top-1 after:left-1 peer-checked:bg-[#2A3B4B]  peer-checked:after:translate-x-0 peer-hover:after:scale-95">
+                                    <div class="group peer ring-0 bg-[#3FC02F] rounded-full outline-none duration-700 after:duration-200 w-[50px] h-6  shadow-md peer-checked:bg-gradient-to-r  peer-focus:outline-none  after:content-[''] after:rounded-full after:absolute after:bg-white after:translate-x-[27px] after:outline-none after:h-4 after:w-4 after:top-1 after:left-1 peer-checked:bg-[#2A3B4B]  peer-checked:after:translate-x-0 peer-hover:after:scale-95">
                                        
                                     </div>
                                   </label>

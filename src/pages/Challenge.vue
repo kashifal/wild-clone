@@ -15,7 +15,7 @@
             <ChallengeCard />
 
             <div class="mx-auto pt-10">
-                <div class="relative mx-auto mb-2 h-1  w-full rounded-full bg-[#112232] sm:w-52 xl:w-[22.625rem]"><span class="absolute left-0 top-0 h-1 w-full rounded-full bg-[#0C49BE]" style="width: 29.1667%;"></span></div>
+                <div class="relative mx-auto mb-2 h-1  w-full rounded-full bg-[#112232] sm:w-52 xl:w-[22.625rem]"><span class="absolute left-0 top-0 h-1 w-full rounded-full bg-[#3FC02F]" style="width: 29.1667%;"></span></div>
                 <p data-slot="text" class="text-center text-sm text-[#66717C] font-medium">You viewed 14 out of 48 challenges</p>
               </div>
               <div class="flex z-20 pt-7 justify-center">

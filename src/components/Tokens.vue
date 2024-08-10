@@ -12,7 +12,7 @@
             <img src="../assets/bit-8.svg" alt="" class="w-8 h-8">
             <img src="../assets/bit9.svg" alt="" class="w-8 h-8">
         </div>
-        <button class="font-semibold text-white text-[14px] w-full lg:w-fit z-30 bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-4 py-[9px] rounded-[8px] ">Deposit</button>
+        <button class="font-semibold text-white text-[14px] w-full lg:w-fit z-30 bg-[#3FC02F] transition-all duration-300 hover:bg-opacity-[70%] px-4 py-[9px] rounded-[8px] ">Deposit</button>
         <div class="absolute z-20 -top-48 left-[50%]">
           <img src="../assets/oevrlay.svg" alt="" class="w-[239px] h-auto text-white fill-white">
         </div>

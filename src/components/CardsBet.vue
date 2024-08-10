@@ -78,7 +78,7 @@
                     alt=""
                     class="h-[17px] w-[17px]"
                   />
-                  <p class="truncate text-[#0C49BE]">Chunichi Dragons *</p>
+                  <p class="truncate text-[#3FC02F]">Chunichi Dragons *</p>
                 </div>
                 <div class="flex items-center gap-3 truncate">
                   <p class="">0</p>
@@ -92,7 +92,7 @@
                     alt=""
                     class="h-[17px] w-[17px]"
                   />
-                  <p class="truncatetext-[#0C49BE]">Chunichi Dragons *</p>
+                  <p class="truncatetext-[#3FC02F]">Chunichi Dragons *</p>
                 </div>
                 <div class="flex items-center gap-3 truncate">
                   <p class="">0</p>
@@ -102,8 +102,8 @@
             </div>
             <div class="flex items-center gap-2 pl-2">
               <div class="md:flex hidden flex-col">
-                <p class="text-xs font-bold text-[#0C49BE]">1</p>
-                <p class="text-xs font-bold text-[#0C49BE]">3</p>
+                <p class="text-xs font-bold text-[#3FC02F]">1</p>
+                <p class="text-xs font-bold text-[#3FC02F]">3</p>
               </div>
               <div class="md:hidden flex flex-col">
                 <p class="text-xs font-bold text-[#77808A]">Set2</p>
@@ -518,7 +518,7 @@
                     alt=""
                     class="h-[17px] w-[17px]"
                   />
-                  <p class="truncate text-[#0C49BE]">Chunichi Dragons *</p>
+                  <p class="truncate text-[#3FC02F]">Chunichi Dragons *</p>
                 </div>
                 <div class="flex items-center gap-3 truncate">
                   <p class="">0</p>
@@ -532,7 +532,7 @@
                     alt=""
                     class="h-[17px] w-[17px]"
                   />
-                  <p class="truncatetext-[#0C49BE]">Chunichi Dragons *</p>
+                  <p class="truncatetext-[#3FC02F]">Chunichi Dragons *</p>
                 </div>
                 <div class="flex items-center gap-3 truncate">
                   <p class="">0</p>
@@ -542,8 +542,8 @@
             </div>
             <div class="flex items-center gap-2 pl-2">
               <div class="md:flex hidden flex-col">
-                <p class="text-xs font-bold text-[#0C49BE]">1</p>
-                <p class="text-xs font-bold text-[#0C49BE]">3</p>
+                <p class="text-xs font-bold text-[#3FC02F]">1</p>
+                <p class="text-xs font-bold text-[#3FC02F]">3</p>
               </div>
               <div class="md:hidden flex flex-col">
                 <p class="text-xs font-bold text-[#77808A]">Set2</p>

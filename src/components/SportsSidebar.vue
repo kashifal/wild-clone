@@ -35,7 +35,7 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-[#0C49BE]"
+              class="h-5 w-5 text-[#3FC02F]"
               width="1em"
               height="1em"
               viewBox="0 0 24 24"

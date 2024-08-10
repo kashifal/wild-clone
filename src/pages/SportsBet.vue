@@ -47,42 +47,42 @@
               >
                 <a
                   href="#"
-                  class="border-l-2 border-[#0C49BE] pl-4 pr-32 py-2 bg-[#2B4658] text-white font-bold text-sm"
+                  class="border-l-2 border-[#3FC02F] pl-4 pr-32 py-2 bg-[#2B4658] text-white font-bold text-sm"
                   >Football</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
               </div>
@@ -120,42 +120,42 @@
               >
                 <a
                   href="#"
-                  class="border-l-2 border-[#0C49BE] pl-4 pr-32 py-2 bg-[#2B4658] text-white font-bold text-sm"
+                  class="border-l-2 border-[#3FC02F] pl-4 pr-32 py-2 bg-[#2B4658] text-white font-bold text-sm"
                   >Football</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
               </div>
@@ -193,42 +193,42 @@
               >
                 <a
                   href="#"
-                  class="border-l-2 border-[#0C49BE] pl-4 pr-32 py-2 bg-[#2B4658] text-white font-bold text-sm"
+                  class="border-l-2 border-[#3FC02F] pl-4 pr-32 py-2 bg-[#2B4658] text-white font-bold text-sm"
                   >Football</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
                 <a
                   href="#"
-                  class="hover:border-l-2 hover:border-[#0C49BE] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
+                  class="hover:border-l-2 hover:border-[#3FC02F] pl-4 pr-32 py-2 hover:bg-[#2B4658] text-white font-bold text-sm"
                   >Tennis</a
                 >
               </div>

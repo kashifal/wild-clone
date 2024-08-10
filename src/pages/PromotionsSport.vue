@@ -10,7 +10,7 @@
                 <div class="relative w-full">
                   <img src="../assets/profit.avif" alt="" class="h-40 rounded object-cover w-full">
                   <div class="absolute top-[50%] left-10 -translate-y-[50%]">
-                    <button class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-8 sm:px-16 py-2.5 rounded-md ">Sign Up</button>
+                    <button class="font-semibold text-white text-[14px] bg-[#3FC02F] transition-all duration-300 hover:bg-opacity-[70%] px-8 sm:px-16 py-2.5 rounded-md ">Sign Up</button>
                   </div>
                   <div class="absolute bottom-2 left-3  ">
                     <a href="#" class="text-xs underline text-gray-400 font-medium hover:text-white">Terms & Conditions</a>
@@ -19,7 +19,7 @@
                 <div class="relative w-full">
                   <img src="../assets/profit.avif" alt="" class="h-40 rounded object-cover w-full">
                   <div class="absolute top-[50%] left-10 -translate-y-[50%]">
-                    <button class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-8 sm:px-16 py-2.5 rounded-md ">Sign Up</button>
+                    <button class="font-semibold text-white text-[14px] bg-[#3FC02F] transition-all duration-300 hover:bg-opacity-[70%] px-8 sm:px-16 py-2.5 rounded-md ">Sign Up</button>
                   </div>
                   <div class="absolute bottom-2 left-3  ">
                     <a href="#" class="text-xs underline text-gray-400 font-medium hover:text-white">Terms & Conditions</a>
@@ -28,7 +28,7 @@
                 <div class="relative w-full">
                   <img src="../assets/profit.avif" alt="" class="h-40 rounded object-cover w-full">
                   <div class="absolute top-[50%] left-10 -translate-y-[50%]">
-                    <button class="font-semibold text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-8 sm:px-16 py-2.5 rounded-md ">Sign Up</button>
+                    <button class="font-semibold text-white text-[14px] bg-[#3FC02F] transition-all duration-300 hover:bg-opacity-[70%] px-8 sm:px-16 py-2.5 rounded-md ">Sign Up</button>
                   </div>
                   <div class="absolute bottom-2 left-3  ">
                     <a href="#" class="text-xs underline text-gray-400 font-medium hover:text-white">Terms & Conditions</a>

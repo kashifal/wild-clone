@@ -1,7 +1,7 @@
 <template>
     <div class="xl:px-6 px-4 py-4 relative gap-3 flex flex-col lg:flex-row lg:items-center justify-between overflow-hidden rounded-2xl bg-gradient-to-r from-[#5C59B9] from-[9.16%] via-[#112333] via-[55.17%] to-[#7A52A5] to-[100%]">
         <div class="flex flex-col -space-y-1 lg:w-1/3">
-            <p class="text-[15px] text-[#0C49BE]">Earn rewards</p>
+            <p class="text-[15px] text-[#3FC02F]">Earn rewards</p>
             <h5 class="text-white">from every single bet you place.</h5>
         </div>
         <h1 class="text-white font-bold text-xl xl:text-3xl lg:w-1/3 lg:text-center">Daily Rakeback</h1>
@@ -30,7 +30,7 @@
                   </div>
                 </div>
               </div>
-              <button class="font-semibold h-fit text-white text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-[18px] py-2.5 rounded-[8px] ">Claim Bonus</button>
+              <button class="font-semibold h-fit text-white text-[14px] bg-[#3FC02F] transition-all duration-300 hover:bg-opacity-[70%] px-[18px] py-2.5 rounded-[8px] ">Claim Bonus</button>
         </div>
         <div class="absolute left-1/2 bottom-0">
             <img src="../assets/banner.webp" alt="" class="w-[608px] h-[100px]">

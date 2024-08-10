@@ -9,7 +9,7 @@
             <img src="../assets/sugarcard.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Sugar Rush 1000</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$7.36</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$7.36</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -23,7 +23,7 @@
             <img src="../assets/card2.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Crazy Time A</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1,220.00</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1,220.00</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -37,7 +37,7 @@
             <img src="../assets/bonanza.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Bone Bonanza</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.29</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.29</p>
                 <img src="../assets/tele.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -51,7 +51,7 @@
             <img src="../assets/mummy.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Mummy land</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.70</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.70</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -65,7 +65,7 @@
             <img src="../assets/football.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Football Mehym</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$4.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$4.40</p>
                 <img src="../assets/card3.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -79,7 +79,7 @@
             <img src="../assets/diamond.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Diamond Luck</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.20</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.20</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -93,7 +93,7 @@
             <img src="../assets/Magic.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Moon Magic</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -107,7 +107,7 @@
             <img src="../assets/rooster.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Rooster Dice</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$2.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$2.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -121,7 +121,7 @@
             <img src="../assets/diamond.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Diamond Luck</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.20</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.20</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -135,7 +135,7 @@
             <img src="../assets/Magic.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Moon Magic</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -149,7 +149,7 @@
             <img src="../assets/diamond.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Diamond Luck</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.20</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.20</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -163,7 +163,7 @@
             <img src="../assets/Magic.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Moon Magic</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -177,7 +177,7 @@
             <img src="../assets/sugarcard.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Sugar Rush 1000</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$7.36</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$7.36</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -191,7 +191,7 @@
             <img src="../assets/card2.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Crazy Time A</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1,220.00</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1,220.00</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -205,7 +205,7 @@
             <img src="../assets/bonanza.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Bone Bonanza</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.29</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.29</p>
                 <img src="../assets/tele.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -219,7 +219,7 @@
             <img src="../assets/mummy.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Mummy land</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.70</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.70</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -233,7 +233,7 @@
             <img src="../assets/football.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Football Mehym</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$4.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$4.40</p>
                 <img src="../assets/card3.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -247,7 +247,7 @@
             <img src="../assets/diamond.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Diamond Luck</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.20</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.20</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -261,7 +261,7 @@
             <img src="../assets/Magic.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Moon Magic</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -275,7 +275,7 @@
             <img src="../assets/rooster.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Rooster Dice</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$2.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$2.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -289,7 +289,7 @@
             <img src="../assets/diamond.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Diamond Luck</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.20</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.20</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -303,7 +303,7 @@
             <img src="../assets/Magic.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Moon Magic</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -317,7 +317,7 @@
             <img src="../assets/diamond.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Diamond Luck</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$0.20</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$0.20</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"
@@ -331,7 +331,7 @@
             <img src="../assets/Magic.webp" alt="" class="w-[100px] h-[128px] rounded">
             <h1 class="pt-2 text-white font-medium text-xs">Moon Magic</h1>
             <div class="flex relative group items-end gap-1">
-                <p class="text-[#0C49BE] font-medium text-xs pt-1">$1.40</p>
+                <p class="text-[#3FC02F] font-medium text-xs pt-1">$1.40</p>
                 <img src="../assets/card1.svg" alt="" class="w-4 h-4">
                 <div
                 class="bg-[#263747] scale-0 flex items-end gap-1 group-hover:scale-100 transition-all duration-300 absolute -top-8 -left-2  text-white text-xs font-medium whitespace-nowrap rounded-md p-2 shadow"

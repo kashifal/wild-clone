@@ -169,7 +169,7 @@
         </button>
         <button
           @click="modalSignup"
-          class="font-semibold text-white truncate text-[14px] bg-[#0C49BE] transition-all duration-300 hover:bg-opacity-[70%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
+          class="font-semibold text-white truncate text-[14px] bg-[#3FC02F] transition-all duration-300 hover:bg-opacity-[70%] px-2 py-1.5 sm:px-5 sm:py-2.5 rounded-[8px]"
         >
           Sign Up
         </button>
@@ -316,7 +316,7 @@
               name="email"
               id="email"
               placeholder="Enter your email"
-              class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
+              class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
             />
           </div>
           <div class="pt-4">
@@ -329,7 +329,7 @@
                 name="password"
                 id="password"
                 placeholder="Password"
-                class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
+                class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
               />
               <div
                 class="w-8 h-8 absolute right-3 top-[13px] rounded-lg hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
@@ -346,13 +346,13 @@
                 </svg>
               </div>
             </div>
-            <a href="#" class="text-sm hover:underline font-bold text-[#0C49BE]"
+            <a href="#" class="text-sm hover:underline font-bold text-[#3FC02F]"
               >Forget Password</a
             >
           </div>
         </div>
         <button
-          class="bg-[#0C49BE] py-3 hover:bg-opacity-90 transition-all duration-100 mt-6 rounded-lg px-4 w-full text-center text-sm font-bold text-white"
+          class="bg-[#3FC02F] py-3 hover:bg-opacity-90 transition-all duration-100 mt-6 rounded-lg px-4 w-full text-center text-sm font-bold text-white"
         >
           Log In
         </button>
@@ -360,7 +360,7 @@
           class="flex items-center justify-center flex-wrap text-center mt-4 gap-1"
         >
           <p class="text-white/80 text-sm">Don't have an account?</p>
-          <a href="#" class="text-sm hover:underline font-bold text-[#0C49BE]"
+          <a href="#" class="text-sm hover:underline font-bold text-[#3FC02F]"
             >Sign up</a
           >
         </div>
@@ -508,7 +508,7 @@
               name="email"
               id="email"
               placeholder="Enter your email"
-              class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
+              class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
             />
           </div>
           <div class="pt-4">
@@ -521,7 +521,7 @@
                 name="password"
                 id="password"
                 placeholder="Password"
-                class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#0C49BE] ring-[#0C49BE] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
+                class="text-white border-[#213344] border rounded-lg w-full py-2 mt-2 placeholder:text-sm outline-[#3FC02F] ring-[#3FC02F] placeholder:text-[#BEC3C7] bg-[#162A3B] px-4"
               />
               <div
                 class="w-8 h-8 absolute right-3 top-[13px] rounded-lg hover:bg-white hover:bg-opacity-[7%] flex items-center cursor-pointer justify-center"
@@ -555,7 +555,7 @@
                 type="checkbox"
               />
               <span
-                class="inline-block w-4 h-4 border border-[#233545] rounded relative cursor-pointer after:content-[''] after:absolute after:top-2/4 after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[10px] after:h-[10px] after:bg-[#0C49BE] after:rounded-[2px] after:opacity-0 peer-checked:after:opacity-100"
+                class="inline-block w-4 h-4 border border-[#233545] rounded relative cursor-pointer after:content-[''] after:absolute after:top-2/4 after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[10px] after:h-[10px] after:bg-[#3FC02F] after:rounded-[2px] after:opacity-0 peer-checked:after:opacity-100"
               ></span>
             </label>
           </div>
@@ -563,25 +563,25 @@
             Agree th the
             <a
               href="#"
-              class="underline transition-all duration-100 hover:text-[#0C49BE]"
+              class="underline transition-all duration-100 hover:text-[#3FC02F]"
               >Terms</a
             >
             &
             <a
               href="#"
-              class="underline transition-all duration-100 hover:text-[#0C49BE]"
+              class="underline transition-all duration-100 hover:text-[#3FC02F]"
               >Privacy Policy</a
             >
           </h3>
         </div>
         <button
-          class="bg-[#0C49BE] py-3 hover:bg-opacity-90 text-center transition-all duration-100 rounded-lg px-4 w-full text-sm font-bold text-white"
+          class="bg-[#3FC02F] py-3 hover:bg-opacity-90 text-center transition-all duration-100 rounded-lg px-4 w-full text-sm font-bold text-white"
         >
           Log In
         </button>
         <div class="flex items-center flex-wrap mt-4 gap-1">
           <p class="text-white/80 text-sm">Already have an account?</p>
-          <a href="#" class="text-sm hover:underline font-bold text-[#0C49BE]"
+          <a href="#" class="text-sm hover:underline font-bold text-[#3FC02F]"
             >Log In</a
           >
         </div>
@@ -712,7 +712,7 @@
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                class="w-6 text-[#3FC02F] group-hover:block hidden transition-all duration-700 h-auto"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -746,7 +746,7 @@
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                class="w-6 text-[#3FC02F] group-hover:block hidden transition-all duration-700 h-auto"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -780,7 +780,7 @@
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 text-[#0C49BE] group-hover:block hidden transition-all duration-700 h-auto"
+                class="w-6 text-[#3FC02F] group-hover:block hidden transition-all duration-700 h-auto"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -831,7 +831,7 @@
         </router-link>
         <div class="px-3">
           <button
-            class="bg-[#0C49BE] py-2 px-4 w-full rounded-lg hover:bg-opacity-50 transition-all duration-500 text-sm text-white font-bold flex items-center text-center justify-center"
+            class="bg-[#3FC02F] py-2 px-4 w-full rounded-lg hover:bg-opacity-50 transition-all duration-500 text-sm text-white font-bold flex items-center text-center justify-center"
           >
             Wallet
             <svg
@@ -896,7 +896,7 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-[#0C49BE]"
+                class="h-5 w-5 text-[#3FC02F]"
                 width="1em"
                 height="1em"
                 viewBox="0 0 24 24"
