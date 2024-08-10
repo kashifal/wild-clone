@@ -328,9 +328,9 @@
           </div>
           <div  class="pt-3 pb-8">
             <p class="text-[#A9AFB5] text-sm text-center font-medium ">To access a shared bet, enter the code provided</p>
-            <div class="flex items-center gap-1 pt-3 justify-between">
-              <input type="number" placeholder="Enter Code" class="placeholder:text-[#A9AFB5] w-44 focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white">
-              <button class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/3 text-white text-sm font-bold py-2 opacity-50 hover:opacity-40">Submit</button>
+            <div class="flex items-center gap-3 pt-3 justify-between">
+              <input type="number" placeholder="Enter Code" class="placeholder:text-[#A9AFB5] w-full focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white">
+              <button class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/1 text-white text-sm font-bold py-2 opacity-50 hover:opacity-40">Submit</button>
             </div>
           </div>
           <div class="py-2  mt-auto bg-[#1C2C3C] px-2">
