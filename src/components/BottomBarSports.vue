@@ -4,7 +4,7 @@
       class="fixed xl:hidden z-20 inset-x-0 bottom-0 flex w-full justify-between bg-[#263747] px-4 py-2.5 shadow"
       style="z-index: 999"
     >
-      <div class="group" @click="modalFunc">
+      <div class="group">
         <router-link
           to="/sports"
           role="button"
@@ -46,7 +46,9 @@
         >
       </div>
 
-      <div class="group" @click="SidemodalFunc">
+      <div class="group"
+       @click="SidemodalFunc"
+       >
         <router-link
           to=""
           role="button"
@@ -143,24 +145,49 @@
           : 'h-[90%] w-[100%]  z-50 overflow-y-auto sidebarer hidden md:px-0 px-6 top-6 fixed inset-0 m-auto ',
       ]"
     >
-      <div class="z-40 pb-10 top-0 h-screen  sidebarer  bg-[#1C2C3C]">
+    <div
+        :class="[
+          bottomBar && combo === true
+            ? ' max-h-[90%]  sidebar shadow-3xl rounded-t-3xl  fixed bottom-[20%] left-0  bg-[#273E50]   overflow-y-auto z-50    w-full'
+            : bottomBar && combo === false
+              ? 'min-h-[100%]  sidebar fixed shadow-3xl bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-full'
+              : 'h-[120px] sidebar overflow-auto shadow-3xl bottom-[0%] bg-[#1C2C3C] absolute w-full',
+        ]"
+      >
         <div
-          class="flex w-full border-b bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
+          :class="[
+            bottomBar
+              ? ' h-[80%]  sidebar fixed left-0 bg-[#273E50]/70 rounded-t-3xl -z-10 overflow-y-auto w-full'
+              : 'h-[80%] sidebar  fixed hidden bottom-[20%] right-0 bg-[#273E50]/40 -z-0 overflow-y-auto w-full',
+          ]"
+        ></div>
+        <div
+          class="flex w-full border-b  sticky top-0 z-50 bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
         >
-          <div
-            @click="combo = true"
-            :class="[
-              combo
-                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
-                : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
-            ]"
-          >
-            <p class="text-sm uppercase font-bold">Bet Slip</p>
-          </div>
+        <div
+        @click="combo = true"
+        :class="[
+          combo
+            ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+            : 'flex px-6  cursor-pointer items-center hover:text-white text-[#526573] gap-1',
+        ]"
+      >
+        <p class="text-sm uppercase font-bold">
+          Combo
+          <span class="px-2 ml-2 rounded-full py-0.5 bg-blue-400">{{
+            bets.all_bets.length
+          }}</span>
+        </p>
+      </div>
 
           <svg
+            @click="bottomBar = !bottomBar"
             xmlns="http://www.w3.org/2000/svg"
-            class="rotate-180 cursor-pointer text-[#526573] hover:text-white w-6 h-6"
+            :class="[
+              bottomBar
+                ? 'rotate-180 cursor-pointer font-bold text-[#526573] hover:text-white w-6 h-6'
+                : 'rotate-270 cursor-pointer font-bold   text-[#526573] hover:text-white w-6 h-6',
+            ]"
             width="1em"
             height="1em"
             viewBox="0 0 24 24"
@@ -180,61 +207,13 @@
             @click="combo = false"
             :class="[
               !combo
-                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+                ? 'flex px-6   cursor-pointer items-center  text-white  gap-1'
                 : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
             ]"
           >
             <p class="text-sm uppercase font-bold">My Bets</p>
           </div>
         </div>
-        <div class="flex justify-between px-4 mt-3 items-center gap-2">
-          <div class="flex items-center   gap-3">
-            <label
-              class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
-              for="switchhToggle"
-              ><input class="peer sr-only" id="switchhToggle" type="checkbox" />
-              <span
-                class="absolute inset-0 m-auto h-2.5 rounded-full bg-stone-600"
-              >
-              </span>
-              <span
-                class="peer-che peer-checked:[&amp;_>_*]:scale-0 absolute inset-y-0 start-0 m-auto size-3.5 rounded-full bg-[#CFCFCF] transition-all peer-checked:start-4 peer-checked:bg-[#F44336]"
-              >
-              </span>
-            </label>
-            <p class="text-white/70 text-sm">Quik Bets</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="text-[#77808A] w-3.5 h-3.5"
-              width="1em"
-              height="1em"
-              viewBox="0 0 16 16"
-            >
-              <rect width="16" height="16" fill="none" />
-              <path
-                fill="currentColor"
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2a1 1 0 0 1 0 2"
-              />
-            </svg>
-          </div>
-          <div class="flex items-center gap-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="text-[#77808A] w-3.5 h-3.5"
-              width="1em"
-              height="1em"
-              viewBox="0 0 20 20"
-            >
-              <rect width="20" height="20" fill="none" />
-              <path
-                fill="currentColor"
-                d="M11.078 0c.294 0 .557.183.656.457l.706 1.957q.379.094.654.192q.3.107.78.33l1.644-.87a.7.7 0 0 1 .832.131l1.446 1.495c.192.199.246.49.138.744l-.771 1.807q.191.352.308.604q.126.273.312.76l1.797.77c.27.115.437.385.419.674l-.132 2.075a.69.69 0 0 1-.46.605l-1.702.605q-.073.352-.154.606a9 9 0 0 1-.298.774l.855 1.89a.68.68 0 0 1-.168.793l-1.626 1.452a.7.7 0 0 1-.796.096l-1.676-.888a7 7 0 0 1-.81.367l-.732.274l-.65 1.8a.7.7 0 0 1-.64.457L9.11 20a.7.7 0 0 1-.669-.447l-.766-2.027a15 15 0 0 1-.776-.29a10 10 0 0 1-.618-.293l-1.9.812a.7.7 0 0 1-.755-.133L2.22 16.303a.68.68 0 0 1-.155-.783l.817-1.78a10 10 0 0 1-.302-.644a14 14 0 0 1-.3-.811L.49 11.74a.69.69 0 0 1-.49-.683l.07-1.921a.69.69 0 0 1 .392-.594L2.34 7.64q.13-.478.23-.748a9 9 0 0 1 .314-.712L2.07 4.46a.68.68 0 0 1 .15-.79l1.404-1.326a.7.7 0 0 1 .75-.138l1.898.784q.314-.209.572-.344q.307-.162.824-.346l.66-1.841A.7.7 0 0 1 8.984 0zm-1.054 7.019c-1.667 0-3.018 1.335-3.018 2.983s1.351 2.984 3.018 2.984s3.017-1.336 3.017-2.984s-1.35-2.983-3.017-2.983"
-              />
-            </svg>
-            <p class="text-white/70 text-sm">Setting</p>
-          </div>
-        </div>
-        <!-- done here -->
         <div v-if="!combo" class="px-1 py-3 ml-2 w-full buttonsRightSide">
           <div
             class="flex p-1 w-full mx-auto justify-between whitespace-nowrap bg-[#2B4658] rounded-full"
@@ -256,22 +235,72 @@
             </button>
           </div>
         </div>
-        <div v-if="combo" class="py-2 px-4 mt-8">
-          <div class="flex py-2 justify-between gap-1 px-2 items-center">
-            <h4
-              class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
-            >
-              Singles
-            </h4>
-            <h4 class="uppercase cursor-pointer text-xs text-white">Combo</h4>
-            <h4
-              class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
-            >
-              System
-            </h4>
+        <div
+          v-else
+          :class="[bottomBar ? 'px-2  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
+        >
+          <div class="flex justify-between px-4 items-center gap-2">
+            <div class="flex items-center gap-3">
+              <label
+                class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
+                for="switchToggle"
+                ><input
+                  class="peer sr-only"
+                  id="switchToggle"
+                  type="checkbox"
+                />
+                <span
+                  class="absolute inset-0 m-auto h-2.5 rounded-full bg-stone-600"
+                >
+                </span>
+                <span
+                  class="peer-che peer-checked:[&amp;_>_*]:scale-0 absolute inset-y-0 start-0 m-auto size-3.5 rounded-full bg-[#CFCFCF] transition-all peer-checked:start-4 peer-checked:bg-[#F44336]"
+                >
+                </span>
+              </label>
+              <p class="text-white/70 text-sm">Quik Bets</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="text-[#77808A] w-3.5 h-3.5"
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+              >
+                <rect width="16" height="16" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2a1 1 0 0 1 0 2"
+                />
+              </svg>
+            </div>
+            <div class="flex items-center gap-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="text-[#77808A] w-3.5 h-3.5"
+                width="1em"
+                height="1em"
+                viewBox="0 0 20 20"
+              >
+                <rect width="20" height="20" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M11.078 0c.294 0 .557.183.656.457l.706 1.957q.379.094.654.192q.3.107.78.33l1.644-.87a.7.7 0 0 1 .832.131l1.446 1.495c.192.199.246.49.138.744l-.771 1.807q.191.352.308.604q.126.273.312.76l1.797.77c.27.115.437.385.419.674l-.132 2.075a.69.69 0 0 1-.46.605l-1.702.605q-.073.352-.154.606a9 9 0 0 1-.298.774l.855 1.89a.68.68 0 0 1-.168.793l-1.626 1.452a.7.7 0 0 1-.796.096l-1.676-.888a7 7 0 0 1-.81.367l-.732.274l-.65 1.8a.7.7 0 0 1-.64.457L9.11 20a.7.7 0 0 1-.669-.447l-.766-2.027a15 15 0 0 1-.776-.29a10 10 0 0 1-.618-.293l-1.9.812a.7.7 0 0 1-.755-.133L2.22 16.303a.68.68 0 0 1-.155-.783l.817-1.78a10 10 0 0 1-.302-.644a14 14 0 0 1-.3-.811L.49 11.74a.69.69 0 0 1-.49-.683l.07-1.921a.69.69 0 0 1 .392-.594L2.34 7.64q.13-.478.23-.748a9 9 0 0 1 .314-.712L2.07 4.46a.68.68 0 0 1 .15-.79l1.404-1.326a.7.7 0 0 1 .75-.138l1.898.784q.314-.209.572-.344q.307-.162.824-.346l.66-1.841A.7.7 0 0 1 8.984 0zm-1.054 7.019c-1.667 0-3.018 1.335-3.018 2.983s1.351 2.984 3.018 2.984s3.017-1.336 3.017-2.984s-1.35-2.983-3.017-2.983"
+                />
+              </svg>
+              <p class="text-white/70 text-sm">Setting</p>
+            </div>
           </div>
-          <div class="py-2 mt-8">
-            <div class="flex py-2 justify-between gap-1 px-2 items-center">
+          <div  class="pt-3 px-4 pb-8">
+            <p class="text-[#A9AFB5] text-sm text-center font-medium ">To access a shared bet, enter the code provided</p>
+            <div class="flex items-center gap-3 pt-3 justify-between">
+              <input type="number" placeholder="Enter Code" class="placeholder:text-[#A9AFB5] w-full focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white">
+              <button class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/1 text-white text-sm font-bold py-2 opacity-50 hover:opacity-40">Submit</button>
+            </div>
+          </div>
+          <div class="py-2  mt-auto bg-[#1C2C3C] px-2">
+            <div
+              class="flex py-2 mt-auto justify-between gap-1 px-2 items-center"
+            >
               <h4
                 class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
               >
@@ -284,74 +313,11 @@
                 System
               </h4>
             </div>
-            <div class="bg-[#273E50] mx-2 my-5 rounded-md p-3 border border-[#343A40]">
-              <div class="flex justify-between items-center gap-1">
-                <div class="flex items-center gap-1.5">
-                  <h1 class="text-white font-medium">Trebles</h1>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="text-[#77808A] w-3.5 h-3.5"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 16 16"
-                  >
-                    <rect width="16" height="16" fill="none" />
-                    <path
-                      fill="currentColor"
-                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2a1 1 0 0 1 0 2"
-                    />
-                  </svg>
-                </div>
-                <div class="flex items-center gap-1">
-                  <div class="flex items-center -space-x-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="w-6 h-6 text-[#3FC02F]"
-                      width="1em"
-                      height="1em"
-                      viewBox="0 0 24 24"
-                    >
-                      <rect width="24" height="24" fill="none" />
-                      <path fill="currentColor" d="m7 15l5-5l5 5z" />
-                    </svg>
-                    <p class="txt-xs font-medium text-white">12.92</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flex items-center gap-1">
-                <input
-                  type="number"
-                  class="bg-[#1C2C3C] text-white px-2 py-1.5 rounded-md w-full mt-3"
-                />
-                <p class="text-white/80 mt-2">BTC</p>
-              </div>
-              <div class="grid grid-cols-4 gap-3 pt-4">
-                <div
-                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
-                >
-                  0.0005
-                </div>
-                <div
-                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
-                >
-                  0.0005
-                </div>
-                <div
-                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
-                >
-                  0.0005
-                </div>
-                <div
-                  class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
-                >
-                  0.0005
-                </div>
-              </div>
-            </div>
-            <div class="h-36 sidebar overflow-auto flex flex-col gap-1">
+
+            <div class="mt-auto sidebar flex flex-col gap-1">
               <div
-                v-for="match in bets.all_bets"
-                :key="match"
+                v-for="bet in bets.all_bets"
+                :key="bet"
                 class="bg-[#273E50] rounded-md p-3 border border-[#343A40]"
               >
                 <div class="flex justify-between items-center gap-1">
@@ -370,7 +336,7 @@
                       />
                     </svg>
                     <h6 class="text-white truncate text-sm font-medium">
-                      Match Winner ・ {{ match.team }} (Wom)
+                      Match Winner ・ {{ bet.team }} (Wom)
                     </h6>
                   </div>
                   <div class="flex items-center gap-1">
@@ -386,14 +352,14 @@
                         <path fill="currentColor" d="m7 15l5-5l5 5z" />
                       </svg>
                       <p class="txt-xs font-medium text-white">
-                        {{ match.score }}
+                        {{ bet.score }}
                       </p>
                     </div>
                     <svg
-                      @click="removeFunc(match.id)"
                       xmlns="http://www.w3.org/2000/svg"
                       class="text-white/80 cursor-pointer w-4 h-4"
                       width="1em"
+                      @click="removeBetFunc(bet.id)"
                       height="1em"
                       viewBox="0 0 15 15"
                     >
@@ -407,83 +373,226 @@
                     </svg>
                   </div>
                 </div>
-                <p class="text-white/80 text-sm">
-                  {{ match.team }} (Wom) — Turkiye (Wom)
-                </p>
+                <p class="text-white/80 text-sm">China (Wom) — Turkiye (Wom)</p>
               </div>
-            </div>
-            <div class="text-center pt-5">
-              <h5 class="text-white font-bold text-sm">
-                Some odds have changed.
-              </h5>
-              <p class="text-white/80">Please review and accept changes</p>
+
               <div
-                class="flex flex-wrap gap-2 justify-center items-center pt-4 px-3"
+                class="bg-[#273E50] mt-auto rounded-md p-3 border border-[#343A40]"
               >
-                <button
-                  class="bg-[#3FC02F] sm:w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md"
-                >
-                  Accept changes
-                </button>
-                <div
-                  class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                  >
-                    <rect width="24" height="24" fill="none" />
-                    <path
-                      fill="currentColor"
-                      d="M22 18.605a.75.75 0 0 1-.75.75h-5.1a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h7.74a2.93 2.93 0 0 1 5.66 0h5.1a.75.75 0 0 1 .75.75m0-13.21a.75.75 0 0 1-.75.75H18.8a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h10.39a2.93 2.93 0 0 1 5.66 0h2.45a.74.74 0 0 1 .75.75m0 6.6a.74.74 0 0 1-.75.75H9.55a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h1.14a2.93 2.93 0 0 1 5.66 0h11.7a.75.75 0 0 1 .75.75"
-                    />
-                  </svg>
+                <div class="flex justify-between items-center gap-1">
+                  <div class="flex items-center gap-1.5">
+                    <h1 class="text-white font-medium">Trebles</h1>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-[#77808A] w-3.5 h-3.5"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 16 16"
+                    >
+                      <rect width="16" height="16" fill="none" />
+                      <path
+                        fill="currentColor"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2a1 1 0 0 1 0 2"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <div class="flex items-center -space-x-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-6 h-6 text-[#3FC02F]"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                      >
+                        <rect width="24" height="24" fill="none" />
+                        <path fill="currentColor" d="m7 15l5-5l5 5z" />
+                      </svg>
+                      <p class="txt-xs font-medium text-white">12.92</p>
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 1024 1024"
+                <div class="flex items-center gap-1">
+                  <input
+                    type="number"
+                    class="bg-[#1C2C3C] text-white px-2 py-1.5 rounded-md w-full mt-3"
+                  />
+                  <p class="text-white/80 mt-2">BTC</p>
+                </div>
+                <div class="grid grid-cols-4 gap-3 pt-4">
+                  <div
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
                   >
-                    <rect width="1024" height="1024" fill="none" />
-                    <path
-                      fill="currentColor"
-                      d="M608 704v160a96 96 0 0 1-192 0V704h-96a128 128 0 0 1-128-128h640a128 128 0 0 1-128 128zM192 512V128.064h640V512z"
-                    />
-                  </svg>
+                    0.0005
+                  </div>
+                  <div
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
+                  >
+                    0.0005
+                  </div>
+                  <div
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
+                  >
+                    0.0005
+                  </div>
+                  <div
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
+                  >
+                    0.0005
+                  </div>
                 </div>
               </div>
-              <button
-                class="hover:bg-[#3FC02F] flex items-center justify-center gap-1 mt-6 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
-              >
-                Share Bet
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                >
-                  <rect width="24" height="24" fill="none" />
-                  <path
-                    fill="currentColor"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z"
-                  />
-                </svg>
-              </button>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        v-if="combo"
+        :class="[
+          bottomBar
+            ? 'text-center  pt-5 bottom-10 w-full z-50 absolute'
+            : 'text-center hidden pt-5 bottom-10 w-full z-50 absolute',
+        ]"
+      >
+        <h5 class="text-white font-bold text-sm">Some odds have changed.</h5>
+        <p class="text-white/80">Please review and accept changes</p>
+        <div class="flex flex-wrap gap-2 justify-center items-center pt-4 px-3">
+          <button
+            class="bg-[#3FC02F] w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md"
+          >
+            Accept changes
+          </button>
+          <div
+          class=""
+          >
+          <div
+          @click="open"
+            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <rect width="24" height="24" fill="none" />
+              <path
+                fill="currentColor"
+                d="M22 18.605a.75.75 0 0 1-.75.75h-5.1a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h7.74a2.93 2.93 0 0 1 5.66 0h5.1a.75.75 0 0 1 .75.75m0-13.21a.75.75 0 0 1-.75.75H18.8a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h10.39a2.93 2.93 0 0 1 5.66 0h2.45a.74.74 0 0 1 .75.75m0 6.6a.74.74 0 0 1-.75.75H9.55a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h1.14a2.93 2.93 0 0 1 5.66 0h11.7a.75.75 0 0 1 .75.75"
+              />
+            </svg>
+          </div>
+          <!--first code here-->
+          <div 
+          :class="[
+           filters
+           ? 'block absolute w-full -top-[86px] left-0'
+           : 'hidden absolute w-full -top-[86px] left-0'
+           ]">
+          <div class="bg-[#273E50] w-full left-0 p-3">
+            <div class="flex items-center justify-between gap-2">
+              <h1 class="text-white font-bold">Odds changes</h1>
+              <div
+               @click="open"
+              class="">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white/80 cursor-pointer w-4 h-4" width="1em" height="1em" viewBox="0 0 15 15"><rect width="15" height="15" fill="none"></rect><path fill="currentColor" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z" clip-rule="evenodd"></path></svg>
+            </div>
+            </div>
+            <div class="flex flex-col gap-1 pt-5">
+              <div class="flex items-center gap-1.5">
+               <div class="flex  justify-center items-center">
+               <label class="">
+               <input
+                 value="wedding-gift"
+                 class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                 checked="checked"
+                 name="filters"
+                 type="radio"
+               />
+               <span
+                class="inline-block w-3.5 h-3.5 border-2 border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                ></span>
+              </label>
+            </div>
+
+                <p class="text-white text-sm font-bold">Do not accept</p>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <div class="flex  justify-center items-center">
+                  <label class="">
+                  <input
+                    value="wedding-gift"
+                    class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                    name="filters"
+                    type="radio"
+                  />
+                  <span
+                   class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                   ></span>
+                 </label>
+               </div>
+                <p class="text-white font-medium text-sm">Accept higher odds</p>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <div class="flex  justify-center items-center">
+                  <label class="">
+                  <input
+                    value="wedding-gift"
+                    class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                    name="filters"
+                    type="radio"
+                  />
+                  <span
+                   class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                   ></span>
+                 </label>
+               </div>
+                <p class="text-white font-medium text-sm">Do not accept</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+          <div
+            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              width="1em"
+              height="1em"
+              viewBox="0 0 1024 1024"
+            >
+              <rect width="1024" height="1024" fill="none" />
+              <path
+                fill="currentColor"
+                d="M608 704v160a96 96 0 0 1-192 0V704h-96a128 128 0 0 1-128-128h640a128 128 0 0 1-128 128zM192 512V128.064h640V512z"
+              />
+            </svg>
+          </div>
+        </div>
+        <button
+          class="hover:bg-[#3FC02F] flex items-center justify-center gap-1 mt-6 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
+        >
+          Share Bet
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <rect width="24" height="24" fill="none" />
+            <path
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
@@ -508,6 +617,19 @@ const removeFunc = (id) => {
 
 const casinoFunc = () => {
   sidebar.setCasino("Casino");
+};
+const bottomBar = ref(true);
+
+
+const filters = ref(false);
+function open() {
+  filters.value = !filters.value;
+}
+
+
+
+const removeBetFunc = (id) => {
+  bets.removeBet(id);
 };
 </script>
 
