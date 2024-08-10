@@ -131,7 +131,7 @@
       @click="SidemodalFunc"
       :class="[
         HIDE
-          ? 'h-[100vh] block z-50 w-screen lg:hidden  bg-black/80 fixed top-0 left-0'
+          ? 'h-[100vh] block z-50 w-screen   bg-black/80 fixed top-0 left-0'
           : 'h-[100vh]  z-50 w-screen hidden  bg-black/80 fixed top-0 left-0',
       ]"
     ></div>
