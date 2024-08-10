@@ -183,9 +183,11 @@
       <!-- Div - Hidden and Show -->
       <div
         :class="[
-          bottomBar
-            ? ' h-[500px] sidebar overflow-auto top-[14%] bg-[#1C2C3C] absolute w-full'
-            : 'h-[120px] sidebar overflow-auto bottom-[0%] bg-[#1C2C3C] absolute w-full',
+          bottomBar && combo === true
+            ? ' max-h-[80%]  sidebar fixed bottom-[20%] right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
+            : bottomBar && combo === false
+              ? 'min-h-[100%]  sidebar fixed bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
+              : 'h-[120px] sidebar overflow-auto bottom-[0%] bg-[#1C2C3C] absolute w-full',
         ]"
       >
         <div
@@ -234,7 +236,7 @@
             @click="combo = false"
             :class="[
               !combo
-                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+                ? 'flex px-6   cursor-pointer items-center  text-white  gap-1'
                 : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
             ]"
           >
@@ -262,7 +264,7 @@
             </button>
           </div>
         </div>
-        <div v-else :class="[bottomBar ? 'px-2 ' : 'px-2.5 hidden']">
+        <div v-else :class="[bottomBar ? 'px-2   ' : 'px-2.5 hidden']">
           <div class="flex justify-between mt-8 items-center gap-2">
             <div class="flex items-center gap-3">
               <label
@@ -314,8 +316,10 @@
               <p class="text-white/70 text-sm">Setting</p>
             </div>
           </div>
-          <div class="py-2 mt-8">
-            <div class="flex py-2 justify-between gap-1 px-2 items-center">
+          <div class="py-2 mt-auto bg-[#273E50]">
+            <div
+              class="flex py-2 mt-auto justify-between gap-1 px-2 items-center"
+            >
               <h4
                 class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
               >
@@ -329,7 +333,7 @@
               </h4>
             </div>
 
-            <div class="h-80 sidebar overflow-auto flex flex-col gap-1">
+            <div class="mt-auto sidebar flex flex-col gap-1">
               <div
                 v-for="bet in bets.all_bets"
                 :key="bet"
@@ -391,7 +395,9 @@
                 <p class="text-white/80 text-sm">China (Wom) — Turkiye (Wom)</p>
               </div>
 
-              <div class="bg-[#273E50] rounded-md p-3 border border-[#343A40]">
+              <div
+                class="bg-[#273E50] mt-auto rounded-md p-3 border border-[#343A40]"
+              >
                 <div class="flex justify-between items-center gap-1">
                   <div class="flex items-center gap-1.5">
                     <h1 class="text-white font-medium">Trebles</h1>
