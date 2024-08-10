@@ -499,7 +499,7 @@
         v-if="combo"
         :class="[
           bottomBar
-            ? 'text-center  pt-5 bottom-10 w-full z-50 absolute'
+            ? 'text-center  pt-5 bottom-16 w-full z-50 absolute'
             : 'text-center hidden pt-5 bottom-10 w-full z-50 absolute',
         ]"
       >
@@ -532,7 +532,6 @@
             </div>
             <!--first code here-->
             <div
-             
               :class="[
                 filters
                   ? 'block absolute w-full -top-[86px] left-0'
@@ -611,9 +610,7 @@
                         ></span>
                       </label>
                     </div>
-                    <p class="text-white font-medium text-sm">
-                      Do not accept
-                    </p>
+                    <p class="text-white font-medium text-sm">Do not accept</p>
                   </div>
                 </div>
               </div>
@@ -626,6 +623,7 @@
               xmlns="http://www.w3.org/2000/svg"
               class="w-6 h-6"
               width="1em"
+              @click="clearBetsFunc"
               height="1em"
               viewBox="0 0 1024 1024"
             >
@@ -638,7 +636,7 @@
           </div>
         </div>
         <button
-          class="hover:bg-[#3FC02F] flex items-center justify-center gap-1 mt-6 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
+          class="hover:bg-[#3FC02F] flex items-center justify-center gap-1 mt-3 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
         >
           Share Bet
           <svg
@@ -678,6 +676,10 @@ const combo = ref(true);
 
 const removeBetFunc = (id) => {
   bets.removeBet(id);
+};
+
+const clearBetsFunc = () => {
+  bets.clearBets();
 };
 </script>
 

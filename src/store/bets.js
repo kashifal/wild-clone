@@ -17,5 +17,9 @@ export const useBetStore = defineStore("bets", {
     removeBet(id) {
       this.all_bets.splice(this.all_bets.indexOf(id), 1);
     },
+
+    clearBets() {
+      this.all_bets = [];
+    },
   },
 });
