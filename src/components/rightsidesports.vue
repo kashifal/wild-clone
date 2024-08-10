@@ -52,7 +52,7 @@
         </svg>
 
         <div
-          class="flex px-6 border-b border-[#0C49BE] h-full cursor-pointer items-center text-white gap-1"
+          class="flex px-6 border-b border-[#3FC02F] h-full cursor-pointer items-center text-white gap-1"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@
         class="flex gap-3 border-b border-[#415565] items-center h-10 justify-center"
       >
         <div
-          class="flex px-6 w-1/2 border-b justify-center border-[#0C49BE] h-full cursor-pointer items-center text-white gap-1"
+          class="flex px-6 w-1/2 border-b justify-center border-[#3FC02F] h-full cursor-pointer items-center text-white gap-1"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@
           </svg>
         </div>
         <div
-          class="flex px-6 w-1/2 hover:border-b border-[#0C49BE] text-[#77808A] hover:tex-white h-full justify-center cursor-pointer items-center gap-1"
+          class="flex px-6 w-1/2 hover:border-b border-[#3FC02F] text-[#77808A] hover:tex-white h-full justify-center cursor-pointer items-center gap-1"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -362,7 +362,7 @@
                     <div class="flex items-center -space-x-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-6 h-6 text-[#0C49BE]"
+                        class="w-6 h-6 text-[#3FC02F]"
                         width="1em"
                         height="1em"
                         viewBox="0 0 24 24"
@@ -419,7 +419,7 @@
                     <div class="flex items-center -space-x-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-6 h-6 text-[#0C49BE]"
+                        class="w-6 h-6 text-[#3FC02F]"
                         width="1em"
                         height="1em"
                         viewBox="0 0 24 24"
@@ -440,22 +440,22 @@
                 </div>
                 <div class="grid grid-cols-4 gap-3 pt-4">
                   <div
-                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
                   >
                     0.0005
                   </div>
                   <div
-                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
                   >
                     0.0005
                   </div>
                   <div
-                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
                   >
                     0.0005
                   </div>
                   <div
-                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+                    class="text-white font-old text-xs px-2 py-2.5 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
                   >
                     0.0005
                   </div>
@@ -477,12 +477,12 @@
         <p class="text-white/80">Please review and accept changes</p>
         <div class="flex flex-wrap gap-2 justify-center items-center pt-4 px-3">
           <button
-            class="bg-[#0C49BE] w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md"
+            class="bg-[#3FC02F] w-1/2 px-4 py-2.5 text-white font-bold text-sm rounded-md"
           >
             Accept changes
           </button>
           <div
-            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -499,7 +499,7 @@
             </svg>
           </div>
           <div
-            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#0C49BE] text-center rounded-md"
+            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -517,7 +517,7 @@
           </div>
         </div>
         <button
-          class="hover:bg-[#0C49BE] flex items-center justify-center gap-1 mt-6 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
+          class="hover:bg-[#3FC02F] flex items-center justify-center gap-1 mt-6 w-full hover:bg-opacity-10 px-4 py-2.5 text-white font-bold text-sm rounded-md"
         >
           Share Bet
           <svg

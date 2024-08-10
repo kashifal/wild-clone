@@ -71,7 +71,7 @@
                     <div class=" w-full text-white overflow-hidden">
                         <div class="mx-auto mb-7 flex flex-col items-center md:max-w-2xl">
                           <h3 class="mb-1 text-center text-3xl font-semibold md:mb-2">
-                            <span><span class="text-[#0C49BE]">VIP</span> Rewards Breakdown</span>
+                            <span><span class="text-[#3FC02F]">VIP</span> Rewards Breakdown</span>
                           </h3>
                           <p data-slot="text" class="max-w-md text-white/80 text-center text-base">Experience an exciting adventure spanning 30 levels across 7 tiers, each delivering its own distinct and rewarding journey.</p>
                         </div>
@@ -247,7 +247,7 @@
                       </div>
                       <div class="py-3">
                         <div class="flex flex-col gap-1 items-center text-center md:max-w-2xl mx-auto">
-                            <h1 class="text-white font-semibold text-3xl"><span class="text-[#0C49BE]">VIP</span> FAQ</h1>
+                            <h1 class="text-white font-semibold text-3xl"><span class="text-[#3FC02F]">VIP</span> FAQ</h1>
                             <p class="text-white/80 text-center">Find quick answers to your VIP-related queries</p>
                         </div>
                         <div class="grid md:grid-cols-2 pt-5 gap-x-4 mx-auto">

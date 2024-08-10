@@ -24,7 +24,7 @@
                         <p class="text-sm font-semibold text-white">AM</p>
                         <label class="relative inline-flex items-center cursor-pointer">
                             <input class="sr-only peer" value="" type="checkbox">
-                            <div class="group peer ring-0 bg-[#0C49BE] rounded-full outline-none duration-700 after:duration-200 w-[50px] h-6  shadow-md peer-checked:bg-gradient-to-r  peer-focus:outline-none  after:content-[''] after:rounded-full after:absolute after:bg-white after:translate-x-[27px] after:outline-none after:h-4 after:w-4 after:top-1 after:left-1 peer-checked:bg-[#091B29]  peer-checked:after:translate-x-0 peer-hover:after:scale-95">
+                            <div class="group peer ring-0 bg-[#3FC02F] rounded-full outline-none duration-700 after:duration-200 w-[50px] h-6  shadow-md peer-checked:bg-gradient-to-r  peer-focus:outline-none  after:content-[''] after:rounded-full after:absolute after:bg-white after:translate-x-[27px] after:outline-none after:h-4 after:w-4 after:top-1 after:left-1 peer-checked:bg-[#091B29]  peer-checked:after:translate-x-0 peer-hover:after:scale-95">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="absolute  top-1 left-[5px] w-4 h-4" fill="none" viewBox="0 0 16 16"><circle cx="8" cy="8" r="1.667" stroke="#fff" stroke-width="2"></circle><path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M8 3.333V2M8 14v-1.334M11.3 4.7l.943-.943M3.757 12.243 4.7 11.3M12.667 8H14M2 8h1.333M11.3 11.3l.943.943M3.757 3.757 4.7 4.7"></path></svg>
                             </div>
                           </label>
@@ -37,49 +37,49 @@
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Slot Games</h3>
                     <div class="flex flex-col gap-2 pt-3.5">
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Slots</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Skill Games</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Jackpot</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Bonus Buy</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Crash Games</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Slots</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Skill Games</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Jackpot</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Bonus Buy</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Crash Games</a>
                     </div>
                 </div>
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Live Casino</h3>
                     <div class="flex flex-col gap-2 pt-3.5">
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Roulette</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Blackjack</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Live Casino</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Table Games</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Video Poker</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Roulette</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Blackjack</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Live Casino</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Table Games</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Video Poker</a>
                     </div>
                 </div>
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Live Casino</h3>
                     <div class="flex flex-col gap-2 pt-3.5">
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">About Us</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Promotions</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Tournaments</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Affiliate Program</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Loyalty Program</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Refer a friend</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Blog</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Bonus Shop</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">About Us</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Promotions</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Tournaments</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Affiliate Program</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Loyalty Program</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Refer a friend</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Blog</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Bonus Shop</a>
                     </div>
                 </div>
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Legal</h3>
                     <div class="flex flex-col gap-2 pt-3.5">
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Privacy Policy</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Terms & Conditions</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Bonus Terms</a>
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Responsible <br /> Gambling</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Privacy Policy</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Terms & Conditions</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Bonus Terms</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Responsible <br /> Gambling</a>
                     </div>
                 </div>
                 <div class="mt-2">
                     <h3 class="uppercase text-white font-medium text-sm">Support</h3>
                     <div class="flex flex-col gap-2 pt-3.5">
-                        <a href="#" class="text-[14px] hover:text-[#0C49BE] transition-all duration-300 text-white/80">Live Support</a>
+                        <a href="#" class="text-[14px] hover:text-[#3FC02F] transition-all duration-300 text-white/80">Live Support</a>
                     </div>
                 </div>
             </div>

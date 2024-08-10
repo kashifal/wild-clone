@@ -7,7 +7,7 @@
         </div>
         <div class="flex items-center px-3 py-2 rounded-md hover:bg-white hover:bg-opacity-[7%] cursor-pointer gap-1">
             <p class="text-white font-medium text-sm">View all</p>
-            <div class="px-2 py-[2px] bg-[#0C49BE] text-white text-xs rounded-full">16</div>
+            <div class="px-2 py-[2px] bg-[#3FC02F] text-white text-xs rounded-full">16</div>
         </div>
     </div>
     <div class="relative">

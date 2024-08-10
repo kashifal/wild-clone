@@ -29,7 +29,7 @@
 
               <div class="md:flex hidden p-1 bg-[#2B4658] rounded-full">
                 <button
-                  class="px-7 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2 text-[#0C49BE] transition-all duration-500 font-bold"
+                  class="px-7 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2 text-[#3FC02F] transition-all duration-500 font-bold"
                 >
                   All
                 </button>
@@ -69,7 +69,7 @@
               class="flex p-1 mt-3 md:hidden bg-[#2B4658] justify-center rounded-full"
             >
               <button
-                class="px-7 w-1/3 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2 text-[#0C49BE] transition-all duration-500 font-bold"
+                class="px-7 w-1/3 text-sm bg-[#1C2C3C] hover:bg-[#091B29] rounded-full py-2 text-[#3FC02F] transition-all duration-500 font-bold"
               >
                 All
               </button>
