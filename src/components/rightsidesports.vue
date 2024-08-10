@@ -326,15 +326,27 @@
               <p class="text-white/70 text-sm">Setting</p>
             </div>
           </div>
-          <div  class="pt-3 pb-8">
-            <p class="text-[#A9AFB5] text-sm text-center font-medium ">To access a shared bet, enter the code provided</p>
+          <div v-if="bets.all_bets.length <= 0" class="pt-3 pb-8">
+            <p class="text-[#A9AFB5] text-sm text-center font-medium">
+              To access a shared bet, enter the code provided
+              {{ bets.all_bets.length }}
+            </p>
             <div class="flex items-center gap-1 pt-3 justify-between">
-              <input type="number" placeholder="Enter Code" class="placeholder:text-[#A9AFB5] w-44 focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white">
-              <button class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/3 text-white text-sm font-bold py-2 opacity-50 hover:opacity-40">Submit</button>
+              <input
+                type="number"
+                placeholder="Enter Code"
+                class="placeholder:text-[#A9AFB5] w-44 focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white"
+              />
+              <button
+                class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/3 text-white text-sm font-bold py-2 opacity-50 hover:opacity-40"
+              >
+                Submit
+              </button>
             </div>
           </div>
-          <div class="py-2  mt-auto bg-[#1C2C3C] px-2">
+          <div class="py-2 mt-auto bg-[#1C2C3C] px-2">
             <div
+              v-if="bets.all_bets.length > 0"
               class="flex py-2 mt-auto justify-between gap-1 px-2 items-center"
             >
               <h4
@@ -413,6 +425,7 @@
               </div>
 
               <div
+                v-if="bets.all_bets.length > 0"
                 class="bg-[#273E50] mt-auto rounded-md p-3 border border-[#343A40]"
               >
                 <div class="flex justify-between items-center gap-1">
@@ -498,99 +511,114 @@
           >
             Accept changes
           </button>
-          <div
-          class=""
-          >
-          <div
-          @click="open"
-            class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
-              width="1em"
-              height="1em"
-              viewBox="0 0 24 24"
+          <div class="">
+            <div
+              @click="open"
+              class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
             >
-              <rect width="24" height="24" fill="none" />
-              <path
-                fill="currentColor"
-                d="M22 18.605a.75.75 0 0 1-.75.75h-5.1a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h7.74a2.93 2.93 0 0 1 5.66 0h5.1a.75.75 0 0 1 .75.75m0-13.21a.75.75 0 0 1-.75.75H18.8a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h10.39a2.93 2.93 0 0 1 5.66 0h2.45a.74.74 0 0 1 .75.75m0 6.6a.74.74 0 0 1-.75.75H9.55a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h1.14a2.93 2.93 0 0 1 5.66 0h11.7a.75.75 0 0 1 .75.75"
-              />
-            </svg>
-          </div>
-          <!--first code here-->
-          <div 
-          @click="open"
-          :class="[
-           filters
-           ? 'block absolute w-full -top-[86px] left-0'
-           : 'hidden absolute w-full -top-[86px] left-0'
-           ]">
-          <div class="bg-[#273E50] w-full left-0 p-3">
-            <div class="flex items-center justify-between gap-2">
-              <h1 class="text-white font-bold">Odds changes</h1>
-              <div
-               @click="open"
-              class="">
-              <svg xmlns="http://www.w3.org/2000/svg" class="text-white/80 cursor-pointer w-4 h-4" width="1em" height="1em" viewBox="0 0 15 15"><rect width="15" height="15" fill="none"></rect><path fill="currentColor" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z" clip-rule="evenodd"></path></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <rect width="24" height="24" fill="none" />
+                <path
+                  fill="currentColor"
+                  d="M22 18.605a.75.75 0 0 1-.75.75h-5.1a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h7.74a2.93 2.93 0 0 1 5.66 0h5.1a.75.75 0 0 1 .75.75m0-13.21a.75.75 0 0 1-.75.75H18.8a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h10.39a2.93 2.93 0 0 1 5.66 0h2.45a.74.74 0 0 1 .75.75m0 6.6a.74.74 0 0 1-.75.75H9.55a2.93 2.93 0 0 1-5.66 0H2.75a.75.75 0 1 1 0-1.5h1.14a2.93 2.93 0 0 1 5.66 0h11.7a.75.75 0 0 1 .75.75"
+                />
+              </svg>
             </div>
-            </div>
-            <div class="flex flex-col gap-1 pt-5">
-              <div class="flex items-center gap-1.5">
-               <div class="flex  justify-center items-center">
-               <label class="">
-               <input
-                 value="wedding-gift"
-                 class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
-                 checked="checked"
-                 name="filters"
-                 type="radio"
-               />
-               <span
-                class="inline-block w-3.5 h-3.5 border-2 border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
-                ></span>
-              </label>
-            </div>
+            <!--first code here-->
+            <div
+              @click="open"
+              :class="[
+                filters
+                  ? 'block absolute w-full -top-[86px] left-0'
+                  : 'hidden absolute w-full -top-[86px] left-0',
+              ]"
+            >
+              <div class="bg-[#273E50] w-full left-0 p-3">
+                <div class="flex items-center justify-between gap-2">
+                  <h1 class="text-white font-bold">Odds changes</h1>
+                  <div @click="open" class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-white/80 cursor-pointer w-4 h-4"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 15 15"
+                    >
+                      <rect width="15" height="15" fill="none"></rect>
+                      <path
+                        fill="currentColor"
+                        fill-rule="evenodd"
+                        d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 pt-5">
+                  <div class="flex items-center gap-1.5">
+                    <div class="flex justify-center items-center">
+                      <label class="">
+                        <input
+                          value="wedding-gift"
+                          class="peer rounded-full w-full bg-transparent cursor-pointer hidden after:opacity-100"
+                          checked="checked"
+                          name="filters"
+                          type="radio"
+                        />
+                        <span
+                          class="inline-block w-3.5 h-3.5 border-2 border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                        ></span>
+                      </label>
+                    </div>
 
-                <p class="text-white text-sm font-bold">Do not accept</p>
-              </div>
-              <div class="flex items-center gap-1.5">
-                <div class="flex  justify-center items-center">
-                  <label class="">
-                  <input
-                    value="wedding-gift"
-                    class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
-                    name="filters"
-                    type="radio"
-                  />
-                  <span
-                   class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
-                   ></span>
-                 </label>
-               </div>
-                <p class="text-[#71808C] font-medium text-sm">Accept higher odds</p>
-              </div>
-              <div class="flex items-center gap-1.5">
-                <div class="flex  justify-center items-center">
-                  <label class="">
-                  <input
-                    value="wedding-gift"
-                    class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
-                    name="filters"
-                    type="radio"
-                  />
-                  <span
-                   class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
-                   ></span>
-                 </label>
-               </div>
-                <p class="text-[#71808C] font-medium text-sm">Do not accept</p>
+                    <p class="text-white text-sm font-bold">Do not accept</p>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <div class="flex justify-center items-center">
+                      <label class="">
+                        <input
+                          value="wedding-gift"
+                          class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                          name="filters"
+                          type="radio"
+                        />
+                        <span
+                          class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                        ></span>
+                      </label>
+                    </div>
+                    <p class="text-[#71808C] font-medium text-sm">
+                      Accept higher odds
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <div class="flex justify-center items-center">
+                      <label class="">
+                        <input
+                          value="wedding-gift"
+                          class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                          name="filters"
+                          type="radio"
+                        />
+                        <span
+                          class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                        ></span>
+                      </label>
+                    </div>
+                    <p class="text-[#71808C] font-medium text-sm">
+                      Do not accept
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        </div>
           <div
             class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
           >
