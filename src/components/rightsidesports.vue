@@ -184,17 +184,17 @@
       <div
         :class="[
           bottomBar && combo === true
-            ? ' max-h-[80%]  sidebar shadow-2xl   fixed bottom-[20%] right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
+            ? ' max-h-[80%]  sidebar shadow-2xl  rounded-t-3xl fixed bottom-[20%] right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
             : bottomBar && combo === false
-              ? 'min-h-[100%]  sidebar fixed shadow-2xl bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
-              : 'h-[120px] sidebar overflow-auto shadow-2xl bottom-[0%] bg-[#1C2C3C] absolute w-full',
+              ? 'min-h-[100%]  sidebar fixed shadow-2xl  bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
+              : 'h-[120px] sidebar overflow-auto shadow-2xl   bottom-[0%] bg-[#1C2C3C] absolute w-full',
         ]"
       >
         <div
           :class="[
             bottomBar
-              ? ' h-[80%] sidebar fixed bottom-[20%] right-0 bg-[#273E50]/70 -z-10 overflow-y-auto w-[20%]'
-              : 'h-[80%] sidebar fixed hidden bottom-[20%] right-0 bg-[#273E50]/40 -z-0 overflow-y-auto w-[20%]',
+              ? ' h-[80%]  sidebar fixed bottom-[20%]  right-0 bg-[#273E50]/70 -z-10 overflow-y-auto w-[20%]'
+              : 'h-[80%] sidebar  fixed hidden bottom-[20%]  right-0 bg-[#273E50]/40 -z-0 overflow-y-auto w-[20%]',
           ]"
         ></div>
         <div
@@ -205,7 +205,7 @@
             :class="[
               combo
                 ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
-                : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
+                : 'flex px-6  cursor-pointer items-center hover:text-white text-[#526573] gap-1',
             ]"
           >
             <p class="text-sm uppercase font-bold">
@@ -275,7 +275,7 @@
           v-else
           :class="[bottomBar ? 'px-2  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
         >
-          <div class="flex justify-between items-center gap-2">
+          <div class="flex justify-between px-4 items-center gap-2">
             <div class="flex items-center gap-3">
               <label
                 class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
