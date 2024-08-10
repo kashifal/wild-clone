@@ -275,7 +275,7 @@
           v-else
           :class="[bottomBar ? 'px-2  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
         >
-          <div class="flex justify-between px-4 items-center gap-2">
+          <div class="flex justify-between px-2 items-center gap-2">
             <div class="flex items-center gap-3">
               <label
                 class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
@@ -331,14 +331,14 @@
               To access a shared bet, enter the code provided
               {{ bets.all_bets.length }}
             </p>
-            <div class="flex items-center gap-1 pt-3 justify-between">
+            <div class="flex items-center px-2 gap-2 pt-3 justify-between">
               <input
                 type="number"
                 placeholder="Enter Code"
-                class="placeholder:text-[#A9AFB5] w-44 focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white"
+                class="placeholder:text-[#A9AFB5] w-full focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white"
               />
               <button
-                class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/3 text-white text-sm font-bold py-2 opacity-50 hover:opacity-40"
+                class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/1 text-white text-sm font-bold py-2.5 opacity-50 hover:opacity-40"
               >
                 Submit
               </button>
@@ -532,7 +532,7 @@
             </div>
             <!--first code here-->
             <div
-              @click="open"
+             
               :class="[
                 filters
                   ? 'block absolute w-full -top-[86px] left-0'
@@ -593,7 +593,7 @@
                         ></span>
                       </label>
                     </div>
-                    <p class="text-[#71808C] font-medium text-sm">
+                    <p class="text-white font-medium text-sm">
                       Accept higher odds
                     </p>
                   </div>
@@ -611,7 +611,7 @@
                         ></span>
                       </label>
                     </div>
-                    <p class="text-[#71808C] font-medium text-sm">
+                    <p class="text-white font-medium text-sm">
                       Do not accept
                     </p>
                   </div>

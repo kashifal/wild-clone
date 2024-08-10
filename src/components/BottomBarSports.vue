@@ -148,10 +148,10 @@
     <div
         :class="[
           bottomBar && combo === true
-            ? ' max-h-[90%]  sidebar shadow-3xl rounded-t-3xl  fixed bottom-[20%] left-0  bg-[#273E50]   overflow-y-auto z-50    w-full'
+            ? ' max-h-[90%]  sidebar shadow-3xl rounded-t-3xl  fixed bottom-[0%] left-0  bg-[#273E50]   overflow-y-auto z-50    w-full'
             : bottomBar && combo === false
               ? 'min-h-[100%]  sidebar fixed shadow-3xl bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-full'
-              : 'h-[120px] sidebar overflow-auto shadow-3xl bottom-[0%] bg-[#1C2C3C] absolute w-full',
+              : 'h-full sidebar overflow-auto shadow-3xl bottom-[0%] bg-[#1C2C3C] absolute w-full',
         ]"
       >
         <div
@@ -237,7 +237,7 @@
         </div>
         <div
           v-else
-          :class="[bottomBar ? 'px-2  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
+          :class="[bottomBar ? ' bg-[#1C2C3C] pb-20 pt-6 z-50 ' : 'px-2.5 hidden']"
         >
           <div class="flex justify-between px-4 items-center gap-2">
             <div class="flex items-center gap-3">
@@ -290,29 +290,42 @@
               <p class="text-white/70 text-sm">Setting</p>
             </div>
           </div>
-          <div  class="pt-3 px-4 pb-8">
-            <p class="text-[#A9AFB5] text-sm text-center font-medium ">To access a shared bet, enter the code provided</p>
-            <div class="flex items-center gap-3 pt-3 justify-between">
-              <input type="number" placeholder="Enter Code" class="placeholder:text-[#A9AFB5] w-full focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white">
-              <button class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/1 text-white text-sm font-bold py-2 opacity-50 hover:opacity-40">Submit</button>
+          <!--conditions prob-->
+          <div v-if="bets.all_bets.length <= 0" class="pt-3 px-2 pb-8">
+            <p class="text-[#A9AFB5] text-sm text-center font-medium">
+              To access a shared bet, enter the code provided
+              {{ bets.all_bets.length }}
+            </p>
+            <div class="flex items-center px-2 gap-2 pt-3 justify-between">
+              <input
+                type="number"
+                placeholder="Enter Code"
+                class="placeholder:text-[#A9AFB5] w-full focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white"
+              />
+              <button
+                class="bg-[#3FC02F] cursor-not-allowed px-4 rounded-md w-1/1 text-white text-sm font-bold py-2.5 opacity-50 hover:opacity-40"
+              >
+                Submit
+              </button>
             </div>
           </div>
-          <div class="py-2  mt-auto bg-[#1C2C3C] px-2">
+          <div class="py-2  mt-auto bg-[#1C2C3C] px-4">
             <div
-              class="flex py-2 mt-auto justify-between gap-1 px-2 items-center"
+            v-if="bets.all_bets.length > 0"
+            class="flex py-2 mt-auto justify-between gap-1 px-2 items-center"
+          >
+            <h4
+              class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
             >
-              <h4
-                class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
-              >
-                Singles
-              </h4>
-              <h4 class="uppercase cursor-pointer text-xs text-white">Combo</h4>
-              <h4
-                class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
-              >
-                System
-              </h4>
-            </div>
+              Singles
+            </h4>
+            <h4 class="uppercase cursor-pointer text-xs text-white">Combo</h4>
+            <h4
+              class="uppercase cursor-pointer text-white/50 text-xs hover:text-white"
+            >
+              System
+            </h4>
+          </div>
 
             <div class="mt-auto sidebar flex flex-col gap-1">
               <div
@@ -444,14 +457,12 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div
+          <div
         v-if="combo"
         :class="[
           bottomBar
-            ? 'text-center  pt-5 bottom-10 w-full z-50 absolute'
-            : 'text-center hidden pt-5 bottom-10 w-full z-50 absolute',
+            ? 'text-center relative pt-5 bottom-0 w-full z-20 '
+            : 'text-center  pt-5 bottom-10 w-full z-20 ',
         ]"
       >
         <h5 class="text-white font-bold text-sm">Some odds have changed.</h5>
@@ -594,6 +605,9 @@
           </svg>
         </button>
       </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -625,7 +639,6 @@ const filters = ref(false);
 function open() {
   filters.value = !filters.value;
 }
-
 
 
 const removeBetFunc = (id) => {
