@@ -184,12 +184,19 @@
       <div
         :class="[
           bottomBar && combo === true
-            ? ' max-h-[80%]  sidebar fixed bottom-[20%] right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
+            ? ' max-h-[80%]  sidebar shadow-2xl   fixed bottom-[20%] right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
             : bottomBar && combo === false
-              ? 'min-h-[100%]  sidebar fixed bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
-              : 'h-[120px] sidebar overflow-auto bottom-[0%] bg-[#1C2C3C] absolute w-full',
+              ? 'min-h-[100%]  sidebar fixed shadow-2xl bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
+              : 'h-[120px] sidebar overflow-auto shadow-2xl bottom-[0%] bg-[#1C2C3C] absolute w-full',
         ]"
       >
+        <div
+          :class="[
+            bottomBar
+              ? ' h-[80%] sidebar fixed bottom-[20%] right-0 bg-[#273E50]/70 -z-10 overflow-y-auto w-[20%]'
+              : 'h-[80%] sidebar fixed hidden bottom-[20%] right-0 bg-[#273E50]/40 -z-0 overflow-y-auto w-[20%]',
+          ]"
+        ></div>
         <div
           class="flex w-full border-b sticky top-0 z-50 bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
         >
@@ -264,8 +271,11 @@
             </button>
           </div>
         </div>
-        <div v-else :class="[bottomBar ? 'px-2   ' : 'px-2.5 hidden']">
-          <div class="flex justify-between mt-8 items-center gap-2">
+        <div
+          v-else
+          :class="[bottomBar ? 'px-2  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
+        >
+          <div class="flex justify-between items-center gap-2">
             <div class="flex items-center gap-3">
               <label
                 class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
@@ -316,7 +326,7 @@
               <p class="text-white/70 text-sm">Setting</p>
             </div>
           </div>
-          <div class="py-2 mt-auto bg-[#273E50]">
+          <div class="py-2 mt-auto bg-[#1C2C3C] px-2">
             <div
               class="flex py-2 mt-auto justify-between gap-1 px-2 items-center"
             >
