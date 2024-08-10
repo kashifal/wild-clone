@@ -533,18 +533,6 @@ const matches = ref([
     team0: { id: 5, team: "Iran", score: 5 },
     team1: { id: 6, team: "China", score: 6 },
   },
-  {
-    team0: { id: 7, team: "Iran", score: 5 },
-    team1: { id: 8, team: "China", score: 6 },
-  },
-  {
-    team0: { id: 9, team: "Iran", score: 5 },
-    team1: { id: 10, team: "China", score: 6 },
-  },
-  {
-    team0: { id: 11, team: "Iran", score: 5 },
-    team1: { id: 12, team: "China", score: 6 },
-  },
 ]);
 
 const setMatch = (match) => {
