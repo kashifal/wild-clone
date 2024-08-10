@@ -482,6 +482,10 @@
             Accept changes
           </button>
           <div
+          class=""
+          >
+          <div
+          
             class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
           >
             <svg
@@ -498,6 +502,66 @@
               />
             </svg>
           </div>
+          <div
+         class="bg-[#273E50] block absolute w-full -top-[86px] left-0 p-3">
+            <div class="flex items-center justify-between gap-2">
+              <h1 class="text-white font-bold">Odds changes</h1>
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-white/80 cursor-pointer w-4 h-4" width="1em" height="1em" viewBox="0 0 15 15"><rect width="15" height="15" fill="none"></rect><path fill="currentColor" fill-rule="evenodd" d="M11.782 4.032a.575.575 0 1 0-.813-.814L7.5 6.687L4.032 3.218a.575.575 0 0 0-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 0 0 .814.814L7.5 8.313l3.469 3.469a.575.575 0 0 0 .813-.814L8.313 7.5z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="flex flex-col gap-1 pt-5">
+              <div class="flex items-center gap-1.5">
+               <div class="flex  justify-center items-center">
+               <label class="">
+               <input
+                 value="wedding-gift"
+                 class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                 checked="checked"
+                 name="filters"
+                 type="checkbox"
+               />
+               <span
+                class="inline-block w-3.5 h-3.5 border-2 border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                ></span>
+              </label>
+            </div>
+
+                <p class="text-white text-sm font-bold">Do not accept</p>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <div class="flex  justify-center items-center">
+                  <label class="">
+                  <input
+                    value="wedding-gift"
+                    class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                    name="filters"
+                    type="checkbox"
+                  />
+                  <span
+                   class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                   ></span>
+                 </label>
+               </div>
+                <p class="text-[#71808C] font-medium text-sm">Accept higher odds</p>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <div class="flex  justify-center items-center">
+                  <label class="">
+                  <input
+                    value="wedding-gift"
+                    class="peer rounded-full bg-transparent cursor-pointer hidden after:opacity-100"
+                    name="filters"
+                    type="checkbox"
+                  />
+                  <span
+                   class="inline-block w-3.5 h-3.5 border-2 border-[#71808C] hover:border-[#3FC02F] relative cursor-pointer after:content-[''] after:absolute after:top-2/4 rounded-full after:rounded-full after:left-2/4 after:-translate-x-1/2 after:-translate-y-1/2 after:w-[8px] after:h-[8px] after:bg-[#3FC02F] after:opacity-0 peer-checked:after:opacity-100"
+                   ></span>
+                 </label>
+               </div>
+                <p class="text-[#71808C] font-medium text-sm">Do not accept</p>
+              </div>
+            </div>
+          </div>
+        </div>
           <div
             class="text-white h-10 flex items-center justify-center w-10 hover:bg-opacity-10 cursor-pointer border border-[#343A40] hover:bg-[#3FC02F] text-center rounded-md"
           >
@@ -547,6 +611,11 @@ import { ref } from "vue";
 const bets = useBetStore();
 const bottomBar = ref(true);
 const removeFunc = (id) => {};
+
+const filters = ref(true);
+function open() {
+  filters.value = !filters.value;
+}
 
 const combo = ref(true);
 
