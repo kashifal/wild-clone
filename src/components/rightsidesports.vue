@@ -273,7 +273,7 @@
         </div>
         <div
           v-else
-          :class="[bottomBar ? 'px-2  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
+          :class="[bottomBar ? 'px-2 pt-4  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
         >
           <div class="flex justify-between px-2 items-center gap-2">
             <div class="flex items-center gap-3">
@@ -343,6 +343,7 @@
                 Submit
               </button>
             </div>
+            <div class="flex items-center justify-center py-8 w-full"></div>
           </div>
           <div class="py-2 mt-auto bg-[#1C2C3C] px-2">
             <div
