@@ -28,7 +28,7 @@
         class="flex sm:w-1/4 lg:w-1/5 xl:w-1/4 2xl:w-[400px] w-1/3 items-center justify-between gap-1 text-[#B0B5BB]"
       >
         <div class="2xl:flex 2xl:justify-between items-center 2xl:gap-28">
-          <div class="md:flex hidden sm:w-[110px] w-[50px] justify-between 2xl:gap-24">
+          <div class="md:flex hidden sm:w-[110px] 4xl:relative -left-7 4xl:gap-32 5xl:-left-20 5xl:gap-44 w-[50px] justify-between 2xl:gap-24">
             <p class="text-sm">1</p>
             <p class="text-sm">2</p>
           </div>
@@ -464,16 +464,16 @@
         <p class="text-xs font-medium text-[#B0B5BB]">Japan,NPB</p>
       </div>
       <div
-        class="flex sm:w-1/3 md:w-[300px] lg:w-[300px] xl:w-[300px] 2xl:w-[400px] w-1/3 items-center justify-between gap-1 text-[#B0B5BB]"
+        class="flex sm:w-1/3 md:w-[300px] lg:w-[300px] 4xl:w-[500px] xl:w-[300px] 3xl:w-[430px] 2xl:w-[400px] w-1/3 items-center justify-between gap-1 text-[#B0B5BB]"
       >
-        <div class="2xl:flex 2xl:justify-between mx-auto items-center 2xl:gap-28">
-          <div class="md:flex hidden sm:w-[110px] md:w-[200px] lg:w-[200px] xl:w-[200px] 2xl:w-[150px] mx-auto w-[50px] justify-between 2xl:gap-14">
+        <div class="2xl:flex 2xl:justify-between mx-auto items-center 2xl:gap-28 3xl:gap-10">
+          <div class="md:flex hidden sm:w-[110px] 4xl:w-[80%] 5xl:w-[250px] md:w-[200px] 5xl:relative -left-6 3xl:w-[120px] lg:w-[200px] xl:w-[200px] 2xl:w-[150px] mx-auto w-[50px] justify-between 3xl:gap-16 2xl:gap-14">
             <p class="text-sm">1</p>
             <p class="text-sm">X</p>
             <p class="text-sm">2</p>
           </div>
           <div
-            class="2xl:flex items-center justify-end gap-3 2xl:gap-6 w-[155px] 2xl:w-[120px] relative -left-10 hidden"
+            class="2xl:flex items-center justify-end gap-3 2xl:gap-6 w-[155px] 3xl:w-[200px] 5xl:w-[150px] 2xl:w-[120px] relative 3xl:-left-5 4xl:left-5 5xl:-left-0 -left-10 hidden"
           >
             <p class="text-sm">Under</p>
             <p class="text-sm">Total</p>
@@ -904,3 +904,4 @@ defineProps({
   items: Object,
 });
 </script>
+

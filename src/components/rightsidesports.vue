@@ -279,10 +279,10 @@
             <div class="flex items-center gap-3">
               <label
                 class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
-                for="switchToggle"
+                for="switchTogggle"
                 ><input
                   class="peer sr-only"
-                  id="switchToggle"
+                  id="switchTogggle"
                   type="checkbox"
                 />
                 <span
