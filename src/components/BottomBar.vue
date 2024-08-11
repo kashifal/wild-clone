@@ -143,7 +143,7 @@
 
       <div class="group">
         <router-link
-          to="/slot"
+          to="/sports"
           role="button"
           class="text-text-subdued relative flex max-w-[3.75rem] flex-1 cursor-pointer flex-col items-center justify-center p-0 px-2 text-xs font-medium text-[#BBC0C5] hover:text-white"
           ><span
