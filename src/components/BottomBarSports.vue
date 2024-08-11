@@ -233,6 +233,13 @@
             </button>
           </div>
         </div>
+        <div v-if="!combo" class="flex items-center mt-40 justify-between gap-2 h-full flex-col">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 w-12 h-12" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M7 18h3.5q.425 0 .713-.288T11.5 17v-2q0-.425-.288-.712T10.5 14H7q-.425 0-.712.288T6 15v2q0 .425.288.713T7 18m0-5h3.5q.425 0 .713-.288T11.5 12V7q0-.425-.288-.712T10.5 6H7q-.425 0-.712.288T6 7v5q0 .425.288.713T7 13m6.5 5H17q.425 0 .713-.288T18 17v-5q0-.425-.288-.712T17 11h-3.5q-.425 0-.712.288T12.5 12v5q0 .425.288.713T13.5 18m0-8H17q.425 0 .713-.288T18 9V7q0-.425-.288-.712T17 6h-3.5q-.425 0-.712.288T12.5 7v2q0 .425.288.713T13.5 10M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v2h1q.425 0 .713.288T23 8t-.288.713T22 9h-1v2h1q.425 0 .713.288T23 12t-.288.713T22 13h-1v2h1q.425 0 .713.288T23 16t-.288.713T22 17h-1v2q0 .825-.587 1.413T19 21z" />
+          </svg>
+          <p class="text-gray-400 font-medium text-center">No Bets history <br> placed here</p>
+        </div>
         <div
           v-else
           :class="[
@@ -457,6 +464,18 @@
                 </div>
               </div>
             </div>
+            <div
+        v-if="combo && bets.all_bets.length <= 0"
+        class="text-center pt-5 bottom-20 w-full z-50 "
+      >
+        <div class="flex items-center justify-between gap-2 flex-col">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 w-12 h-12" width="1em" height="1em" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="none" />
+            <path fill="currentColor" d="M7 18h3.5q.425 0 .713-.288T11.5 17v-2q0-.425-.288-.712T10.5 14H7q-.425 0-.712.288T6 15v2q0 .425.288.713T7 18m0-5h3.5q.425 0 .713-.288T11.5 12V7q0-.425-.288-.712T10.5 6H7q-.425 0-.712.288T6 7v5q0 .425.288.713T7 13m6.5 5H17q.425 0 .713-.288T18 17v-5q0-.425-.288-.712T17 11h-3.5q-.425 0-.712.288T12.5 12v5q0 .425.288.713T13.5 18m0-8H17q.425 0 .713-.288T18 9V7q0-.425-.288-.712T17 6h-3.5q-.425 0-.712.288T12.5 7v2q0 .425.288.713T13.5 10M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v2h1q.425 0 .713.288T23 8t-.288.713T22 9h-1v2h1q.425 0 .713.288T23 12t-.288.713T22 13h-1v2h1q.425 0 .713.288T23 16t-.288.713T22 17h-1v2q0 .825-.587 1.413T19 21z" />
+          </svg>
+          <p class="text-gray-400 font-medium text-center">No Bets history <br> placed here</p>
+        </div>
+      </div>
           </div>
           <div
             v-if="combo && bets.all_bets.length > 0"
