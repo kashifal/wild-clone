@@ -202,11 +202,11 @@
           <div
             :class="[
               router.currentRoute.value.fullPath === '/football'
-                ? 'flex items-center bg-[#2B4658] cursor-pointer transition-all duration-500 hover:bg-[#1C3141] py-2.5 px-4 gap-3'
-                : 'flex items-center cursor-pointer transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3',
+                ? 'flex items-center bg-[#2B4658] justify-between cursor-pointer transition-all duration-500 hover:bg-[#1C3141] py-2.5 px-4 gap-3'
+                : 'flex items-center cursor-pointer justify-between transition-all duration-500 hover:bg-[#214058] py-2.5 px-4 gap-3',
             ]"
           >
-            <div class="flex items-center gap-3">
+            <div class="flex items-center  gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 text-[#77808A]"

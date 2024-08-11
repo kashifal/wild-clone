@@ -184,7 +184,7 @@
       <div
         :class="[
           bottomBar && combo === true
-            ? ' max-h-[80%]  sidebar shadow-2xl   fixed bottom-[20%] right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
+            ? ' max-h-[80%]  sidebar shadow-2xl  rounded-t-3xl fixed bottom-[20%] right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
             : bottomBar && combo === false
               ? 'min-h-[100%]  sidebar fixed shadow-2xl bottom-0  right-0  bg-[#273E50]   overflow-y-auto z-50    w-[20%]'
               : 'h-[120px] sidebar overflow-auto shadow-2xl bottom-[0%] bg-[#1C2C3C] absolute w-full',
@@ -193,28 +193,28 @@
         <div
           :class="[
             bottomBar
-              ? ' h-[80%] sidebar fixed bottom-[20%] right-0 bg-[#273E50]/70 -z-10 overflow-y-auto w-[20%]'
-              : 'h-[80%] sidebar fixed hidden bottom-[20%] right-0 bg-[#273E50]/40 -z-0 overflow-y-auto w-[20%]',
+              ? ' h-[80%]  sidebar fixed bottom-[20%] right-0 bg-[#273E50]/70 -z-10 overflow-y-auto w-[20%]'
+              : 'h-[80%] sidebar  fixed hidden bottom-[20%] right-0 bg-[#273E50]/40 -z-0 overflow-y-auto w-[20%]',
           ]"
         ></div>
         <div
-          class="flex w-full border-b sticky top-0 z-50 bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
+          class="flex w-full border-b  sticky top-0 z-50 bg-[#273E50] border-[#415565] items-center min-h-16 justify-between"
         >
-          <div
-            @click="combo = true"
-            :class="[
-              combo
-                ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
-                : 'flex px-6 cursor-pointer items-center hover:text-white text-[#526573] gap-1',
-            ]"
-          >
-            <p class="text-sm uppercase font-bold">
-              Combo
-              <span class="px-2 ml-2 rounded-full py-0.5 bg-blue-400">{{
-                bets.all_bets.length
-              }}</span>
-            </p>
-          </div>
+        <div
+        @click="combo = true"
+        :class="[
+          combo
+            ? 'flex px-6 cursor-pointer items-center  text-white  gap-1'
+            : 'flex px-6  cursor-pointer items-center hover:text-white text-[#526573] gap-1',
+        ]"
+      >
+        <p class="text-sm uppercase font-bold">
+          Combo
+          <span class="px-2 ml-2 rounded-full py-0.5 bg-blue-400">{{
+            bets.all_bets.length
+          }}</span>
+        </p>
+      </div>
 
           <svg
             @click="bottomBar = !bottomBar"
@@ -275,7 +275,7 @@
           v-else
           :class="[bottomBar ? 'px-2  bg-[#1C2C3C] z-50 ' : 'px-2.5 hidden']"
         >
-          <div class="flex justify-between items-center gap-2">
+          <div class="flex justify-between px-4 items-center gap-2">
             <div class="flex items-center gap-3">
               <label
                 class="relative h-8 w-6 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
@@ -326,7 +326,7 @@
               <p class="text-white/70 text-sm">Setting</p>
             </div>
           </div>
-          <div  class="pt-3 pb-8">
+          <div  class="pt-3 px-4 pb-8">
             <p class="text-[#A9AFB5] text-sm text-center font-medium ">To access a shared bet, enter the code provided</p>
             <div class="flex items-center gap-3 pt-3 justify-between">
               <input type="number" placeholder="Enter Code" class="placeholder:text-[#A9AFB5] w-full focus:ring-[#2FC02F] ring-1 ring-white outline-none bg-[#1C2C3C] rounded py-1.5 px-2 text-white">
@@ -521,7 +521,7 @@
           </div>
           <!--first code here-->
           <div 
-          @click="open"
+          
           :class="[
            filters
            ? 'block absolute w-full -top-[86px] left-0'
@@ -569,7 +569,7 @@
                    ></span>
                  </label>
                </div>
-                <p class="text-[#71808C] font-medium text-sm">Accept higher odds</p>
+                <p class="text-white font-medium text-sm">Accept higher odds</p>
               </div>
               <div class="flex items-center gap-1.5">
                 <div class="flex  justify-center items-center">
@@ -585,7 +585,7 @@
                    ></span>
                  </label>
                </div>
-                <p class="text-[#71808C] font-medium text-sm">Do not accept</p>
+                <p class="text-white font-medium text-sm">Do not accept</p>
               </div>
             </div>
           </div>
